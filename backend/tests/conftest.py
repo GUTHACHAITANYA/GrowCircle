@@ -16,8 +16,10 @@ from backend.app.db.session import get_async_db
 from backend.app.main import app
 from backend.app.models.crop import Crop
 from backend.app.models.ingestion import IngestionLog
+from backend.app.models.inquiry import Inquiry
 from backend.app.models.mandi import Mandi
 from backend.app.models.price import Price
+from backend.app.models.user import User
 
 TEST_DATABASE_URL = "sqlite+aiosqlite:///:memory:"
 
@@ -54,6 +56,8 @@ async def db_session() -> AsyncGenerator[AsyncSession, None]:
 
     async with TestingSessionLocal() as session:
         # Clean existing test data
+        await session.execute(delete(Inquiry))
+        await session.execute(delete(User))
         await session.execute(delete(Price))
         await session.execute(delete(Mandi))
         await session.execute(delete(Crop))

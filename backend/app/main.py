@@ -6,7 +6,9 @@ GrowCircle Core Engine - FastAPI Modular Monolith.
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
+from backend.app.api.ivr import router as ivr_router
 from backend.app.api.routes import router as api_router
+from backend.app.api.whatsapp import router as whatsapp_router
 
 app = FastAPI(
     title="GrowCircle API",
@@ -23,5 +25,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Mount core API router
+# Mount door routers
 app.include_router(api_router)
+app.include_router(ivr_router)
+app.include_router(whatsapp_router)

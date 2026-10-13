@@ -50,9 +50,5 @@ async def get_async_db() -> AsyncGenerator[AsyncSession, None]:
 
 
 def get_sync_db() -> Session:
-    """Helper for sync context."""
-    db = SyncSessionLocal()
-    try:
-        return db
-    finally:
-        db.close()
+    """Helper for sync context (Celery workers and CLI scripts). Caller is responsible for closing."""
+    return SyncSessionLocal()

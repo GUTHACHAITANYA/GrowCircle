@@ -68,7 +68,7 @@ docker-compose exec backend python -m backend.scripts.seed_data
 # Activate virtual environment
 .\.venv\Scripts\Activate.ps1
 
-# Run tests (22/22 unit & integration tests)
+# Run tests (44/44 unit & integration tests across Phase 1 & Phase 2)
 pytest -v
 
 # Run linters
@@ -87,11 +87,23 @@ npm run dev
 # Visit http://localhost:3000/en/prices or http://localhost:3000/te/prices
 ```
 
-### 4. Core Endpoints (Phase 1)
-- `GET /health`: DB, Redis connectivity, last fetch timestamp, stale data alert (>24h).
-- `GET /prices?crop=banana&state=andhra-pradesh&district=guntur`: Today's mandi prices with quintal, kg, and ton breakdowns.
-- `GET /nearby-mandis?lat=16.3067&lng=80.4365&crop=banana&limit=3`: PostGIS geodesic distance ranking of nearest mandis.
-- `GET /history?mandi_id=ap-guntur-01&crop=banana&days=30`: 30-day modal price chronological series.
+### 4. Core Endpoints & Doors
+- **Phase 1 REST API**:
+  - `GET /health`: DB, Redis connectivity, last fetch timestamp, stale data alert (>24h).
+  - `GET /prices?crop=banana&state=andhra-pradesh&district=guntur`: Today's mandi prices.
+  - `GET /nearby-mandis?lat=16.3067&lng=80.4365&crop=banana&limit=3`: PostGIS geodesic distance ranking.
+  - `GET /history?mandi_id=ap-guntur-01&crop=banana&days=30`: 30-day modal price trend.
+- **Phase 2 Phone (IVR) Door**:
+  - `POST /ivr/missed-call`: Trigger callback call on missed call.
+  - `POST /ivr/callback`: Language DTMF menu (1=te, 2=hi, 3=gu) and district prompt.
+  - `POST /ivr/crop-menu`: Speaks 3 nearest mandis' prices under 1 minute.
+  - `POST /ivr/action-selection`: Actions (1=sell lead, 2=transport lead, 9=repeat).
+- **Phase 2 WhatsApp Door**:
+  - `GET /whatsapp/webhook`: Meta Webhook challenge verification.
+  - `POST /whatsapp/webhook`: Handles voice notes (transcribe > text + voice note reply), location pins, and text queries.
 
-For detailed architecture and curl examples, see [docs/phase1_price_engine.md](docs/phase1_price_engine.md).
+For detailed setup, credential requirements, and local sandbox simulation, see:
+- [docs/phase1_price_engine.md](docs/phase1_price_engine.md)
+- [docs/phase2_ivr_whatsapp_setup.md](docs/phase2_ivr_whatsapp_setup.md)
+
 

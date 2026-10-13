@@ -28,6 +28,32 @@ class Settings(BaseSettings):
     # Telegram Bot
     TELEGRAM_BOT_TOKEN: str = ""
 
+    # Telephony & IVR
+    TELEPHONY_PROVIDER: str = "mock"  # 'mock', 'exotel', 'twilio'
+    EXOTEL_SID: str = ""
+    EXOTEL_TOKEN: str = ""
+    EXOTEL_CALLER_ID: str = ""
+    TWILIO_ACCOUNT_SID: str = ""
+    TWILIO_AUTH_TOKEN: str = ""
+    TWILIO_PHONE_NUMBER: str = ""
+    IVR_CALLBACK_BASE_URL: str = "http://localhost:8000"
+
+    # Speech AI (STT & TTS)
+    STT_PROVIDER: str = "mock"  # 'mock', 'bhashini', 'sarvam', 'google'
+    TTS_PROVIDER: str = "mock"  # 'mock', 'bhashini', 'sarvam', 'google'
+    BHASHINI_USER_ID: str = ""
+    BHASHINI_API_KEY: str = ""
+    BHASHINI_PIPELINE_ID: str = ""
+    SARVAM_API_KEY: str = ""
+    GOOGLE_SPEECH_API_KEY: str = ""
+
+    # WhatsApp Cloud API
+    WHATSAPP_PROVIDER: str = "mock"  # 'mock', 'meta'
+    WHATSAPP_PHONE_NUMBER_ID: str = ""
+    WHATSAPP_BUSINESS_ACCOUNT_ID: str = ""
+    WHATSAPP_ACCESS_TOKEN: str = ""
+    WHATSAPP_VERIFY_TOKEN: str = "growcircle_webhook_token_2026"
+
     # Security
     SECRET_KEY: str = "dev-secret-key-growcircle-phase1-change-in-production"
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 10080

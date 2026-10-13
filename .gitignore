@@ -66,3 +66,8 @@ ml/models/*.joblib
 ml/models/*.onnx
 ml/data/raw/*
 !ml/data/raw/.gitkeep
+
+# Audio cache
+backend/data/audio_cache/*
+!backend/data/audio_cache/.gitkeep
+

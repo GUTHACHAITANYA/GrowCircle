@@ -25,6 +25,11 @@ celery.conf.update(
             "task": "backend.app.jobs.tasks.fetch_and_ingest_ap_banana",
             "schedule": crontab(hour=6, minute=30),
         },
+        # Daily 07:00 AM IST WhatsApp Price Broadcast to subscribed users
+        "daily-whatsapp-price-broadcast": {
+            "task": "backend.app.jobs.tasks.broadcast_daily_whatsapp_prices",
+            "schedule": crontab(hour=7, minute=0),
+        },
     },
 )
 
