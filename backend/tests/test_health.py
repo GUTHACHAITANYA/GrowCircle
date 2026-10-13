@@ -1,16 +1,16 @@
-import pytest
-from httpx import ASGITransport, AsyncClient
+"""
+Test system health endpoint.
+"""
 
-from backend.app.main import app
+import pytest
+from httpx import AsyncClient
 
 
 @pytest.mark.asyncio
-async def test_health_check() -> None:
-    transport = ASGITransport(app=app)
-    async with AsyncClient(transport=transport, base_url="http://test") as client:
-        response = await client.get("/health")
-        assert response.status_code == 200
-        data = response.json()
-        assert data["status"] == "healthy"
-        assert data["service"] == "growcircle-engine"
-        assert "doors_supported" in data
+async def test_health_check(client: AsyncClient) -> None:
+    response = await client.get("/health")
+    assert response.status_code == 200
+    data = response.json()
+    assert data["status"] in ["healthy", "degraded"]
+    assert data["service"] == "growcircle-engine"
+    assert data["database"] == "connected"

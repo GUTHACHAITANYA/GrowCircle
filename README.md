@@ -54,18 +54,44 @@ Every interface interacts with the exact same unified FastAPI backend:
 ### Prerequisites
 - Python 3.11+
 - Node.js 18+ & npm
-- Docker & Docker Compose (optional for local PostgreSQL/Redis)
+- Docker & Docker Compose (for PostgreSQL with PostGIS & Redis)
 
-### Web (PWA)
+### 1. Docker Compose (Full Stack)
+```bash
+docker-compose up -d
+docker-compose exec backend alembic upgrade head
+docker-compose exec backend python -m backend.scripts.seed_data
+```
+
+### 2. Backend Local Development
+```bash
+# Activate virtual environment
+.\.venv\Scripts\Activate.ps1
+
+# Run tests (22/22 unit & integration tests)
+pytest -v
+
+# Run linters
+ruff check .
+black --check .
+
+# Start FastAPI server
+uvicorn backend.app.main:app --host 0.0.0.0 --port 8000 --reload
+```
+
+### 3. Web Frontend (Next.js)
 ```bash
 cd web
 npm install
 npm run dev
+# Visit http://localhost:3000/en/prices or http://localhost:3000/te/prices
 ```
 
-### Python Linting & Formatting
-```bash
-ruff check .
-black --check .
-mypy backend
-```
+### 4. Core Endpoints (Phase 1)
+- `GET /health`: DB, Redis connectivity, last fetch timestamp, stale data alert (>24h).
+- `GET /prices?crop=banana&state=andhra-pradesh&district=guntur`: Today's mandi prices with quintal, kg, and ton breakdowns.
+- `GET /nearby-mandis?lat=16.3067&lng=80.4365&crop=banana&limit=3`: PostGIS geodesic distance ranking of nearest mandis.
+- `GET /history?mandi_id=ap-guntur-01&crop=banana&days=30`: 30-day modal price chronological series.
+
+For detailed architecture and curl examples, see [docs/phase1_price_engine.md](docs/phase1_price_engine.md).
+

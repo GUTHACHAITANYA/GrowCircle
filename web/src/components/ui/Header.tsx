@@ -33,7 +33,7 @@ export const Header: React.FC<HeaderProps> = ({
         <div className="flex items-center justify-between h-20 gap-4">
           {/* Logo & Brand Name */}
           <Link
-            href="/"
+            href={`/${currentLocale}`}
             className="flex items-center gap-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-deep-leaf rounded-xl p-1 -ml-1 group"
             aria-label={`${brandName} Home`}
           >
@@ -67,9 +67,20 @@ export const Header: React.FC<HeaderProps> = ({
 
           {/* Navigation links & Language Switcher */}
           <div className="flex items-center gap-3 sm:gap-6">
-            <nav className="hidden md:flex items-center gap-1">
+            <nav className="hidden md:flex items-center gap-2">
               <Link
-                href="/showcase"
+                href={`/${currentLocale}/prices`}
+                className={clsx(
+                  'px-3.5 py-2 rounded-xl text-sm font-semibold transition-colors min-h-[44px] inline-flex items-center',
+                  activeNav === 'prices'
+                    ? 'bg-deep-leaf text-white shadow-sm'
+                    : 'text-ink hover:text-deep-leaf hover:bg-black/5'
+                )}
+              >
+                Price Today
+              </Link>
+              <Link
+                href={`/${currentLocale}/showcase`}
                 className={clsx(
                   'px-3.5 py-2 rounded-xl text-sm font-semibold transition-colors min-h-[44px] inline-flex items-center',
                   activeNav === 'showcase'
@@ -77,7 +88,7 @@ export const Header: React.FC<HeaderProps> = ({
                     : 'text-ink hover:text-deep-leaf hover:bg-black/5'
                 )}
               >
-                Design System Showcase
+                Design System
               </Link>
             </nav>
 

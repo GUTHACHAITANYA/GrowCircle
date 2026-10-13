@@ -60,17 +60,26 @@ export function HomePageClient() {
           <div className="bg-white p-6 sm:p-8 rounded-3xl border border-border shadow-sm max-w-md mx-auto mb-8">
             <VoiceButton
               state="idle"
+              onClick={() => router.push(`/${locale}/prices`)}
               label={t('voice.speak')}
               sublabel={t('voice.prompt')}
             />
           </div>
 
           <div className="flex flex-wrap items-center justify-center gap-4">
-            <Link href={`/${locale}/showcase`}>
+            <Link href={`/${locale}/prices`}>
               <Button
                 variant="primary"
                 size="lg"
                 rightIcon={<ArrowRight className="w-5 h-5" />}
+              >
+                {t('nav.prices')} (Andhra Pradesh Banana)
+              </Button>
+            </Link>
+            <Link href={`/${locale}/showcase`}>
+              <Button
+                variant="secondary"
+                size="lg"
               >
                 {t('nav.showcase')}
               </Button>
@@ -90,23 +99,25 @@ export function HomePageClient() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Card className="p-6 flex flex-col justify-between">
-              <div>
-                <div className="w-12 h-12 rounded-2xl bg-deep-leaf/10 text-deep-leaf flex items-center justify-center mb-4">
-                  <TrendingUp className="w-6 h-6" />
+            <Link href={`/${locale}/prices`} className="block group">
+              <Card className="p-6 flex flex-col justify-between h-full" isClickable>
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-deep-leaf/10 text-deep-leaf flex items-center justify-center mb-4">
+                    <TrendingUp className="w-6 h-6" />
+                  </div>
+                  <h3 className="font-heading text-xl font-bold text-ink mb-1 group-hover:text-deep-leaf transition-colors">
+                    {t('roles.farmer')}
+                  </h3>
+                  <p className="text-sm text-muted">
+                    Voice-first queries, nearest mandis, fair crop listing, and masked calls with buyers.
+                  </p>
                 </div>
-                <h3 className="font-heading text-xl font-bold text-ink mb-1">
-                  {t('roles.farmer')}
-                </h3>
-                <p className="text-sm text-muted">
-                  Voice-first queries, nearest mandis, fair crop listing, and masked calls with buyers.
-                </p>
-              </div>
-              <div className="mt-4 pt-4 border-t border-border flex items-center text-xs text-deep-leaf font-bold">
-                <CheckCircle2 className="w-4 h-4 mr-1.5" />
-                Always 100% Free
-              </div>
-            </Card>
+                <div className="mt-4 pt-4 border-t border-border flex items-center text-xs text-deep-leaf font-bold">
+                  <CheckCircle2 className="w-4 h-4 mr-1.5" />
+                  Always 100% Free
+                </div>
+              </Card>
+            </Link>
 
             <Card className="p-6 flex flex-col justify-between">
               <div>
@@ -144,23 +155,25 @@ export function HomePageClient() {
               </div>
             </Card>
 
-            <Card className="p-6 flex flex-col justify-between">
-              <div>
-                <div className="w-12 h-12 rounded-2xl bg-amber/10 text-amber flex items-center justify-center mb-4">
-                  <Users className="w-6 h-6" />
+            <Link href={`/${locale}/prices`} className="block group">
+              <Card className="p-6 flex flex-col justify-between h-full" isClickable>
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-amber/10 text-amber flex items-center justify-center mb-4">
+                    <Users className="w-6 h-6" />
+                  </div>
+                  <h3 className="font-heading text-xl font-bold text-ink mb-1 group-hover:text-deep-leaf transition-colors">
+                    {t('roles.consumer')}
+                  </h3>
+                  <p className="text-sm text-muted">
+                    No login required. Today&apos;s mandi prices, regional price trends, and consumer alerts.
+                  </p>
                 </div>
-                <h3 className="font-heading text-xl font-bold text-ink mb-1">
-                  {t('roles.consumer')}
-                </h3>
-                <p className="text-sm text-muted">
-                  No login required. Today&apos;s mandi prices, regional price trends, and consumer alerts.
-                </p>
-              </div>
-              <div className="mt-4 pt-4 border-t border-border flex items-center text-xs text-deep-leaf font-bold">
-                <CheckCircle2 className="w-4 h-4 mr-1.5" />
-                No Login Needed
-              </div>
-            </Card>
+                <div className="mt-4 pt-4 border-t border-border flex items-center text-xs text-deep-leaf font-bold">
+                  <CheckCircle2 className="w-4 h-4 mr-1.5" />
+                  No Login Needed
+                </div>
+              </Card>
+            </Link>
           </div>
         </div>
       </main>
