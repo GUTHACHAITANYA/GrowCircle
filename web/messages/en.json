@@ -1,0 +1,71 @@
+{
+  "brand": {
+    "name": "GrowCircle",
+    "tagline": "Farm to everyone, full circle",
+    "greeting": "Welcome to GrowCircle"
+  },
+  "nav": {
+    "prices": "Price Today",
+    "buyers": "Find Buyer",
+    "logistics": "Move Produce",
+    "planner": "Plan Ahead",
+    "showcase": "Design System Showcase"
+  },
+  "roles": {
+    "farmer": "Farmer",
+    "buyer": "Buyer / Institution",
+    "driver": "Driver",
+    "consumer": "Consumer / Family"
+  },
+  "languages": {
+    "title": "Select Language",
+    "en": "English",
+    "te": "తెలుగు",
+    "hi": "हिंदी",
+    "gu": "ગુજરાતી"
+  },
+  "priceTile": {
+    "perKg": "₹{price}/kg",
+    "perQuintal": "₹{price}/quintal",
+    "modalPrice": "Modal Price",
+    "lastUpdated": "Updated {time}",
+    "today": "Today",
+    "staleWarning": "Prices older than 24h",
+    "trendUp": "Price up from yesterday",
+    "trendDown": "Price down from yesterday",
+    "trendSame": "Stable price"
+  },
+  "mandiRow": {
+    "distance": "{km} km away",
+    "arrival": "Arrivals: {qty} qtl",
+    "viewDetails": "View Mandi"
+  },
+  "voice": {
+    "speak": "Tap to speak",
+    "listening": "Listening...",
+    "stop": "Stop listening",
+    "prompt": "Ask for today's price or mandi in your language"
+  },
+  "emptyState": {
+    "noPricesTitle": "No Mandi Prices Reported",
+    "noPricesDesc": "This mandi has not reported daily arrival rates yet today. Showing closest active mandi.",
+    "noResultsTitle": "No Results Found",
+    "noResultsDesc": "Try selecting another district or nearby crop.",
+    "actionRetry": "Refresh Data"
+  },
+  "buttons": {
+    "search": "Search Prices",
+    "call": "Call (Masked)",
+    "offer": "Make Offer",
+    "accept": "Accept Deal",
+    "dispatch": "Find Drivers",
+    "back": "Back",
+    "close": "Close"
+  },
+  "toasts": {
+    "successTitle": "Operation Successful",
+    "errorTitle": "Error Encountered",
+    "warningTitle": "Attention Required",
+    "infoTitle": "Information"
+  }
+}

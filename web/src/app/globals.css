@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Noto+Sans+Gujarati:wght@400;500;600;700&family=Noto+Sans+Telugu:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-deep-leaf: #1F6B3A;
+  --color-harvest-gold: #F6C343;
+  --color-amber: #C77700;
+  --color-cream: #FBFAF4;
+  --color-ink: #1B1B18;
+  --color-muted: #4A4A42;
+  --color-border: #E3E0D2;
+  --color-danger: #C62828;
+  --color-info: #1565C0;
+}
+
+body {
+  background-color: #FBFAF4;
+  color: #1B1B18;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Accessible focus rings */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 3px solid #1F6B3A;
+  outline-offset: 2px;
+}
+
+/* Brand heading font */
+h1, h2, h3, .font-heading {
+  font-family: 'Baloo 2', cursive, sans-serif;
+}
+
+/* Locale font families */
+[lang="te"] {
+  font-family: 'Noto Sans Telugu', system-ui, sans-serif;
+}
+[lang="hi"] {
+  font-family: 'Noto Sans Devanagari', system-ui, sans-serif;
+}
+[lang="gu"] {
+  font-family: 'Noto Sans Gujarati', system-ui, sans-serif;
+}

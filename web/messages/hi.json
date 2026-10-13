@@ -1,0 +1,71 @@
+{
+  "brand": {
+    "name": "ग्रो सर्कल",
+    "tagline": "खेत से हर घर तक, पूरा घेरा",
+    "greeting": "ग्रो सर्कल में आपका स्वागत है"
+  },
+  "nav": {
+    "prices": "आज के भाव",
+    "buyers": "खरीदार खोजें",
+    "logistics": "गाड़ी खोजें",
+    "planner": "फसल योजना",
+    "showcase": "डिज़ाइन सिस्टम शोकेस"
+  },
+  "roles": {
+    "farmer": "किसान",
+    "buyer": "खरीदार / संस्था",
+    "driver": "ड्राइवर",
+    "consumer": "उपभोक्ता / परिवार"
+  },
+  "languages": {
+    "title": "भाषा चुनें",
+    "en": "English",
+    "te": "తెలుగు",
+    "hi": "हिंदी",
+    "gu": "ગુજરાતી"
+  },
+  "priceTile": {
+    "perKg": "₹{price}/किलो",
+    "perQuintal": "₹{price}/क्विंटल",
+    "modalPrice": "औसत भाव",
+    "lastUpdated": "अपडेट {time}",
+    "today": "आज",
+    "staleWarning": "24 घंटे से पुराना भाव",
+    "trendUp": "कल से भाव बढ़ा",
+    "trendDown": "कल से भाव घटा",
+    "trendSame": "स्थिर भाव"
+  },
+  "mandiRow": {
+    "distance": "{km} किमी दूर",
+    "arrival": "आवक: {qty} क्विंटल",
+    "viewDetails": "मंडी देखें"
+  },
+  "voice": {
+    "speak": "बोलने के लिए दबाएं",
+    "listening": "सुन रहे हैं...",
+    "stop": "रोकें",
+    "prompt": "अपनी भाषा में आज का भाव या मंडी पूछें"
+  },
+  "emptyState": {
+    "noPricesTitle": "मंडी भाव उपलब्ध नहीं",
+    "noPricesDesc": "इस मंडी से आज का आवक भाव प्राप्त नहीं हुआ है। नजदीकी सक्रिय मंडी दिखाई जा रही है।",
+    "noResultsTitle": "कोई परिणाम नहीं मिला",
+    "noResultsDesc": "कृपया कोई अन्य ज़िला या फसल चुनें।",
+    "actionRetry": "ताज़ा करें"
+  },
+  "buttons": {
+    "search": "भाव खोजें",
+    "call": "कॉल करें (सुरक्षित)",
+    "offer": "सौदा दें",
+    "accept": "सौदा स्वीकारें",
+    "dispatch": "गाड़ी बुक करें",
+    "back": "पीछे",
+    "close": "बंद करें"
+  },
+  "toasts": {
+    "successTitle": "सफल हुआ",
+    "errorTitle": "त्रुटि हुई",
+    "warningTitle": "ध्यान दें",
+    "infoTitle": "सूचना"
+  }
+}

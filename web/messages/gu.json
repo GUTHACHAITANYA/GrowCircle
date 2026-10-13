@@ -1,0 +1,71 @@
+{
+  "brand": {
+    "name": "ગ્રો સર્કલ",
+    "tagline": "ખેતરથી દરેક સુધી, સંપૂર્ણ વર્તુળ",
+    "greeting": "ગ્રો સર્કલમાં આપનું સ્વાગત છે"
+  },
+  "nav": {
+    "prices": "આજના ભાવ",
+    "buyers": "ગ્રાહક શોધો",
+    "logistics": "વાહન શોધો",
+    "planner": "પાક આયોજન",
+    "showcase": "ડિઝાઇન સિસ્ટમ પ્રદર્શન"
+  },
+  "roles": {
+    "farmer": "ખેડૂત",
+    "buyer": "વેપારી / સંસ્થા",
+    "driver": "ડ્રાઈવર",
+    "consumer": "ગ્રાહક / પરિવાર"
+  },
+  "languages": {
+    "title": "ભાષા પસંદ કરો",
+    "en": "English",
+    "te": "తెలుగు",
+    "hi": "हिंदी",
+    "gu": "ગુજરાતી"
+  },
+  "priceTile": {
+    "perKg": "₹{price}/કિલો",
+    "perQuintal": "₹{price}/ક્વિન્ટલ",
+    "modalPrice": "સરેરાશ ભાવ",
+    "lastUpdated": "અપડેટ {time}",
+    "today": "આજે",
+    "staleWarning": "24 કલાક કરતાં જૂનો ભાવ",
+    "trendUp": "ગઈકાલ કરતાં ભાવ વધ્યો",
+    "trendDown": "ગઈકાલ કરતાં ભાવ ઘટ્યો",
+    "trendSame": "સ્થિર ભાવ"
+  },
+  "mandiRow": {
+    "distance": "{km} કિમી દૂર",
+    "arrival": "આવક: {qty} ક્વિ.",
+    "viewDetails": "માર્કેટ યાર્ડ જુઓ"
+  },
+  "voice": {
+    "speak": "બોલવા માટે ટેપ કરો",
+    "listening": "સાંભળી રહ્યા છીએ...",
+    "stop": "બંધ કરો",
+    "prompt": "તમારી ભાષામાં આજના ભાવ અથવા યાર્ડ વિશે પૂછો"
+  },
+  "emptyState": {
+    "noPricesTitle": "યાર્ડના ભાવ મળ્યા નથી",
+    "noPricesDesc": "આ માર્કેટ યાર્ડમાંથી આજના આવક ભાવ હજી મળ્યા નથી. નજીકનું ચાલુ યાર્ડ બતાવી રહ્યા છીએ.",
+    "noResultsTitle": "કોઈ પરિણામ મળ્યું નથી",
+    "noResultsDesc": "કૃપા કરીને અન્ય જિલ્લો અથવા પાક પસંદ કરો.",
+    "actionRetry": "તાજું કરો"
+  },
+  "buttons": {
+    "search": "ભાવ શોધો",
+    "call": "કોલ કરો (સુરક્ષિત)",
+    "offer": "સોદો આપો",
+    "accept": "સોદો સ્વીકારો",
+    "dispatch": "ડ્રાઈવર શોધો",
+    "back": "પાછા",
+    "close": "બંધ કરો"
+  },
+  "toasts": {
+    "successTitle": "સફળ રહ્યું",
+    "errorTitle": "ભૂલ આવી",
+    "warningTitle": "ધ્યાન આપો",
+    "infoTitle": "માહિતી"
+  }
+}
