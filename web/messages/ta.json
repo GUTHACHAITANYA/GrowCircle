@@ -1,0 +1,123 @@
+{
+  "brand": {
+    "name": "க்ரோ சர்க்கிள்",
+    "tagline": "Farm to everyone, full circle",
+    "greeting": "Welcome to GrowCircle"
+  },
+  "nav": {
+    "prices": "இன்றைய விலை",
+    "buyers": "வாங்குபவரைக் கண்டறியவும்",
+    "portal": "வாங்குபவர் போர்டல்",
+    "admin": "நிர்வாக சரிபார்ப்பு",
+    "logistics": "போக்குவரத்து",
+    "diary": "விவசாய குறிப்பேடு",
+    "planner": "பயிர் திட்டம்",
+    "showcase": "வடிவமைப்பு அமைப்பு"
+  },
+  "roles": {
+    "farmer": "விவசாயி",
+    "buyer": "வாங்குபவர் / நிறுவனம்",
+    "driver": "ஓட்டுநர்",
+    "consumer": "நுகர்வோர் / குடும்பம்"
+  },
+  "languages": {
+    "title": "மொழியைத் தேர்ந்தெடுக்கவும்",
+    "selectLanguage": "மொழியைத் தேர்ந்தெடுக்கவும்",
+    "searchPlaceholder": "மொழியைத் தேடுங்கள்...",
+    "partlyTranslated": "பகுதி மொழிபெயர்க்கப்பட்டது",
+    "reviewed": "சரிபார்க்கப்பட்டது",
+    "firstVisitTitle": "உங்கள் மொழியைத் தேர்ந்தெடுக்கவும்",
+    "firstVisitDesc": "க்ரோ சர்க்கிள் 22 இந்திய மொழிகள் மற்றும் ஆங்கிலத்தில் கிடைக்கிறது.",
+    "noResults": "மொழிகள் எதுவும் கிடைக்கவில்லை",
+    "en": "English",
+    "te": "తెలుగు",
+    "hi": "हिंदी",
+    "gu": "ગુજરાતી"
+  },
+  "priceTile": {
+    "perKg": "₹{price}/கிலோ",
+    "perQuintal": "₹{price}/குவிண்டால்",
+    "modalPrice": "மாதிரி விலை",
+    "lastUpdated": "புதுப்பிக்கப்பட்டது {time}",
+    "today": "இன்று",
+    "staleWarning": "Prices older than 24h",
+    "trendUp": "Price up from yesterday",
+    "trendDown": "Price down from yesterday",
+    "trendSame": "Stable price"
+  },
+  "mandiRow": {
+    "distance": "{km} km away",
+    "arrival": "வரத்து: {qty} குவிண்டால்",
+    "viewDetails": "View Mandi"
+  },
+  "voice": {
+    "speak": "பேச தட்டவும்",
+    "listening": "கேட்கிறது...",
+    "stop": "Stop listening",
+    "prompt": "உங்கள் மொழியில் இன்றைய விலை அல்லது மண்டியைப் பற்றி கேளுங்கள்"
+  },
+  "emptyState": {
+    "noPricesTitle": "No Mandi Prices Reported",
+    "noPricesDesc": "This mandi has not reported daily arrival rates yet today. Showing closest active mandi.",
+    "noResultsTitle": "No Results Found",
+    "noResultsDesc": "Try selecting another district or nearby crop.",
+    "actionRetry": "Refresh Data"
+  },
+  "buttons": {
+    "search": "விலைகளைத் தேடுங்கள்",
+    "call": "Call (Masked)",
+    "offer": "Make Offer",
+    "accept": "Accept Deal",
+    "dispatch": "Find Drivers",
+    "back": "பின்செல்",
+    "close": "மூடு"
+  },
+  "transport": {
+    "title": "Transporter Portal",
+    "availableToday": "Available Today",
+    "offline": "Offline",
+    "guideRate": "Guide Rate: ₹{amount}",
+    "guideRateNotice": "Guide rate only (indicative estimate). Transporter and farmer/buyer agree directly on final freight charges.",
+    "pickupOtp": "Pickup OTP",
+    "deliveryOtp": "Delivery OTP",
+    "verifyPickup": "Verify Pickup",
+    "completeDelivery": "Complete Delivery",
+    "pooling": "Freight Pooling v1",
+    "goodsAuto": "Goods Auto (<500 kg)",
+    "miniTruck": "Mini-Truck (500 kg - 1.5 t)",
+    "largeTruck": "Large Truck (>1.5 t)"
+  },
+  "diary": {
+    "title": "Farm Diary & Season Economics",
+    "plotDetails": "Plot & Cultivation Details",
+    "area": "Cultivated Area",
+    "acres": "{count} ஏக்கர்",
+    "profitPerAcre": "Profit / Loss per Acre",
+    "breakEven": "Break-Even Price",
+    "seasonSummary": "Season Summary vs Mandi Average",
+    "exportRecords": "Export My Records (CSV/JSON)",
+    "addCost": "Record Expense",
+    "addYield": "Record Harvest",
+    "addSale": "Record Sale",
+    "voiceEntry": "Voice Entry (Transcribe & Confirm)",
+    "readbackTitle": "Read-Back Confirmation",
+    "readbackPrompt": "Please confirm the details transcribed from your voice note before saving:",
+    "confirmSave": "Confirm & Save Entry"
+  },
+  "consumer": {
+    "title": "Consumer Price Center",
+    "anyCrop": "Price Today for Any Crop",
+    "isExpensive": "Is it expensive this month?",
+    "expensiveBadge": "Expensive this month",
+    "fairBadge": "Normal / Fair Price",
+    "cheapBadge": "Great time to buy!",
+    "subscribeAlerts": "Get WhatsApp / Telegram Alerts",
+    "noLogin": "No login needed • Direct Mandi data"
+  },
+  "toasts": {
+    "successTitle": "Operation Successful",
+    "errorTitle": "Error Encountered",
+    "warningTitle": "Attention Required",
+    "infoTitle": "Information"
+  }
+}

@@ -42,6 +42,28 @@ class ExotelTelephonyProvider(TelephonyProvider):
             res_json = resp.json()
             return res_json.get("Call", {}).get("Sid", "exotel-call")
 
+    async def initiate_masked_call(
+        self, caller_phone: str, callee_phone: str, context_id: str
+    ) -> str:
+        if not self.sid or not self.token or not self.caller_id:
+            logger.warning("Exotel credentials unconfigured, returning simulation bridge ID.")
+            return f"simulated-exotel-bridge-{context_id}"
+
+        # Exotel number-masking bridge: calls caller, connects to callee via proxy CallerId
+        url = f"https://api.exotel.com/v1/Accounts/{self.sid}/Calls/connect.json"
+        data = {
+            "From": caller_phone,
+            "To": callee_phone,
+            "CallerId": self.caller_id,
+            "CallType": "trans",
+        }
+        async with httpx.AsyncClient(timeout=10.0) as client:
+            resp = await client.post(url, data=data, auth=(self.sid, self.token))
+            resp.raise_for_status()
+            res_json = resp.json()
+            return res_json.get("Call", {}).get("Sid", "exotel-bridge")
+
+
     def render_ivr_response(
         self,
         say_text: str | None = None,
@@ -97,6 +119,27 @@ class TwilioTelephonyProvider(TelephonyProvider):
             resp.raise_for_status()
             res_json = resp.json()
             return res_json.get("sid", "twilio-call")
+
+    async def initiate_masked_call(
+        self, caller_phone: str, callee_phone: str, context_id: str
+    ) -> str:
+        if not self.account_sid or not self.auth_token or not self.from_number:
+            logger.warning("Twilio credentials unconfigured, returning simulation bridge ID.")
+            return f"simulated-twilio-bridge-{context_id}"
+
+        # Twilio call bridge
+        url = f"https://api.twilio.com/2010-04-01/Accounts/{self.account_sid}/Calls.json"
+        data = {
+            "To": caller_phone,
+            "From": self.from_number,
+            "Url": f"{settings.IVR_CALLBACK_BASE_URL}/ivr/bridge-twiml?callee={callee_phone}",
+        }
+        async with httpx.AsyncClient(timeout=10.0) as client:
+            resp = await client.post(url, data=data, auth=(self.account_sid, self.auth_token))
+            resp.raise_for_status()
+            res_json = resp.json()
+            return res_json.get("sid", "twilio-bridge")
+
 
     def render_ivr_response(
         self,

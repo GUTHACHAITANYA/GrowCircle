@@ -14,11 +14,28 @@ from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker, create_asyn
 from backend.app.db.base import Base
 from backend.app.db.session import get_async_db
 from backend.app.main import app
+from backend.app.models.anomaly import AnomalyReview
+from backend.app.models.audit_log import AuditLog
+from backend.app.models.buyer import BuyerProfile
+from backend.app.models.buyer_need import BuyerNeed
 from backend.app.models.crop import Crop
+from backend.app.models.deal import Deal
+from backend.app.models.farm_diary import FarmDiaryEntry, FarmSeason
+from backend.app.models.feedback import Feedback
+from backend.app.models.ground_truth import GroundTruthCheck
+from backend.app.models.hierarchy import DistrictMaster, MandalMaster, StateMaster
 from backend.app.models.ingestion import IngestionLog
 from backend.app.models.inquiry import Inquiry
+from backend.app.models.language import Language
+from backend.app.models.listing import Listing
 from backend.app.models.mandi import Mandi
+from backend.app.models.offer import Offer
 from backend.app.models.price import Price
+from backend.app.models.price_alert import PriceAlert
+from backend.app.models.rating import Rating
+from backend.app.models.transporter import Transporter
+from backend.app.models.trip import Trip
+from backend.app.models.trip_rating import TripRating
 from backend.app.models.user import User
 
 TEST_DATABASE_URL = "sqlite+aiosqlite:///:memory:"
@@ -55,17 +72,37 @@ async def db_session() -> AsyncGenerator[AsyncSession, None]:
         await conn.run_sync(Base.metadata.create_all)
 
     async with TestingSessionLocal() as session:
-        # Clean existing test data
+        # Clean existing test data in reverse foreign-key dependency order
+        await session.execute(delete(Feedback))
+        await session.execute(delete(GroundTruthCheck))
+        await session.execute(delete(AnomalyReview))
+        await session.execute(delete(AuditLog))
+        await session.execute(delete(PriceAlert))
+        await session.execute(delete(FarmDiaryEntry))
+        await session.execute(delete(FarmSeason))
+        await session.execute(delete(TripRating))
+        await session.execute(delete(Trip))
+        await session.execute(delete(Transporter))
+        await session.execute(delete(Rating))
+        await session.execute(delete(Deal))
+        await session.execute(delete(Offer))
+        await session.execute(delete(Listing))
+        await session.execute(delete(BuyerNeed))
+        await session.execute(delete(BuyerProfile))
         await session.execute(delete(Inquiry))
+        await session.execute(delete(Language))
         await session.execute(delete(User))
         await session.execute(delete(Price))
         await session.execute(delete(Mandi))
+        await session.execute(delete(MandalMaster))
+        await session.execute(delete(DistrictMaster))
+        await session.execute(delete(StateMaster))
         await session.execute(delete(Crop))
         await session.execute(delete(IngestionLog))
         await session.commit()
 
-        # Seed Banana Crop
-        crop = Crop(
+        # Seed Crops (Banana, Tomato, Onion, Chilli)
+        crop_banana = Crop(
             id="banana",
             name_en="Banana",
             name_te="అరటిపండు",
@@ -74,29 +111,68 @@ async def db_session() -> AsyncGenerator[AsyncSession, None]:
             icon="banana",
             category="fruit",
         )
-        session.add(crop)
+        crop_tomato = Crop(
+            id="tomato",
+            name_en="Tomato",
+            name_te="టమాటా",
+            name_hi="टमाटर",
+            name_gu="ટામેટા",
+            icon="tomato",
+            category="vegetable",
+        )
+        crop_onion = Crop(
+            id="onion",
+            name_en="Onion",
+            name_te="ఉల్లిపాయ",
+            name_hi="प्याज",
+            name_gu="ડુંગળી",
+            icon="onion",
+            category="vegetable",
+        )
+        crop_chilli = Crop(
+            id="chilli",
+            name_en="Green Chilli",
+            name_te="పచ్చిమిర్చి",
+            name_hi="हरी मिर्च",
+            name_gu="લીલા મરચા",
+            icon="chilli",
+            category="vegetable",
+        )
+        session.add_all([crop_banana, crop_tomato, crop_onion, crop_chilli])
 
         # Seed Mandis
         mandi_guntur = Mandi(
             name="Guntur",
+            canonical_name="Guntur",
             district="Guntur",
             state="Andhra Pradesh",
             latitude=16.3067,
             longitude=80.4365,
+            location_verified=True,
+            geocode_confidence=1.0,
+            geocode_source="verified_seed",
         )
         mandi_vja = Mandi(
             name="Vijayawada",
+            canonical_name="Vijayawada",
             district="NTR",
             state="Andhra Pradesh",
             latitude=16.5062,
             longitude=80.6480,
+            location_verified=True,
+            geocode_confidence=1.0,
+            geocode_source="verified_seed",
         )
         mandi_mad = Mandi(
             name="Madanapalle",
+            canonical_name="Madanapalle",
             district="Annamayya",
             state="Andhra Pradesh",
             latitude=13.5500,
             longitude=78.5000,
+            location_verified=True,
+            geocode_confidence=1.0,
+            geocode_source="verified_seed",
         )
         session.add_all([mandi_guntur, mandi_vja, mandi_mad])
         await session.flush()
@@ -184,3 +260,22 @@ async def client(db_session: AsyncSession) -> AsyncGenerator[AsyncClient, None]:
         yield ac
 
     app.dependency_overrides.clear()
+
+
+@pytest_asyncio.fixture(scope="function")
+async def admin_headers(db_session: AsyncSession) -> dict[str, str]:
+    """Generates an authenticated 2FA-verified Admin Bearer authorization header."""
+    from backend.app.models.user import User
+    from backend.app.services.security import create_access_token
+
+    admin = User(
+        phone="9999900099",
+        name="Admin Test",
+        role="admin",
+        language="en",
+        is_admin_2fa_verified=True,
+    )
+    db_session.add(admin)
+    await db_session.flush()
+    token = create_access_token(admin.id, admin.phone, "admin", is_admin_2fa=True)
+    return {"Authorization": f"Bearer {token}"}

@@ -1,0 +1,251 @@
+sample_id,category,entity_id,crop_id,mandi_id,price_date,min_price_kg,max_price_kg,modal_price_kg,arrival_tonnes,offered_price_kg,mandi_benchmark_price_kg,cancelled_count,total_interactions,is_photo_reuse,target_date,actual_reporting_mandis,expected_reporting_mandis,is_ground_truth_anomaly,expected_reason,notes
+SMP-0001,price,PRC-00001,banana,ap-guntur-01,2026-08-01,19.5,29.5,24.5,16.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0002,price,PRC-00002,banana,ap-guntur-01,2026-08-02,20.0,30.0,25.0,17.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0003,price,PRC-00003,banana,ap-guntur-01,2026-08-03,20.5,30.5,25.5,15.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0004,price,PRC-00004,banana,ap-guntur-01,2026-08-04,21.0,31.0,26.0,16.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0005,price,PRC-00005,banana,ap-guntur-01,2026-08-05,19.0,29.0,24.0,17.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0006,price,PRC-00006,banana,ap-guntur-01,2026-08-06,19.5,29.5,24.5,15.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0007,price,PRC-00007,banana,ap-guntur-01,2026-08-07,20.0,30.0,25.0,16.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0008,price,PRC-00008,banana,ap-guntur-01,2026-08-08,20.5,30.5,25.5,17.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0009,price,PRC-00009,banana,ap-guntur-01,2026-08-09,21.0,31.0,26.0,15.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0010,price,PRC-00010,banana,ap-guntur-01,2026-08-10,19.0,29.0,24.0,16.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0011,price,PRC-00011,banana,ap-guntur-01,2026-08-11,19.5,29.5,24.5,17.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0012,price,PRC-00012,banana,ap-guntur-01,2026-08-12,20.0,30.0,25.0,15.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0013,price,PRC-00013,banana,ap-guntur-01,2026-08-13,20.5,30.5,25.5,16.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0014,price,PRC-00014,banana,ap-guntur-01,2026-08-14,21.0,31.0,26.0,17.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0015,price,PRC-00015,banana,ap-guntur-01,2026-08-15,19.0,29.0,24.0,15.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0016,price,PRC-00016,banana,ap-guntur-01,2026-08-16,19.5,29.5,24.5,16.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0017,price,PRC-00017,banana,ap-guntur-01,2026-08-17,20.0,30.0,25.0,17.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0018,price,PRC-00018,banana,ap-guntur-01,2026-08-18,20.5,30.5,25.5,15.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0019,price,PRC-00019,banana,ap-guntur-01,2026-08-19,21.0,31.0,26.0,16.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0020,price,PRC-00020,banana,ap-guntur-01,2026-08-20,19.0,29.0,24.0,17.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0021,price,PRC-00021,banana,ap-guntur-01,2026-08-21,19.5,29.5,24.5,15.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0022,price,PRC-00022,banana,ap-guntur-01,2026-08-22,20.0,30.0,25.0,16.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0023,price,PRC-00023,banana,ap-guntur-01,2026-08-23,20.5,30.5,25.5,17.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0024,price,PRC-00024,banana,ap-guntur-01,2026-08-24,21.0,31.0,26.0,15.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0025,price,PRC-00025,banana,ap-guntur-01,2026-08-25,19.0,29.0,24.0,16.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0026,price,PRC-00026,banana,ap-guntur-01,2026-08-26,19.5,29.5,24.5,17.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0027,price,PRC-00027,banana,ap-vijayawada-01,2026-08-01,21.5,31.5,26.0,13.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0028,price,PRC-00028,banana,ap-vijayawada-01,2026-08-02,22.0,32.0,26.5,14.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0029,price,PRC-00029,banana,ap-vijayawada-01,2026-08-03,22.5,32.5,27.0,12.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0030,price,PRC-00030,banana,ap-vijayawada-01,2026-08-04,23.0,33.0,27.5,13.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0031,price,PRC-00031,banana,ap-vijayawada-01,2026-08-05,21.0,31.0,25.5,14.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0032,price,PRC-00032,banana,ap-vijayawada-01,2026-08-06,21.5,31.5,26.0,12.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0033,price,PRC-00033,banana,ap-vijayawada-01,2026-08-07,22.0,32.0,26.5,13.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0034,price,PRC-00034,banana,ap-vijayawada-01,2026-08-08,22.5,32.5,27.0,14.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0035,price,PRC-00035,banana,ap-vijayawada-01,2026-08-09,23.0,33.0,27.5,12.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0036,price,PRC-00036,banana,ap-vijayawada-01,2026-08-10,21.0,31.0,25.5,13.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0037,price,PRC-00037,banana,ap-vijayawada-01,2026-08-11,21.5,31.5,26.0,14.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0038,price,PRC-00038,banana,ap-vijayawada-01,2026-08-12,22.0,32.0,26.5,12.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0039,price,PRC-00039,banana,ap-vijayawada-01,2026-08-13,22.5,32.5,27.0,13.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0040,price,PRC-00040,banana,ap-vijayawada-01,2026-08-14,23.0,33.0,27.5,14.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0041,price,PRC-00041,banana,ap-vijayawada-01,2026-08-15,21.0,31.0,25.5,12.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0042,price,PRC-00042,banana,ap-vijayawada-01,2026-08-16,21.5,31.5,26.0,13.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0043,price,PRC-00043,banana,ap-vijayawada-01,2026-08-17,22.0,32.0,26.5,14.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0044,price,PRC-00044,banana,ap-vijayawada-01,2026-08-18,22.5,32.5,27.0,12.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0045,price,PRC-00045,banana,ap-vijayawada-01,2026-08-19,23.0,33.0,27.5,13.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0046,price,PRC-00046,banana,ap-vijayawada-01,2026-08-20,21.0,31.0,25.5,14.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0047,price,PRC-00047,banana,ap-vijayawada-01,2026-08-21,21.5,31.5,26.0,12.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0048,price,PRC-00048,banana,ap-vijayawada-01,2026-08-22,22.0,32.0,26.5,13.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0049,price,PRC-00049,banana,ap-vijayawada-01,2026-08-23,22.5,32.5,27.0,14.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0050,price,PRC-00050,banana,ap-vijayawada-01,2026-08-24,23.0,33.0,27.5,12.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0051,price,PRC-00051,banana,ap-vijayawada-01,2026-08-25,21.0,31.0,25.5,13.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0052,price,PRC-00052,banana,ap-vijayawada-01,2026-08-26,21.5,31.5,26.0,14.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0053,price,PRC-00053,tomato,ap-madanapalle-01,2026-08-01,11.5,21.5,17.5,46.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0054,price,PRC-00054,tomato,ap-madanapalle-01,2026-08-02,12.0,22.0,18.0,47.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0055,price,PRC-00055,tomato,ap-madanapalle-01,2026-08-03,12.5,22.5,18.5,45.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0056,price,PRC-00056,tomato,ap-madanapalle-01,2026-08-04,13.0,23.0,19.0,46.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0057,price,PRC-00057,tomato,ap-madanapalle-01,2026-08-05,11.0,21.0,17.0,47.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0058,price,PRC-00058,tomato,ap-madanapalle-01,2026-08-06,11.5,21.5,17.5,45.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0059,price,PRC-00059,tomato,ap-madanapalle-01,2026-08-07,12.0,22.0,18.0,46.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0060,price,PRC-00060,tomato,ap-madanapalle-01,2026-08-08,12.5,22.5,18.5,47.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0061,price,PRC-00061,tomato,ap-madanapalle-01,2026-08-09,13.0,23.0,19.0,45.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0062,price,PRC-00062,tomato,ap-madanapalle-01,2026-08-10,11.0,21.0,17.0,46.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0063,price,PRC-00063,tomato,ap-madanapalle-01,2026-08-11,11.5,21.5,17.5,47.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0064,price,PRC-00064,tomato,ap-madanapalle-01,2026-08-12,12.0,22.0,18.0,45.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0065,price,PRC-00065,tomato,ap-madanapalle-01,2026-08-13,12.5,22.5,18.5,46.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0066,price,PRC-00066,tomato,ap-madanapalle-01,2026-08-14,13.0,23.0,19.0,47.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0067,price,PRC-00067,tomato,ap-madanapalle-01,2026-08-15,11.0,21.0,17.0,45.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0068,price,PRC-00068,tomato,ap-madanapalle-01,2026-08-16,11.5,21.5,17.5,46.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0069,price,PRC-00069,tomato,ap-madanapalle-01,2026-08-17,12.0,22.0,18.0,47.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0070,price,PRC-00070,tomato,ap-madanapalle-01,2026-08-18,12.5,22.5,18.5,45.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0071,price,PRC-00071,tomato,ap-madanapalle-01,2026-08-19,13.0,23.0,19.0,46.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0072,price,PRC-00072,tomato,ap-madanapalle-01,2026-08-20,11.0,21.0,17.0,47.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0073,price,PRC-00073,tomato,ap-madanapalle-01,2026-08-21,11.5,21.5,17.5,45.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0074,price,PRC-00074,tomato,ap-madanapalle-01,2026-08-22,12.0,22.0,18.0,46.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0075,price,PRC-00075,tomato,ap-madanapalle-01,2026-08-23,12.5,22.5,18.5,47.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0076,price,PRC-00076,tomato,ap-madanapalle-01,2026-08-24,13.0,23.0,19.0,45.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0077,price,PRC-00077,tomato,ap-madanapalle-01,2026-08-25,11.0,21.0,17.0,46.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0078,price,PRC-00078,tomato,ap-madanapalle-01,2026-08-26,11.5,21.5,17.5,47.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0079,price,PRC-00079,onion,ap-kurnool-01,2026-08-01,17.5,27.5,21.5,81.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0080,price,PRC-00080,onion,ap-kurnool-01,2026-08-02,18.0,28.0,22.0,82.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0081,price,PRC-00081,onion,ap-kurnool-01,2026-08-03,18.5,28.5,22.5,80.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0082,price,PRC-00082,onion,ap-kurnool-01,2026-08-04,19.0,29.0,23.0,81.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0083,price,PRC-00083,onion,ap-kurnool-01,2026-08-05,17.0,27.0,21.0,82.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0084,price,PRC-00084,onion,ap-kurnool-01,2026-08-06,17.5,27.5,21.5,80.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0085,price,PRC-00085,onion,ap-kurnool-01,2026-08-07,18.0,28.0,22.0,81.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0086,price,PRC-00086,onion,ap-kurnool-01,2026-08-08,18.5,28.5,22.5,82.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0087,price,PRC-00087,onion,ap-kurnool-01,2026-08-09,19.0,29.0,23.0,80.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0088,price,PRC-00088,onion,ap-kurnool-01,2026-08-10,17.0,27.0,21.0,81.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0089,price,PRC-00089,onion,ap-kurnool-01,2026-08-11,17.5,27.5,21.5,82.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0090,price,PRC-00090,onion,ap-kurnool-01,2026-08-12,18.0,28.0,22.0,80.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0091,price,PRC-00091,onion,ap-kurnool-01,2026-08-13,18.5,28.5,22.5,81.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0092,price,PRC-00092,onion,ap-kurnool-01,2026-08-14,19.0,29.0,23.0,82.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0093,price,PRC-00093,onion,ap-kurnool-01,2026-08-15,17.0,27.0,21.0,80.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0094,price,PRC-00094,onion,ap-kurnool-01,2026-08-16,17.5,27.5,21.5,81.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0095,price,PRC-00095,onion,ap-kurnool-01,2026-08-17,18.0,28.0,22.0,82.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0096,price,PRC-00096,onion,ap-kurnool-01,2026-08-18,18.5,28.5,22.5,80.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0097,price,PRC-00097,onion,ap-kurnool-01,2026-08-19,19.0,29.0,23.0,81.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0098,price,PRC-00098,onion,ap-kurnool-01,2026-08-20,17.0,27.0,21.0,82.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0099,price,PRC-00099,onion,ap-kurnool-01,2026-08-21,17.5,27.5,21.5,80.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0100,price,PRC-00100,onion,ap-kurnool-01,2026-08-22,18.0,28.0,22.0,81.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0101,price,PRC-00101,onion,ap-kurnool-01,2026-08-23,18.5,28.5,22.5,82.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0102,price,PRC-00102,onion,ap-kurnool-01,2026-08-24,19.0,29.0,23.0,80.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0103,price,PRC-00103,onion,ap-kurnool-01,2026-08-25,17.0,27.0,21.0,81.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0104,price,PRC-00104,onion,ap-kurnool-01,2026-08-26,17.5,27.5,21.5,82.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0105,price,PRC-00105,potato,ap-kurnool-01,2026-08-01,15.5,23.5,19.5,36.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0106,price,PRC-00106,potato,ap-kurnool-01,2026-08-02,16.0,24.0,20.0,37.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0107,price,PRC-00107,potato,ap-kurnool-01,2026-08-03,16.5,24.5,20.5,35.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0108,price,PRC-00108,potato,ap-kurnool-01,2026-08-04,17.0,25.0,21.0,36.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0109,price,PRC-00109,potato,ap-kurnool-01,2026-08-05,15.0,23.0,19.0,37.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0110,price,PRC-00110,potato,ap-kurnool-01,2026-08-06,15.5,23.5,19.5,35.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0111,price,PRC-00111,potato,ap-kurnool-01,2026-08-07,16.0,24.0,20.0,36.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0112,price,PRC-00112,potato,ap-kurnool-01,2026-08-08,16.5,24.5,20.5,37.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0113,price,PRC-00113,potato,ap-kurnool-01,2026-08-09,17.0,25.0,21.0,35.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0114,price,PRC-00114,potato,ap-kurnool-01,2026-08-10,15.0,23.0,19.0,36.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0115,price,PRC-00115,potato,ap-kurnool-01,2026-08-11,15.5,23.5,19.5,37.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0116,price,PRC-00116,potato,ap-kurnool-01,2026-08-12,16.0,24.0,20.0,35.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0117,price,PRC-00117,potato,ap-kurnool-01,2026-08-13,16.5,24.5,20.5,36.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0118,price,PRC-00118,potato,ap-kurnool-01,2026-08-14,17.0,25.0,21.0,37.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0119,price,PRC-00119,potato,ap-kurnool-01,2026-08-15,15.0,23.0,19.0,35.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0120,price,PRC-00120,potato,ap-kurnool-01,2026-08-16,15.5,23.5,19.5,36.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0121,price,PRC-00121,potato,ap-kurnool-01,2026-08-17,16.0,24.0,20.0,37.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0122,price,PRC-00122,potato,ap-kurnool-01,2026-08-18,16.5,24.5,20.5,35.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0123,price,PRC-00123,potato,ap-kurnool-01,2026-08-19,17.0,25.0,21.0,36.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0124,price,PRC-00124,potato,ap-kurnool-01,2026-08-20,15.0,23.0,19.0,37.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0125,price,PRC-00125,potato,ap-kurnool-01,2026-08-21,15.5,23.5,19.5,35.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0126,price,PRC-00126,potato,ap-kurnool-01,2026-08-22,16.0,24.0,20.0,36.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0127,price,PRC-00127,potato,ap-kurnool-01,2026-08-23,16.5,24.5,20.5,37.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0128,price,PRC-00128,potato,ap-kurnool-01,2026-08-24,17.0,25.0,21.0,35.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0129,price,PRC-00129,potato,ap-kurnool-01,2026-08-25,15.0,23.0,19.0,36.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0130,price,PRC-00130,potato,ap-kurnool-01,2026-08-26,15.5,23.5,19.5,37.0,,,,,,,,,0,CLEAN,Regular market trading within standard historical bounds
+SMP-0131,price,PRC-00131,banana,ap-guntur-01,2026-09-01,2500.0,3500.0,3000.0,20.0,,,,,,,,,1,RULE_UNIT_ERROR,Agmarknet quintal price entered in kg field
+SMP-0132,price,PRC-00132,banana,ap-guntur-01,2026-09-02,2550.0,3550.0,3050.0,20.0,,,,,,,,,1,RULE_UNIT_ERROR,Agmarknet quintal price entered in kg field
+SMP-0133,price,PRC-00133,banana,ap-guntur-01,2026-09-03,2600.0,3600.0,3100.0,20.0,,,,,,,,,1,RULE_UNIT_ERROR,Agmarknet quintal price entered in kg field
+SMP-0134,price,PRC-00134,banana,ap-guntur-01,2026-09-04,2650.0,3650.0,3150.0,20.0,,,,,,,,,1,RULE_UNIT_ERROR,Agmarknet quintal price entered in kg field
+SMP-0135,price,PRC-00135,banana,ap-guntur-01,2026-09-05,2700.0,3700.0,3200.0,20.0,,,,,,,,,1,RULE_UNIT_ERROR,Agmarknet quintal price entered in kg field
+SMP-0136,price,PRC-00136,tomato,ap-madanapalle-01,2026-09-01,1800.0,2800.0,2200.0,20.0,,,,,,,,,1,RULE_UNIT_ERROR,Raw quintal unit confusion
+SMP-0137,price,PRC-00137,tomato,ap-madanapalle-01,2026-09-02,1850.0,2850.0,2250.0,20.0,,,,,,,,,1,RULE_UNIT_ERROR,Raw quintal unit confusion
+SMP-0138,price,PRC-00138,tomato,ap-madanapalle-01,2026-09-03,1900.0,2900.0,2300.0,20.0,,,,,,,,,1,RULE_UNIT_ERROR,Raw quintal unit confusion
+SMP-0139,price,PRC-00139,tomato,ap-madanapalle-01,2026-09-04,1950.0,2950.0,2350.0,20.0,,,,,,,,,1,RULE_UNIT_ERROR,Raw quintal unit confusion
+SMP-0140,price,PRC-00140,tomato,ap-madanapalle-01,2026-09-05,2000.0,3000.0,2400.0,20.0,,,,,,,,,1,RULE_UNIT_ERROR,Raw quintal unit confusion
+SMP-0141,price,PRC-00141,onion,ap-kurnool-01,2026-09-01,2000.0,3000.0,2500.0,20.0,,,,,,,,,1,RULE_UNIT_ERROR,Mandi clerk typed quintal without conversion
+SMP-0142,price,PRC-00142,onion,ap-kurnool-01,2026-09-02,2050.0,3050.0,2550.0,20.0,,,,,,,,,1,RULE_UNIT_ERROR,Mandi clerk typed quintal without conversion
+SMP-0143,price,PRC-00143,onion,ap-kurnool-01,2026-09-03,2100.0,3100.0,2600.0,20.0,,,,,,,,,1,RULE_UNIT_ERROR,Mandi clerk typed quintal without conversion
+SMP-0144,price,PRC-00144,onion,ap-kurnool-01,2026-09-04,2150.0,3150.0,2650.0,20.0,,,,,,,,,1,RULE_UNIT_ERROR,Mandi clerk typed quintal without conversion
+SMP-0145,price,PRC-00145,onion,ap-kurnool-01,2026-09-05,2200.0,3200.0,2700.0,20.0,,,,,,,,,1,RULE_UNIT_ERROR,Mandi clerk typed quintal without conversion
+SMP-0146,price,PRC-00146,potato,ap-kurnool-01,2026-09-01,1500.0,2500.0,2000.0,20.0,,,,,,,,,1,RULE_UNIT_ERROR,Quintal entered in kg rate column
+SMP-0147,price,PRC-00147,potato,ap-kurnool-01,2026-09-02,1550.0,2550.0,2050.0,20.0,,,,,,,,,1,RULE_UNIT_ERROR,Quintal entered in kg rate column
+SMP-0148,price,PRC-00148,potato,ap-kurnool-01,2026-09-03,1600.0,2600.0,2100.0,20.0,,,,,,,,,1,RULE_UNIT_ERROR,Quintal entered in kg rate column
+SMP-0149,price,PRC-00149,potato,ap-kurnool-01,2026-09-04,1650.0,2650.0,2150.0,20.0,,,,,,,,,1,RULE_UNIT_ERROR,Quintal entered in kg rate column
+SMP-0150,price,PRC-00150,potato,ap-kurnool-01,2026-09-05,1700.0,2700.0,2200.0,20.0,,,,,,,,,1,RULE_UNIT_ERROR,Quintal entered in kg rate column
+SMP-0151,price,PRC-00151,banana,ap-vijayawada-01,2026-09-01,2800.0,3800.0,3200.0,20.0,,,,,,,,,1,RULE_UNIT_ERROR,Quintal entered directly
+SMP-0152,price,PRC-00152,banana,ap-vijayawada-01,2026-09-02,2850.0,3850.0,3250.0,20.0,,,,,,,,,1,RULE_UNIT_ERROR,Quintal entered directly
+SMP-0153,price,PRC-00153,banana,ap-vijayawada-01,2026-09-03,2900.0,3900.0,3300.0,20.0,,,,,,,,,1,RULE_UNIT_ERROR,Quintal entered directly
+SMP-0154,price,PRC-00154,banana,ap-vijayawada-01,2026-09-04,2950.0,3950.0,3350.0,20.0,,,,,,,,,1,RULE_UNIT_ERROR,Quintal entered directly
+SMP-0155,price,PRC-00155,banana,ap-vijayawada-01,2026-09-05,3000.0,4000.0,3400.0,20.0,,,,,,,,,1,RULE_UNIT_ERROR,Quintal entered directly
+SMP-0156,price,PRC-00156,banana,ap-guntur-01,2026-09-07,240.0,280.0,260.0,25.0,,,,,,,,,1,RULE_10X_SPIKE,Typo: extra zero added (260 vs normal 26)
+SMP-0157,price,PRC-00157,banana,ap-guntur-01,2026-09-08,240.0,280.0,260.0,25.0,,,,,,,,,1,RULE_10X_SPIKE,Typo: extra zero added (260 vs normal 26)
+SMP-0158,price,PRC-00158,banana,ap-guntur-01,2026-09-09,240.0,280.0,260.0,25.0,,,,,,,,,1,RULE_10X_SPIKE,Typo: extra zero added (260 vs normal 26)
+SMP-0159,price,PRC-00159,banana,ap-guntur-01,2026-09-10,240.0,280.0,260.0,25.0,,,,,,,,,1,RULE_10X_SPIKE,Typo: extra zero added (260 vs normal 26)
+SMP-0160,price,PRC-00160,banana,ap-guntur-01,2026-09-11,240.0,280.0,260.0,25.0,,,,,,,,,1,RULE_10X_SPIKE,Typo: extra zero added (260 vs normal 26)
+SMP-0161,price,PRC-00161,tomato,ap-madanapalle-01,2026-09-07,180.0,220.0,200.0,25.0,,,,,,,,,1,RULE_10X_SPIKE,Typo: extra zero added (200 vs normal 20)
+SMP-0162,price,PRC-00162,tomato,ap-madanapalle-01,2026-09-08,180.0,220.0,200.0,25.0,,,,,,,,,1,RULE_10X_SPIKE,Typo: extra zero added (200 vs normal 20)
+SMP-0163,price,PRC-00163,tomato,ap-madanapalle-01,2026-09-09,180.0,220.0,200.0,25.0,,,,,,,,,1,RULE_10X_SPIKE,Typo: extra zero added (200 vs normal 20)
+SMP-0164,price,PRC-00164,tomato,ap-madanapalle-01,2026-09-10,180.0,220.0,200.0,25.0,,,,,,,,,1,RULE_10X_SPIKE,Typo: extra zero added (200 vs normal 20)
+SMP-0165,price,PRC-00165,tomato,ap-madanapalle-01,2026-09-11,180.0,220.0,200.0,25.0,,,,,,,,,1,RULE_10X_SPIKE,Typo: extra zero added (200 vs normal 20)
+SMP-0166,price,PRC-00166,onion,ap-kurnool-01,2026-09-07,2.1,2.5,2.2,25.0,,,,,,,,,1,RULE_10X_CRASH,Typo: decimal point error (2.2 vs normal 22)
+SMP-0167,price,PRC-00167,onion,ap-kurnool-01,2026-09-08,2.1,2.5,2.2,25.0,,,,,,,,,1,RULE_10X_CRASH,Typo: decimal point error (2.2 vs normal 22)
+SMP-0168,price,PRC-00168,onion,ap-kurnool-01,2026-09-09,2.1,2.5,2.2,25.0,,,,,,,,,1,RULE_10X_CRASH,Typo: decimal point error (2.2 vs normal 22)
+SMP-0169,price,PRC-00169,onion,ap-kurnool-01,2026-09-10,2.1,2.5,2.2,25.0,,,,,,,,,1,RULE_10X_CRASH,Typo: decimal point error (2.2 vs normal 22)
+SMP-0170,price,PRC-00170,onion,ap-kurnool-01,2026-09-11,2.1,2.5,2.2,25.0,,,,,,,,,1,RULE_10X_CRASH,Typo: decimal point error (2.2 vs normal 22)
+SMP-0171,price,PRC-00171,potato,ap-kurnool-01,2026-09-07,1.8,2.4,2.0,25.0,,,,,,,,,1,RULE_10X_CRASH,Typo: decimal point error (2.0 vs normal 20)
+SMP-0172,price,PRC-00172,potato,ap-kurnool-01,2026-09-08,1.8,2.4,2.0,25.0,,,,,,,,,1,RULE_10X_CRASH,Typo: decimal point error (2.0 vs normal 20)
+SMP-0173,price,PRC-00173,potato,ap-kurnool-01,2026-09-09,1.8,2.4,2.0,25.0,,,,,,,,,1,RULE_10X_CRASH,Typo: decimal point error (2.0 vs normal 20)
+SMP-0174,price,PRC-00174,potato,ap-kurnool-01,2026-09-10,1.8,2.4,2.0,25.0,,,,,,,,,1,RULE_10X_CRASH,Typo: decimal point error (2.0 vs normal 20)
+SMP-0175,price,PRC-00175,potato,ap-kurnool-01,2026-09-11,1.8,2.4,2.0,25.0,,,,,,,,,1,RULE_10X_CRASH,Typo: decimal point error (2.0 vs normal 20)
+SMP-0176,price,PRC-00176,banana,ap-guntur-01,2026-09-13,35.0,20.0,25.0,15.0,,,,,,,,,1,RULE_INVERTED_RANGE,min_price > max_price inverted bounds
+SMP-0177,price,PRC-00177,banana,ap-guntur-01,2026-09-14,35.0,20.0,25.0,15.0,,,,,,,,,1,RULE_INVERTED_RANGE,min_price > max_price inverted bounds
+SMP-0178,price,PRC-00178,banana,ap-guntur-01,2026-09-15,35.0,20.0,25.0,15.0,,,,,,,,,1,RULE_INVERTED_RANGE,min_price > max_price inverted bounds
+SMP-0179,price,PRC-00179,banana,ap-guntur-01,2026-09-16,35.0,20.0,25.0,15.0,,,,,,,,,1,RULE_INVERTED_RANGE,min_price > max_price inverted bounds
+SMP-0180,price,PRC-00180,banana,ap-guntur-01,2026-09-17,35.0,20.0,25.0,15.0,,,,,,,,,1,RULE_INVERTED_RANGE,min_price > max_price inverted bounds
+SMP-0181,price,PRC-00181,tomato,ap-madanapalle-01,2026-09-13,-5.0,25.0,15.0,15.0,,,,,,,,,1,RULE_NEGATIVE_OR_ZERO,Negative min price recorded
+SMP-0182,price,PRC-00182,tomato,ap-madanapalle-01,2026-09-14,-5.0,25.0,15.0,15.0,,,,,,,,,1,RULE_NEGATIVE_OR_ZERO,Negative min price recorded
+SMP-0183,price,PRC-00183,tomato,ap-madanapalle-01,2026-09-15,-5.0,25.0,15.0,15.0,,,,,,,,,1,RULE_NEGATIVE_OR_ZERO,Negative min price recorded
+SMP-0184,price,PRC-00184,tomato,ap-madanapalle-01,2026-09-16,-5.0,25.0,15.0,15.0,,,,,,,,,1,RULE_NEGATIVE_OR_ZERO,Negative min price recorded
+SMP-0185,price,PRC-00185,tomato,ap-madanapalle-01,2026-09-17,-5.0,25.0,15.0,15.0,,,,,,,,,1,RULE_NEGATIVE_OR_ZERO,Negative min price recorded
+SMP-0186,price,PRC-00186,onion,ap-kurnool-01,2026-09-13,20.0,30.0,35.0,15.0,,,,,,,,,1,RULE_MODAL_OUT_OF_BOUNDS,Modal price exceeds max_price
+SMP-0187,price,PRC-00187,onion,ap-kurnool-01,2026-09-14,20.0,30.0,35.0,15.0,,,,,,,,,1,RULE_MODAL_OUT_OF_BOUNDS,Modal price exceeds max_price
+SMP-0188,price,PRC-00188,onion,ap-kurnool-01,2026-09-15,20.0,30.0,35.0,15.0,,,,,,,,,1,RULE_MODAL_OUT_OF_BOUNDS,Modal price exceeds max_price
+SMP-0189,price,PRC-00189,onion,ap-kurnool-01,2026-09-16,20.0,30.0,35.0,15.0,,,,,,,,,1,RULE_MODAL_OUT_OF_BOUNDS,Modal price exceeds max_price
+SMP-0190,price,PRC-00190,onion,ap-kurnool-01,2026-09-17,20.0,30.0,35.0,15.0,,,,,,,,,1,RULE_MODAL_OUT_OF_BOUNDS,Modal price exceeds max_price
+SMP-0191,price,PRC-00191,tomato,ap-madanapalle-01,2026-09-19,45.0,55.0,50.0,12.0,,,,,,,,,1,STAT_RESIDUAL_ZSCORE,Sudden massive uncorroborated single-mandi spike (normal 18)
+SMP-0192,price,PRC-00192,tomato,ap-madanapalle-01,2026-09-20,45.0,55.0,50.0,12.0,,,,,,,,,1,STAT_RESIDUAL_ZSCORE,Sudden massive uncorroborated single-mandi spike (normal 18)
+SMP-0193,price,PRC-00193,tomato,ap-madanapalle-01,2026-09-21,45.0,55.0,50.0,12.0,,,,,,,,,1,STAT_RESIDUAL_ZSCORE,Sudden massive uncorroborated single-mandi spike (normal 18)
+SMP-0194,price,PRC-00194,tomato,ap-madanapalle-01,2026-09-22,45.0,55.0,50.0,12.0,,,,,,,,,1,STAT_RESIDUAL_ZSCORE,Sudden massive uncorroborated single-mandi spike (normal 18)
+SMP-0195,price,PRC-00195,tomato,ap-madanapalle-01,2026-09-23,45.0,55.0,50.0,12.0,,,,,,,,,1,STAT_RESIDUAL_ZSCORE,Sudden massive uncorroborated single-mandi spike (normal 18)
+SMP-0196,price,PRC-00196,onion,ap-kurnool-01,2026-09-19,55.0,68.0,62.0,12.0,,,,,,,,,1,STAT_RESIDUAL_ZSCORE,Sudden uncorroborated single-mandi surge (normal 22)
+SMP-0197,price,PRC-00197,onion,ap-kurnool-01,2026-09-20,55.0,68.0,62.0,12.0,,,,,,,,,1,STAT_RESIDUAL_ZSCORE,Sudden uncorroborated single-mandi surge (normal 22)
+SMP-0198,price,PRC-00198,onion,ap-kurnool-01,2026-09-21,55.0,68.0,62.0,12.0,,,,,,,,,1,STAT_RESIDUAL_ZSCORE,Sudden uncorroborated single-mandi surge (normal 22)
+SMP-0199,price,PRC-00199,onion,ap-kurnool-01,2026-09-22,55.0,68.0,62.0,12.0,,,,,,,,,1,STAT_RESIDUAL_ZSCORE,Sudden uncorroborated single-mandi surge (normal 22)
+SMP-0200,price,PRC-00200,onion,ap-kurnool-01,2026-09-23,55.0,68.0,62.0,12.0,,,,,,,,,1,STAT_RESIDUAL_ZSCORE,Sudden uncorroborated single-mandi surge (normal 22)
+SMP-0201,price,PRC-00201,banana,ap-guntur-01,2026-09-19,8.0,12.0,10.0,12.0,,,,,,,,,1,STAT_RESIDUAL_ZSCORE,Sudden severe uncorroborated crash without arrival surge
+SMP-0202,price,PRC-00202,banana,ap-guntur-01,2026-09-20,8.0,12.0,10.0,12.0,,,,,,,,,1,STAT_RESIDUAL_ZSCORE,Sudden severe uncorroborated crash without arrival surge
+SMP-0203,price,PRC-00203,banana,ap-guntur-01,2026-09-21,8.0,12.0,10.0,12.0,,,,,,,,,1,STAT_RESIDUAL_ZSCORE,Sudden severe uncorroborated crash without arrival surge
+SMP-0204,price,PRC-00204,banana,ap-guntur-01,2026-09-22,8.0,12.0,10.0,12.0,,,,,,,,,1,STAT_RESIDUAL_ZSCORE,Sudden severe uncorroborated crash without arrival surge
+SMP-0205,price,PRC-00205,banana,ap-guntur-01,2026-09-23,8.0,12.0,10.0,12.0,,,,,,,,,1,STAT_RESIDUAL_ZSCORE,Sudden severe uncorroborated crash without arrival surge
+SMP-0206,price,PRC-00206,potato,ap-kurnool-01,2026-09-19,45.0,55.0,50.0,12.0,,,,,,,,,1,STAT_RESIDUAL_ZSCORE,Sudden unprovoked price spike with Z > 4.5
+SMP-0207,price,PRC-00207,potato,ap-kurnool-01,2026-09-20,45.0,55.0,50.0,12.0,,,,,,,,,1,STAT_RESIDUAL_ZSCORE,Sudden unprovoked price spike with Z > 4.5
+SMP-0208,price,PRC-00208,potato,ap-kurnool-01,2026-09-21,45.0,55.0,50.0,12.0,,,,,,,,,1,STAT_RESIDUAL_ZSCORE,Sudden unprovoked price spike with Z > 4.5
+SMP-0209,price,PRC-00209,potato,ap-kurnool-01,2026-09-22,45.0,55.0,50.0,12.0,,,,,,,,,1,STAT_RESIDUAL_ZSCORE,Sudden unprovoked price spike with Z > 4.5
+SMP-0210,price,PRC-00210,potato,ap-kurnool-01,2026-09-23,45.0,55.0,50.0,12.0,,,,,,,,,1,STAT_RESIDUAL_ZSCORE,Sudden unprovoked price spike with Z > 4.5
+SMP-0211,price,PRC-00211,tomato,ap-madanapalle-01,2026-09-25,28.0,38.0,34.0,5.0,,,,,,,,,0,CLEAN,Regional price swing confirmed by neighboring Chittoor/Tirupati mandis following rains
+SMP-0212,price,PRC-00212,tomato,ap-madanapalle-01,2026-09-26,28.0,38.0,34.0,5.0,,,,,,,,,0,CLEAN,Regional price swing confirmed by neighboring Chittoor/Tirupati mandis following rains
+SMP-0213,price,PRC-00213,tomato,ap-madanapalle-01,2026-09-27,28.0,38.0,34.0,5.0,,,,,,,,,0,CLEAN,Regional price swing confirmed by neighboring Chittoor/Tirupati mandis following rains
+SMP-0214,price,PRC-00214,tomato,ap-madanapalle-01,2026-09-28,28.0,38.0,34.0,5.0,,,,,,,,,0,CLEAN,Regional price swing confirmed by neighboring Chittoor/Tirupati mandis following rains
+SMP-0215,price,PRC-00215,tomato,ap-madanapalle-01,2026-09-29,28.0,38.0,34.0,5.0,,,,,,,,,0,CLEAN,Regional price swing confirmed by neighboring Chittoor/Tirupati mandis following rains
+SMP-0216,price,PRC-00216,tomato,ap-madanapalle-01,2026-09-25,28.0,38.0,34.0,5.0,,,,,,,,,0,CLEAN,Regional price swing confirmed by neighboring Chittoor/Tirupati mandis following rains
+SMP-0217,price,PRC-00217,tomato,ap-madanapalle-01,2026-09-26,28.0,38.0,34.0,5.0,,,,,,,,,0,CLEAN,Regional price swing confirmed by neighboring Chittoor/Tirupati mandis following rains
+SMP-0218,price,PRC-00218,tomato,ap-madanapalle-01,2026-09-27,28.0,38.0,34.0,5.0,,,,,,,,,0,CLEAN,Regional price swing confirmed by neighboring Chittoor/Tirupati mandis following rains
+SMP-0219,price,PRC-00219,tomato,ap-madanapalle-01,2026-09-28,28.0,38.0,34.0,5.0,,,,,,,,,0,CLEAN,Regional price swing confirmed by neighboring Chittoor/Tirupati mandis following rains
+SMP-0220,price,PRC-00220,tomato,ap-madanapalle-01,2026-09-29,28.0,38.0,34.0,5.0,,,,,,,,,0,CLEAN,Regional price swing confirmed by neighboring Chittoor/Tirupati mandis following rains
+SMP-0221,deal,OFFER-0221,banana,ap-guntur-01,,,,,,26.0,25.0,0,10,0,,,,0,CLEAN,Fair deal offer within 4% of mandi price
+SMP-0222,deal,OFFER-0222,banana,ap-guntur-01,,,,,,26.0,25.0,0,10,0,,,,0,CLEAN,Fair deal offer within 4% of mandi price
+SMP-0223,deal,OFFER-0223,banana,ap-guntur-01,,,,,,26.0,25.0,0,10,0,,,,0,CLEAN,Fair deal offer within 4% of mandi price
+SMP-0224,deal,OFFER-0224,banana,ap-guntur-01,,,,,,26.0,25.0,0,10,0,,,,0,CLEAN,Fair deal offer within 4% of mandi price
+SMP-0225,deal,OFFER-0225,banana,ap-guntur-01,,,,,,26.0,25.0,0,10,0,,,,0,CLEAN,Fair deal offer within 4% of mandi price
+SMP-0226,deal,OFFER-0226,tomato,ap-madanapalle-01,,,,,,7.0,20.0,0,5,0,,,,1,DEAL_OFFER_EXTREME_LOWBALL,Predatory lowball offer 65% below mandi benchmark
+SMP-0227,deal,OFFER-0227,tomato,ap-madanapalle-01,,,,,,7.0,20.0,0,5,0,,,,1,DEAL_OFFER_EXTREME_LOWBALL,Predatory lowball offer 65% below mandi benchmark
+SMP-0228,deal,OFFER-0228,tomato,ap-madanapalle-01,,,,,,7.0,20.0,0,5,0,,,,1,DEAL_OFFER_EXTREME_LOWBALL,Predatory lowball offer 65% below mandi benchmark
+SMP-0229,deal,OFFER-0229,tomato,ap-madanapalle-01,,,,,,7.0,20.0,0,5,0,,,,1,DEAL_OFFER_EXTREME_LOWBALL,Predatory lowball offer 65% below mandi benchmark
+SMP-0230,deal,OFFER-0230,onion,ap-kurnool-01,,,,,,22.0,22.0,4,5,0,,,,1,DEAL_SERIAL_CANCELLATIONS,Buyer with 80% cancellation rate in last 7 days
+SMP-0231,deal,OFFER-0231,onion,ap-kurnool-01,,,,,,22.0,22.0,4,5,0,,,,1,DEAL_SERIAL_CANCELLATIONS,Buyer with 80% cancellation rate in last 7 days
+SMP-0232,deal,OFFER-0232,onion,ap-kurnool-01,,,,,,22.0,22.0,4,5,0,,,,1,DEAL_SERIAL_CANCELLATIONS,Buyer with 80% cancellation rate in last 7 days
+SMP-0233,deal,LST-0233,banana,ap-guntur-01,,,,,,25.0,25.0,0,2,1,,,,1,DEAL_STOLEN_PHOTO_REUSE,Listing reused exact photo hash from another farmer's lot
+SMP-0234,deal,LST-0234,banana,ap-guntur-01,,,,,,25.0,25.0,0,2,1,,,,1,DEAL_STOLEN_PHOTO_REUSE,Listing reused exact photo hash from another farmer's lot
+SMP-0235,deal,LST-0235,banana,ap-guntur-01,,,,,,25.0,25.0,0,2,1,,,,1,DEAL_STOLEN_PHOTO_REUSE,Listing reused exact photo hash from another farmer's lot
+SMP-0236,reporting_drop,RPT-0236,,,,,,,,,,,,,2026-10-01,19,18.5,0,CLEAN,Normal weekday reporting operations
+SMP-0237,reporting_drop,RPT-0237,,,,,,,,,,,,,2026-10-02,19,18.5,0,CLEAN,Normal weekday reporting operations
+SMP-0238,reporting_drop,RPT-0238,,,,,,,,,,,,,2026-10-03,19,18.5,0,CLEAN,Normal weekday reporting operations
+SMP-0239,reporting_drop,RPT-0239,,,,,,,,,,,,,2026-10-04,19,18.5,0,CLEAN,Normal weekday reporting operations
+SMP-0240,reporting_drop,RPT-0240,,,,,,,,,,,,,2026-10-05,19,18.5,0,CLEAN,Normal weekday reporting operations
+SMP-0241,reporting_drop,RPT-0241,,,,,,,,,,,,,2026-10-06,19,18.5,0,CLEAN,Normal weekday reporting operations
+SMP-0242,reporting_drop,RPT-0242,,,,,,,,,,,,,2026-10-07,19,18.5,0,CLEAN,Normal weekday reporting operations
+SMP-0243,reporting_drop,RPT-0243,,,,,,,,,,,,,2026-10-04,2,2.0,0,CLEAN,"Normal Sunday market closure, expected low reporting"
+SMP-0244,reporting_drop,RPT-0244,,,,,,,,,,,,,2026-10-11,2,2.0,0,CLEAN,"Normal Sunday market closure, expected low reporting"
+SMP-0245,reporting_drop,RPT-0245,,,,,,,,,,,,,2026-10-18,2,2.0,0,CLEAN,"Normal Sunday market closure, expected low reporting"
+SMP-0246,reporting_drop,RPT-0246,,,,,,,,,,,,,2026-10-15,2,18.5,1,CRITICAL_OUTAGE,Catastrophic drop to 2 reporting mandis on a weekday (data.gov.in outage)
+SMP-0247,reporting_drop,RPT-0247,,,,,,,,,,,,,2026-10-16,2,18.5,1,CRITICAL_OUTAGE,Catastrophic drop to 2 reporting mandis on a weekday (data.gov.in outage)
+SMP-0248,reporting_drop,RPT-0248,,,,,,,,,,,,,2026-10-17,2,18.5,1,CRITICAL_OUTAGE,Catastrophic drop to 2 reporting mandis on a weekday (data.gov.in outage)
+SMP-0249,reporting_drop,RPT-0249,,,,,,,,,,,,,2026-10-18,2,18.5,1,CRITICAL_OUTAGE,Catastrophic drop to 2 reporting mandis on a weekday (data.gov.in outage)
+SMP-0250,reporting_drop,RPT-0250,,,,,,,,,,,,,2026-10-19,2,18.5,1,CRITICAL_OUTAGE,Catastrophic drop to 2 reporting mandis on a weekday (data.gov.in outage)

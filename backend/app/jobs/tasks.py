@@ -5,6 +5,7 @@ Celery background tasks for daily price ingestion and health checks.
 import asyncio
 import logging
 from datetime import UTC, datetime, timedelta
+from typing import Any
 
 from sqlalchemy import func, select
 
@@ -148,3 +149,101 @@ def broadcast_daily_whatsapp_prices() -> dict[str, str | int]:
         return {"status": "error", "error": str(ex), "sent": sent_count}
     finally:
         db.close()
+
+
+@celery.task(name="backend.app.jobs.tasks.nightly_rescore_and_model_promotion")
+def nightly_rescore_and_model_promotion() -> dict[str, Any]:
+    """
+    Scheduled nightly task to re-score forecasting models against newly ingested mandi prices.
+    Promotes candidate model ONLY if it beats current production baseline on expanding backtest.
+    Logs run metrics and artifact state to MLflow.
+    """
+    logger.info("Starting nightly ML price forecasting re-scoring and promotion job...")
+    try:
+        import mlflow
+
+        from ml.evaluation.backtest import RollingOriginBacktester
+
+        bt = RollingOriginBacktester()
+        results = bt.run_backtest()
+
+        # Check promotion condition: LightGBM must beat seasonal naive across all horizons
+        promoted = results["overall_lgb_beats_baseline"]
+        avg_mase = float(
+            sum(results["horizons"][h]["models"]["lightgbm_global"]["mase"] for h in results["horizons"])
+            / len(results["horizons"])
+        )
+
+        # Log promotion decision to MLflow
+        try:
+            mlflow.set_tracking_uri("sqlite:///mlruns/mlflow.db")
+            mlflow.set_experiment("growcircle_mandi_price_foundation")
+            with mlflow.start_run(run_name="nightly_rescore_promotion"):
+                mlflow.log_params({"job": "nightly_rescore", "promoted": str(promoted)})
+                mlflow.log_metrics({"overall_avg_mase": avg_mase})
+                mlflow.set_tags({"promotion_status": "PROMOTED" if promoted else "REJECTED"})
+        except Exception as ml_err:
+            logger.warning(f"MLflow logging warning during nightly job: {ml_err}")
+
+        logger.info(
+            f"Nightly re-scoring completed. Promoted: {promoted}, Average MASE: {avg_mase:.3f}"
+        )
+        return {
+            "status": "success",
+            "promoted": promoted,
+            "average_mase": avg_mase,
+            "horizons_evaluated": list(results["horizons"].keys()),
+        }
+    except Exception as e:
+        logger.exception(f"Error during nightly ML re-scoring: {e}")
+        return {"status": "error", "error": str(e)}
+
+
+@celery.task(name="backend.app.jobs.tasks.run_multi_source_price_sync")
+def run_multi_source_price_sync(state: str = "Andhra Pradesh") -> dict[str, Any]:
+    """
+    Ingests and reconciles real mandi prices across configured adapters:
+    1. Official Agmarknet Portal CSV drops (Priority 1)
+    2. data.gov.in Agmarknet API (Priority 2)
+    3. CEDA Agri Market dataset (Priority 3)
+    """
+    logger.info(f"Starting scheduled multi-source price sync for state='{state}'...")
+    from backend.app.services.price_sources.agmarknet_csv_adapter import AgmarknetPortalCsvAdapter
+    from backend.app.services.price_sources.ceda_adapter import CedaAgriAdapter
+    from backend.app.services.price_sources.data_gov_adapter import DataGovInAdapter
+    from backend.app.services.price_sources.reconciler import PriceReconciler
+
+    portal_adapter = AgmarknetPortalCsvAdapter()
+    data_gov_adapter = DataGovInAdapter()
+    ceda_adapter = CedaAgriAdapter()
+
+    async def _gather_records():
+        records = []
+        # Ingest portal CSVs first
+        csv_recs = await portal_adapter.fetch_prices(state=state)
+        records.extend(csv_recs)
+
+        # Ingest live data.gov.in
+        dg_recs = await data_gov_adapter.fetch_prices(state=state)
+        records.extend(dg_recs)
+
+        # Ingest CEDA if available
+        ceda_recs = await ceda_adapter.fetch_prices(state=state)
+        records.extend(ceda_recs)
+        return records
+
+    all_records = asyncio.run(_gather_records())
+
+    db = get_sync_db()
+    try:
+        reconciler = PriceReconciler(db)
+        stats = reconciler.reconcile_and_save(all_records)
+        logger.info(f"Multi-source price sync completed: {stats}")
+        return {"status": "success", "stats": stats}
+    except Exception as e:
+        logger.exception(f"Multi-source price sync failed: {e}")
+        return {"status": "failure", "error": str(e)}
+    finally:
+        db.close()
+
+

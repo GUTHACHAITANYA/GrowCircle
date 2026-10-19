@@ -23,6 +23,7 @@ import {
   Search,
   ShoppingCart,
 } from 'lucide-react';
+import { RoleGuard } from '@/components/auth/RoleGuard';
 
 export function ShowcaseClient() {
   const t = useTranslations();
@@ -61,7 +62,13 @@ export function ShowcaseClient() {
         activeNav="showcase"
       />
 
-      <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 space-y-16">
+      <RoleGuard
+        allowedRoles={['admin']}
+        require2FA={false}
+        fallbackTitle="Design System Access Restricted"
+        fallbackMessage="The Storybook component showcase and raw design system tokens are restricted to administrators. Please sign in with an authorized account."
+      >
+        <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 space-y-16">
         {/* Showcase Header */}
         <div className="bg-white p-8 rounded-3xl border border-border shadow-sm">
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
@@ -74,14 +81,14 @@ export function ShowcaseClient() {
                 Storybook Component Showcase
               </h1>
               <p className="text-muted text-base mt-2 max-w-2xl">
-                Every component strictly follows WCAG AA contrast standards, &ge; 44px accessible touch targets, and the canonical token system in all four Indian languages.
+                Every component strictly follows WCAG AA contrast standards, &ge; 44px accessible touch targets, and the canonical token system across all 22 scheduled Indian languages plus English with honest coverage tracking.
               </p>
             </div>
 
             {/* Language Switcher Bar */}
             <div className="flex flex-col items-start md:items-end gap-2">
               <span className="text-xs font-bold text-muted uppercase tracking-wider">
-                Switch Language / భాషను మార్చండి
+                Select a Language / భాషను ఎంచుకోండి
               </span>
               <LanguageSwitcher
                 currentLocale={locale}
@@ -283,7 +290,7 @@ export function ShowcaseClient() {
               4. MandiRow Component (3 Nearest Mandis)
             </h2>
             <p className="text-sm text-muted">
-              PostGIS distance calculations showing nearest mandi badges, arrival tonnage, and modal prices.
+              Accurate straight-line distance calculations showing nearest mandi badges, arrival tonnage, and modal prices.
             </p>
           </div>
 
@@ -561,6 +568,7 @@ export function ShowcaseClient() {
           </Card>
         </section>
       </main>
+      </RoleGuard>
 
       <footer className="border-t border-border bg-white py-6 text-center text-xs text-muted">
         GrowCircle Design System &bull; Phase 0 Foundation Complete

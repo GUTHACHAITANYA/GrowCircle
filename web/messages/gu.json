@@ -7,7 +7,10 @@
   "nav": {
     "prices": "આજના ભાવ",
     "buyers": "ગ્રાહક શોધો",
+    "portal": "વેપારી પોર્ટલ",
+    "admin": "એડમિન ચકાસણી",
     "logistics": "વાહન શોધો",
+    "diary": "ખેડૂત ડાયરી",
     "planner": "પાક આયોજન",
     "showcase": "ડિઝાઇન સિસ્ટમ પ્રદર્શન"
   },
@@ -19,6 +22,13 @@
   },
   "languages": {
     "title": "ભાષા પસંદ કરો",
+    "selectLanguage": "ભાષા પસંદ કરો",
+    "searchPlaceholder": "ભાષા શોધો...",
+    "partlyTranslated": "અંશતઃ અનુવાદિત",
+    "reviewed": "ચકાસાયેલ",
+    "firstVisitTitle": "તમારી ભાષા પસંદ કરો",
+    "firstVisitDesc": "ગ્રો સર્કલ 22 સુનિશ્ચિત ભારતીય ભાષાઓ અને અંગ્રેજીમાં ઉપલબ્ધ છે.",
+    "noResults": "કોઈ મેળ ખાતી ભાષા મળી નથી",
     "en": "English",
     "te": "తెలుగు",
     "hi": "हिंदी",
@@ -62,10 +72,103 @@
     "back": "પાછા",
     "close": "બંધ કરો"
   },
+  "transport": {
+    "title": "ટ્રાન્સપોર્ટર પોર્ટલ",
+    "availableToday": "આજે ઉપલબ્ધ છે",
+    "offline": "ઓફલાઇન",
+    "guideRate": "ગાઇડ ભાડું: ₹{amount}",
+    "guideRateNotice": "માત્ર અંદાજિત ગાઇડ ભાડું. ટ્રાન્સપોર્ટર અને ખેડૂત/ખરીદનાર સીધા જ અંતિમ ભાડું નક્કી કરે છે.",
+    "pickupOtp": "પિકઅપ OTP",
+    "deliveryOtp": "ડિલિવરી OTP",
+    "verifyPickup": "પિકઅપ ચકાસો",
+    "completeDelivery": "ડિલિવરી પૂર્ણ કરો",
+    "pooling": "લોડ પૂલિંગ v1",
+    "goodsAuto": "ગુડ્સ ઓટો (<500 કિગ્રા)",
+    "miniTruck": "મીની-ટ્રક (500 કિગ્રા - 1.5 ટન)",
+    "largeTruck": "મોટો ટ્રક (>1.5 ટન)"
+  },
+  "diary": {
+    "title": "ખેડૂત ડાયરી અને આર્થિક હિસાબ",
+    "plotDetails": "ખેતર અને પાકની વિગતો",
+    "area": "વાવેતર વિસ્તાર",
+    "acres": "{count} એકર",
+    "profitPerAcre": "એકર દીઠ નફો / નુકસાન",
+    "breakEven": "બ્રેક-ઇવન કિંમત (ખર્ચ વસૂલાત)",
+    "seasonSummary": "મંડી સરેરાશ ભાવ સાથે સરખામણી",
+    "exportRecords": "મારો રેકોર્ડ ડાઉનલોડ કરો (CSV/JSON)",
+    "addCost": "ખર્ચ નોંધો",
+    "addYield": "પાક નોંધો",
+    "addSale": "વેચાણ નોંધો",
+    "voiceEntry": "બોલીને નોંધો (ખાતરી સાથે)",
+    "readbackTitle": "વાંચીને ખાતરી (રીડ-બેક)",
+    "readbackPrompt": "સેવ કરતા પહેલાં કૃપા કરીને વિગતો તપાસો:",
+    "confirmSave": "ખાતરી કરો અને સેવ કરો"
+  },
+  "consumer": {
+    "title": "ગ્રાહક ભાવ કેન્દ્ર",
+    "anyCrop": "કોઈપણ પાકનો આજનો ભાવ",
+    "isExpensive": "શું આ મહિને ભાવ મોંઘો છે?",
+    "expensiveBadge": "આ મહિને ભાવ મોંઘો છે",
+    "fairBadge": "સામાન્ય / વ્યાજબી ભાવ",
+    "cheapBadge": "ખરીદી કરવાનો ઉત્તમ સમય!",
+    "subscribeAlerts": "વોટ્સએપ / ટેલિગ્રામ પર એલર્ટ મેળવો",
+    "noLogin": "લોગિન જરૂરી નથી • સીધા મંડી ભાવો"
+  },
   "toasts": {
     "successTitle": "સફળ રહ્યું",
     "errorTitle": "ભૂલ આવી",
     "warningTitle": "ધ્યાન આપો",
     "infoTitle": "માહિતી"
+  },
+  "auth": {
+    "signInTitle": "સાઇન ઇન / નોંધણી",
+    "verifyOtpTitle": "ફોન ઓટીપી ચકાસણી",
+    "admin2faTitle": "એડમિન 2FA સુરક્ષા",
+    "phoneSubtitle": "પાસવર્ડની જરૂર નથી — ફોન ઓટીપી પ્રમાણીકરણ",
+    "otpSubtitle": "+91 {phone} પર મોકલેલો કોડ દાખલ કરો",
+    "admin2faSubtitle": "વહીવટી 2FA કોડ જરૂરી છે",
+    "mobileNumberLabel": "મોબાઇલ નંબર",
+    "mobileNumberPlaceholder": "98480 12345",
+    "realProviderNotice": "અમે 6 અંકના વોટ્સએપ અથવા એસએમએસ કોડ દ્વારા ચકાસણી કરીએ છીએ. પાસવર્ડની જરૂર નથી.",
+    "demoModeNotice": "ડેમો મોડ — ચકાસણી કોડ સિમ્યુલેટેડ છે. પાસવર્ડની જરૂર નથી.",
+    "nameLabel": "તમારું નામ",
+    "optional": "વૈકલ્પિક",
+    "namePlaceholder": "દા.ત. વેંકટ રાવ",
+    "selectRoleLabel": "તમારી ભૂમિકા પસંદ કરો",
+    "sendOtpButton": "ઓટીપી મોકલો",
+    "sendingOtp": "કોડ મોકલી રહ્યા છીએ...",
+    "enterOtpLabel": "6 અંકનો ઓટીપી દાખલ કરો",
+    "changePhone": "ફોન નંબર બદલો",
+    "resendOtp": "ઓટીપી ફરી મોકલો",
+    "resendCooldown": "{seconds} સેકન્ડમાં ફરી મોકલો",
+    "verifyButton": "ચકાસો અને આગળ વધો",
+    "verifying": "ચકાસણી ચાલુ છે...",
+    "devOtpHdr": "ડેવ ઓટીપી",
+    "devOtpBadge": "ડેમો સેન્ડબોક્સ કોડ",
+    "autoFill": "ઓટો-ફિલ",
+    "attemptsLeft": "{count} પ્રયાસો બાકી",
+    "accountLocked": "વારંવાર નિષ્ફળ પ્રયાસોને લીધે ઉપકરણ લૉક થઈ ગયું છે. કૃપા કરીને {seconds} સેકન્ડ રાહ જુઓ.",
+    "pendingVerificationNotice": "તમારું ખાતું એડમિન ચકાસણી માટે બાકી છે. ચકાસણી દરમિયાન તમે પ્લેટફોર્મ બ્રાઉઝ કરી શકો છો.",
+    "adminCodeLabel": "એડમિન 2FA સુરક્ષા કોડ",
+    "adminCodeDesc": "એડમિનિસ્ટ્રેટિવ એક્સેસ માટે ગૌણ TOTP અધિકૃતતા આવશ્યક છે. ડેમો મોડમાં 654321 વાપરો.",
+    "adminSubmit": "એડમિન કન્સોલ ખોલો",
+    "roles": {
+      "farmer": {
+        "title": "ખેડૂત",
+        "subtitle": "ઉપજ નોંધો, સ્થાનિક મંડી દરો જુઓ, ડાયરી મેનેજ કરો"
+      },
+      "buyer": {
+        "title": "ખરીદનાર (સંસ્થા / દુકાન)",
+        "subtitle": "જરૂરિયાતો પોસ્ટ કરો, ખેતરોમાંથી સીધી ખરીદી કરો (ચકાસણી પેન્ડિંગ)"
+      },
+      "driver": {
+        "title": "ટ્રાન્સપોર્ટર",
+        "subtitle": "ખેતરમાંથી મંડી ટ્રિપ્સ સ્વીકારો, ઓટીપી (ચકાસણી પેન્ડિંગ)"
+      },
+      "consumer": {
+        "title": "ગ્રાહક",
+        "subtitle": "પારદર્શક મંડી ભાવો અને સામૂહિક ખરીદી"
+      }
+    }
   }
 }

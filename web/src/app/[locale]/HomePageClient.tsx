@@ -99,7 +99,7 @@ export function HomePageClient() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Link href={`/${locale}/prices`} className="block group">
+            <Link href={`/${locale}/diary`} className="block group">
               <Card className="p-6 flex flex-col justify-between h-full" isClickable>
                 <div>
                   <div className="w-12 h-12 rounded-2xl bg-deep-leaf/10 text-deep-leaf flex items-center justify-center mb-4">
@@ -109,51 +109,55 @@ export function HomePageClient() {
                     {t('roles.farmer')}
                   </h3>
                   <p className="text-sm text-muted">
-                    Voice-first queries, nearest mandis, fair crop listing, and masked calls with buyers.
+                    Voice-first farm diary, profit &amp; loss per acre, break-even price, and Mandi price comparison.
                   </p>
                 </div>
                 <div className="mt-4 pt-4 border-t border-border flex items-center text-xs text-deep-leaf font-bold">
                   <CheckCircle2 className="w-4 h-4 mr-1.5" />
-                  Always 100% Free
+                  Farm Diary &amp; Economics
                 </div>
               </Card>
             </Link>
 
-            <Card className="p-6 flex flex-col justify-between">
-              <div>
-                <div className="w-12 h-12 rounded-2xl bg-harvest-gold/30 text-ink flex items-center justify-center mb-4">
-                  <Store className="w-6 h-6" />
+            <Link href={`/${locale}/portal`} className="block group">
+              <Card className="p-6 flex flex-col justify-between h-full" isClickable>
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-harvest-gold/30 text-ink flex items-center justify-center mb-4">
+                    <Store className="w-6 h-6" />
+                  </div>
+                  <h3 className="font-heading text-xl font-bold text-ink mb-1 group-hover:text-deep-leaf transition-colors">
+                    {t('roles.buyer')}
+                  </h3>
+                  <p className="text-sm text-muted">
+                    Colleges, hostels, schools, hotels & shops post weekly requirements and negotiate directly.
+                  </p>
                 </div>
-                <h3 className="font-heading text-xl font-bold text-ink mb-1">
-                  {t('roles.buyer')}
-                </h3>
-                <p className="text-sm text-muted">
-                  Colleges, hostels, schools, hotels & shops post weekly requirements and negotiate directly.
-                </p>
-              </div>
-              <div className="mt-4 pt-4 border-t border-border flex items-center text-xs text-muted font-bold">
-                <CheckCircle2 className="w-4 h-4 mr-1.5 text-deep-leaf" />
-                Verified Supply
-              </div>
-            </Card>
+                <div className="mt-4 pt-4 border-t border-border flex items-center text-xs text-deep-leaf font-bold">
+                  <CheckCircle2 className="w-4 h-4 mr-1.5" />
+                  Verified Supply & 50km Radar
+                </div>
+              </Card>
+            </Link>
 
-            <Card className="p-6 flex flex-col justify-between">
-              <div>
-                <div className="w-12 h-12 rounded-2xl bg-info/10 text-info flex items-center justify-center mb-4">
-                  <Truck className="w-6 h-6" />
+            <Link href={`/${locale}/driver`} className="block group">
+              <Card className="p-6 flex flex-col justify-between h-full" isClickable>
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-info/10 text-info flex items-center justify-center mb-4">
+                    <Truck className="w-6 h-6" />
+                  </div>
+                  <h3 className="font-heading text-xl font-bold text-ink mb-1 group-hover:text-deep-leaf transition-colors">
+                    {t('roles.driver')}
+                  </h3>
+                  <p className="text-sm text-muted">
+                    Goods autos & mini-trucks receive trip requests post-deal with secure OTP verification.
+                  </p>
                 </div>
-                <h3 className="font-heading text-xl font-bold text-ink mb-1">
-                  {t('roles.driver')}
-                </h3>
-                <p className="text-sm text-muted">
-                  Goods autos & mini-trucks receive trip requests post-deal with secure OTP verification.
-                </p>
-              </div>
-              <div className="mt-4 pt-4 border-t border-border flex items-center text-xs text-muted font-bold">
-                <CheckCircle2 className="w-4 h-4 mr-1.5 text-deep-leaf" />
-                Two-way Ratings
-              </div>
-            </Card>
+                <div className="mt-4 pt-4 border-t border-border flex items-center text-xs text-muted font-bold">
+                  <CheckCircle2 className="w-4 h-4 mr-1.5 text-deep-leaf" />
+                  Two-way Ratings & Pooling v1
+                </div>
+              </Card>
+            </Link>
 
             <Link href={`/${locale}/prices`} className="block group">
               <Card className="p-6 flex flex-col justify-between h-full" isClickable>

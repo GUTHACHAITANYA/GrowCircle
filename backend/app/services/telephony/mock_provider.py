@@ -16,6 +16,7 @@ class MockTelephonyProvider(TelephonyProvider):
 
     def __init__(self) -> None:
         self.outbound_calls: list[dict[str, str]] = []
+        self.masked_calls: list[dict[str, str]] = []
 
     async def initiate_outbound_call(self, to_phone: str, callback_action_url: str) -> str:
         call_id = f"mock-call-{uuid.uuid4().hex[:8]}"
@@ -27,6 +28,21 @@ class MockTelephonyProvider(TelephonyProvider):
             }
         )
         return call_id
+
+    async def initiate_masked_call(
+        self, caller_phone: str, callee_phone: str, context_id: str
+    ) -> str:
+        bridge_id = f"mock-masked-{uuid.uuid4().hex[:8]}"
+        self.masked_calls.append(
+            {
+                "bridge_id": bridge_id,
+                "caller_phone": caller_phone,
+                "callee_phone": callee_phone,
+                "context_id": context_id,
+            }
+        )
+        return bridge_id
+
 
     def render_ivr_response(
         self,

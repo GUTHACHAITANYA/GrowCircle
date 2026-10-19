@@ -1,0 +1,38 @@
+{
+  "created_at": "2026-10-13T17:33:04.522221",
+  "crops": {
+    "banana": {
+      "status": "completed",
+      "records_count": 2881,
+      "start_date": "2024-01-01",
+      "end_date": "2026-10-13",
+      "raw_file": "data\\raw\\ap_banana.json",
+      "timestamp": "2026-10-13T17:33:04.568367"
+    },
+    "tomato": {
+      "status": "completed",
+      "records_count": 2652,
+      "start_date": "2024-01-01",
+      "end_date": "2026-10-13",
+      "raw_file": "data\\raw\\ap_tomato.json",
+      "timestamp": "2026-10-13T17:33:04.609884"
+    },
+    "onion": {
+      "status": "completed",
+      "records_count": 2155,
+      "start_date": "2024-01-01",
+      "end_date": "2026-10-13",
+      "raw_file": "data\\raw\\ap_onion.json",
+      "timestamp": "2026-10-13T17:33:04.643269"
+    },
+    "potato": {
+      "status": "completed",
+      "records_count": 1617,
+      "start_date": "2024-01-01",
+      "end_date": "2026-10-13",
+      "raw_file": "data\\raw\\ap_potato.json",
+      "timestamp": "2026-10-13T17:33:04.669403"
+    }
+  },
+  "last_updated": "2026-10-13T17:33:04.669664"
+}

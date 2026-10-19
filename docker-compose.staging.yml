@@ -1,0 +1,124 @@
+services:
+  postgres:
+    image: postgis/postgis:16-3.4
+    container_name: growcircle_staging_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: growcircle_staging
+      POSTGRES_PASSWORD: staging_secure_password_replace
+      POSTGRES_DB: growcircle_staging_db
+    ports:
+      - "5433:5432"
+    volumes:
+      - staging_postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U growcircle_staging -d growcircle_staging_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    container_name: growcircle_staging_redis
+    restart: unless-stopped
+    ports:
+      - "6380:6379"
+    volumes:
+      - staging_redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    container_name: growcircle_staging_backend
+    restart: unless-stopped
+    environment:
+      - ENVIRONMENT=staging
+      - DEBUG=false
+      - DATABASE_URL=postgresql+asyncpg://growcircle_staging:staging_secure_password_replace@postgres:5432/growcircle_staging_db
+      - DATABASE_SYNC_URL=postgresql://growcircle_staging:staging_secure_password_replace@postgres:5432/growcircle_staging_db
+      - REDIS_URL=redis://redis:6379/0
+      - CELERY_BROKER_URL=redis://redis:6379/1
+      - CELERY_RESULT_BACKEND=redis://redis:6379/2
+      - SENTRY_DSN=${SENTRY_DSN:-}
+      - RATE_LIMIT_ENABLED=true
+      - DATA_GOV_API_KEY=${DATA_GOV_API_KEY:-}
+    ports:
+      - "8001:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+
+  celery_worker:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    container_name: growcircle_staging_worker
+    restart: unless-stopped
+    command: ["celery", "-A", "backend.app.jobs.celery_app.celery", "worker", "--loglevel=info"]
+    environment:
+      - ENVIRONMENT=staging
+      - DATABASE_URL=postgresql+asyncpg://growcircle_staging:staging_secure_password_replace@postgres:5432/growcircle_staging_db
+      - DATABASE_SYNC_URL=postgresql://growcircle_staging:staging_secure_password_replace@postgres:5432/growcircle_staging_db
+      - REDIS_URL=redis://redis:6379/0
+      - CELERY_BROKER_URL=redis://redis:6379/1
+      - CELERY_RESULT_BACKEND=redis://redis:6379/2
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+
+  web:
+    build:
+      context: ./web
+      dockerfile: Dockerfile
+    container_name: growcircle_staging_web
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+      - NEXT_PUBLIC_API_URL=http://backend:8000
+    ports:
+      - "3001:3000"
+    depends_on:
+      - backend
+
+  prometheus:
+    image: prom/prometheus:v2.51.0
+    container_name: growcircle_staging_prometheus
+    restart: unless-stopped
+    volumes:
+      - ./infra/monitoring/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - staging_prometheus_data:/prometheus
+    ports:
+      - "9090:9090"
+    depends_on:
+      - backend
+
+  grafana:
+    image: grafana/grafana:10.4.1
+    container_name: growcircle_staging_grafana
+    restart: unless-stopped
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin_staging_change_me
+      - GF_USERS_ALLOW_SIGN_UP=false
+    volumes:
+      - ./infra/monitoring/grafana_growcircle_dashboard.json:/var/lib/grafana/dashboards/growcircle.json:ro
+      - staging_grafana_data:/var/lib/grafana
+    ports:
+      - "3002:3000"
+    depends_on:
+      - prometheus
+
+volumes:
+  staging_postgres_data:
+  staging_redis_data:
+  staging_prometheus_data:
+  staging_grafana_data:

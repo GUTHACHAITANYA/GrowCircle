@@ -67,7 +67,20 @@ ml/models/*.onnx
 ml/data/raw/*
 !ml/data/raw/.gitkeep
 
-# Audio cache
+# Databases & Local Cache
+*.db
+*.sqlite
+*.sqlite3
+data/growcircle.db
 backend/data/audio_cache/*
 !backend/data/audio_cache/.gitkeep
+backend/data/feedback/*
+backend/data/vision_collection/*
+
+# MLflow & Scratch
+mlruns/
+backend/mlruns/
+scratch/
+backend/backend/
+
 

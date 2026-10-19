@@ -1,0 +1,135 @@
+{
+  "source": "Directorate of Economics and Statistics, Department of Agriculture & Cooperation, Andhra Pradesh",
+  "license": "Government Open Data License - India (GODL)",
+  "reference_year": "2024-2025",
+  "data": {
+    "guntur": {
+      "banana": {
+        "planted_area_acres": 24500,
+        "share_of_district_area_pct": 3.8,
+        "recent_3yr_area_trend_pct": 2.4,
+        "avg_district_yield_tonnes_acre": 29.5
+      },
+      "chilli": {
+        "planted_area_acres": 182000,
+        "share_of_district_area_pct": 28.5,
+        "recent_3yr_area_trend_pct": 4.1,
+        "avg_district_yield_tonnes_acre": 8.2
+      },
+      "tomato": {
+        "planted_area_acres": 12800,
+        "share_of_district_area_pct": 2.0,
+        "recent_3yr_area_trend_pct": -1.2,
+        "avg_district_yield_tonnes_acre": 15.4
+      },
+      "maize": {
+        "planted_area_acres": 68000,
+        "share_of_district_area_pct": 10.6,
+        "recent_3yr_area_trend_pct": 1.8,
+        "avg_district_yield_tonnes_acre": 3.1
+      },
+      "onion": {
+        "planted_area_acres": 9200,
+        "share_of_district_area_pct": 1.4,
+        "recent_3yr_area_trend_pct": 0.5,
+        "avg_district_yield_tonnes_acre": 9.2
+      }
+    },
+    "annamayya": {
+      "tomato": {
+        "planted_area_acres": 78500,
+        "share_of_district_area_pct": 18.2,
+        "recent_3yr_area_trend_pct": 14.8,
+        "avg_district_yield_tonnes_acre": 17.2
+      },
+      "banana": {
+        "planted_area_acres": 18200,
+        "share_of_district_area_pct": 4.2,
+        "recent_3yr_area_trend_pct": 3.1,
+        "avg_district_yield_tonnes_acre": 28.0
+      },
+      "groundnut": {
+        "planted_area_acres": 145000,
+        "share_of_district_area_pct": 33.6,
+        "recent_3yr_area_trend_pct": -3.2,
+        "avg_district_yield_tonnes_acre": 1.3
+      },
+      "onion": {
+        "planted_area_acres": 11200,
+        "share_of_district_area_pct": 2.6,
+        "recent_3yr_area_trend_pct": 5.4,
+        "avg_district_yield_tonnes_acre": 9.8
+      },
+      "potato": {
+        "planted_area_acres": 4800,
+        "share_of_district_area_pct": 1.1,
+        "recent_3yr_area_trend_pct": 1.0,
+        "avg_district_yield_tonnes_acre": 8.5
+      }
+    },
+    "kurnool": {
+      "onion": {
+        "planted_area_acres": 84000,
+        "share_of_district_area_pct": 14.5,
+        "recent_3yr_area_trend_pct": 8.2,
+        "avg_district_yield_tonnes_acre": 10.4
+      },
+      "potato": {
+        "planted_area_acres": 12500,
+        "share_of_district_area_pct": 2.2,
+        "recent_3yr_area_trend_pct": 4.6,
+        "avg_district_yield_tonnes_acre": 9.1
+      },
+      "tomato": {
+        "planted_area_acres": 22400,
+        "share_of_district_area_pct": 3.9,
+        "recent_3yr_area_trend_pct": 6.8,
+        "avg_district_yield_tonnes_acre": 15.0
+      },
+      "groundnut": {
+        "planted_area_acres": 162000,
+        "share_of_district_area_pct": 28.0,
+        "recent_3yr_area_trend_pct": -2.5,
+        "avg_district_yield_tonnes_acre": 1.4
+      },
+      "chilli": {
+        "planted_area_acres": 48000,
+        "share_of_district_area_pct": 8.3,
+        "recent_3yr_area_trend_pct": 3.2,
+        "avg_district_yield_tonnes_acre": 7.8
+      },
+      "maize": {
+        "planted_area_acres": 52000,
+        "share_of_district_area_pct": 9.0,
+        "recent_3yr_area_trend_pct": 2.0,
+        "avg_district_yield_tonnes_acre": 3.2
+      }
+    },
+    "ntr": {
+      "banana": {
+        "planted_area_acres": 31200,
+        "share_of_district_area_pct": 6.8,
+        "recent_3yr_area_trend_pct": 4.2,
+        "avg_district_yield_tonnes_acre": 31.0
+      },
+      "tomato": {
+        "planted_area_acres": 14200,
+        "share_of_district_area_pct": 3.1,
+        "recent_3yr_area_trend_pct": 1.2,
+        "avg_district_yield_tonnes_acre": 16.0
+      },
+      "chilli": {
+        "planted_area_acres": 42000,
+        "share_of_district_area_pct": 9.2,
+        "recent_3yr_area_trend_pct": 2.8,
+        "avg_district_yield_tonnes_acre": 8.4
+      },
+      "maize": {
+        "planted_area_acres": 38000,
+        "share_of_district_area_pct": 8.3,
+        "recent_3yr_area_trend_pct": 1.5,
+        "avg_district_yield_tonnes_acre": 3.3
+      }
+    }
+  }
+}

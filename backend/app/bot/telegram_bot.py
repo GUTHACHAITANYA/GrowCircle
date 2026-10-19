@@ -73,23 +73,23 @@ class TelegramBotHandler:
 
             if not nearby:
                 return (
-                    f"🌿 *{b_info['name']}*\n"
+                    f"*{b_info['name']}*\n"
                     f"_{b_info['tagline']}_\n\n"
                     f"No active banana mandi prices found near your location."
                 )
 
             lines = [
-                f"🌿 *{b_info['name']}*",
+                f"*{b_info['name']}*",
                 f"_{b_info['tagline']}_\n",
-                f"📍 *{b_info['nearest']}*\n",
+                f"*{b_info['nearest']}*\n",
             ]
 
             for idx, m in enumerate(nearby, start=1):
                 dist_str = f"{m['distance_km']} km" if m.get("distance_km") is not None else ""
                 lines.append(
                     f"{idx}. *{m['mandi_name']}* ({m['district']}) - {dist_str}\n"
-                    f"   💰 *₹{m['modal_price_kg']}/kg* (₹{int(m['modal_price_quintal'])}/qtl)\n"
-                    f"   🗓 Updated: {m['price_date']}\n"
+                    f"   *₹{m['modal_price_kg']}/kg* (₹{int(m['modal_price_quintal'])}/qtl)\n"
+                    f"   Updated: {m['price_date']}\n"
                 )
 
             lines.append("Always verified Agmarknet data • No login needed")
@@ -100,9 +100,9 @@ class TelegramBotHandler:
 
         if "/start" in text_clean:
             return (
-                f"🌿 *{b_info['name']}*\n"
+                f"*{b_info['name']}*\n"
                 f"_{b_info['tagline']}_\n\n"
-                f"Welcome! Send *'banana price'* or share your 📍 *Location* to see the 3 nearest mandi rates."
+                f"Welcome! Send *'banana price'* or share your *Location* to see the 3 nearest mandi rates."
             )
 
         if any(term in text_clean for term in ["banana", "price", "ధర", "भाव", "ભાવ"]):
@@ -116,23 +116,24 @@ class TelegramBotHandler:
             )
 
             lines = [
-                f"🌿 *{b_info['name']}*",
+                f"*{b_info['name']}*",
                 f"_{b_info['tagline']}_\n",
-                f"🍌 *{b_info['nearest']}*\n",
+                f"*{b_info['nearest']}*\n",
             ]
 
             for idx, m in enumerate(nearby, start=1):
                 dist_str = f"~{m['distance_km']} km" if m.get("distance_km") is not None else ""
                 lines.append(
                     f"{idx}. *{m['mandi_name']}* ({m['district']}) {dist_str}\n"
-                    f"   💰 *₹{m['modal_price_kg']}/kg* (₹{int(m['modal_price_quintal'])}/quintal)\n"
-                    f"   🗓 {m['price_date']}\n"
+                    f"   *₹{m['modal_price_kg']}/kg* (₹{int(m['modal_price_quintal'])}/quintal)\n"
+                    f"   {m['price_date']}\n"
                 )
 
             lines.append("Share your location anytime to see your nearest mandis!")
             return "\n".join(lines)
 
         return (
-            f"🌿 *{b_info['name']}*\n"
+            f"*{b_info['name']}*\n"
             f"Please type *'banana price'* or share your *location* to get today's rates."
         )
+

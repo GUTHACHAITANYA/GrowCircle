@@ -16,6 +16,15 @@ class TelephonyProvider(ABC):
         """
 
     @abstractmethod
+    async def initiate_masked_call(
+        self, caller_phone: str, callee_phone: str, context_id: str
+    ) -> str:
+        """
+        Bridges a phone call between caller and callee through a proxy virtual number (DID)
+        so neither party's personal phone number is exposed (DPDP Act privacy).
+        """
+
+    @abstractmethod
     def render_ivr_response(
         self,
         say_text: str | None = None,
@@ -27,3 +36,4 @@ class TelephonyProvider(ABC):
         """
         Renders telephony response markup (TwiML / provider XML).
         """
+

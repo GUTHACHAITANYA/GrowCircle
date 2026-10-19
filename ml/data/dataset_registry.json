@@ -1,0 +1,35 @@
+{
+  "datasets": [
+    {
+      "name": "ap_mandi_prices_historical",
+      "version": "1.0.0",
+      "data_hash": "sha256:756ebd1bd30f1aebddbe6ab43593d41591a48e088c3fe1d6f8ee235bbf9657fd",
+      "metrics": {
+        "total_rows": 9301,
+        "file_size_kb": 1632.27,
+        "date_range": "2024-01-01 to 2026-10-13",
+        "crops_count": 4,
+        "crops": [
+          "banana",
+          "onion",
+          "potato",
+          "tomato"
+        ],
+        "mandis_count": 6,
+        "mandis": [
+          "ap-anantapur-01",
+          "ap-guntur-01",
+          "ap-kurnool-01",
+          "ap-madanapalle-01",
+          "ap-tirupati-01",
+          "ap-vijayawada-01"
+        ],
+        "outliers_flagged": 2,
+        "outlier_rate_pct": 0.022
+      },
+      "owner": "GrowCircle ML Team",
+      "date": "2026-10-17T06:59:40Z",
+      "file_path": "data\\processed\\cleaned_mandi_prices.csv"
+    }
+  ]
+}

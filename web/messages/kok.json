@@ -1,0 +1,123 @@
+{
+  "brand": {
+    "name": "ग्रो सर्कल",
+    "tagline": "खेत से हर घर तक, पूरा घेरा",
+    "greeting": "ग्रो सर्कल में आपका स्वागत है"
+  },
+  "nav": {
+    "prices": "आज के भाव",
+    "buyers": "खरीदार खोजें",
+    "portal": "खरीदार पोर्टल",
+    "admin": "एडमिन सत्यापन",
+    "logistics": "गाड़ी खोजें",
+    "diary": "किसान डायरी",
+    "planner": "फसल योजना",
+    "showcase": "डिज़ाइन सिस्टम शोकेस"
+  },
+  "roles": {
+    "farmer": "किसान",
+    "buyer": "खरीदार / संस्था",
+    "driver": "ड्राइवर",
+    "consumer": "उपभोक्ता / परिवार"
+  },
+  "languages": {
+    "title": "भास वेचून काढा",
+    "selectLanguage": "भास वेचून काढा",
+    "searchPlaceholder": "भाषा खोजें...",
+    "partlyTranslated": "Partly translated",
+    "reviewed": "Native reviewed",
+    "firstVisitTitle": "Select your language",
+    "firstVisitDesc": "GrowCircle is available across 22 scheduled Indian languages plus English.",
+    "noResults": "No matching languages found",
+    "en": "English",
+    "te": "తెలుగు",
+    "hi": "हिंदी",
+    "gu": "ગુજરાતી"
+  },
+  "priceTile": {
+    "perKg": "₹{price}/किलो",
+    "perQuintal": "₹{price}/क्विंटल",
+    "modalPrice": "सरासरी दर",
+    "lastUpdated": "अपडेट {time}",
+    "today": "आज",
+    "staleWarning": "24 घंटे से पुराना भाव",
+    "trendUp": "कल से भाव बढ़ा",
+    "trendDown": "कल से भाव घटा",
+    "trendSame": "स्थिर भाव"
+  },
+  "mandiRow": {
+    "distance": "{km} किमी दूर",
+    "arrival": "आवक: {qty} क्विंटल",
+    "viewDetails": "मंडी देखें"
+  },
+  "voice": {
+    "speak": "बोलने के लिए दबाएं",
+    "listening": "सुन रहे हैं...",
+    "stop": "रोकें",
+    "prompt": "अपनी भाषा में आज का भाव या मंडी पूछें"
+  },
+  "emptyState": {
+    "noPricesTitle": "मंडी भाव उपलब्ध नहीं",
+    "noPricesDesc": "इस मंडी से आज का आवक भाव प्राप्त नहीं हुआ है। नजदीकी सक्रिय मंडी दिखाई जा रही है।",
+    "noResultsTitle": "कोई परिणाम नहीं मिला",
+    "noResultsDesc": "कृपया कोई अन्य ज़िला या फसल चुनें।",
+    "actionRetry": "ताज़ा करें"
+  },
+  "buttons": {
+    "search": "भाव खोजें",
+    "call": "कॉल करें (सुरक्षित)",
+    "offer": "सौदा दें",
+    "accept": "सौदा स्वीकारें",
+    "dispatch": "गाड़ी बुक करें",
+    "back": "पीछे",
+    "close": "बंद करें"
+  },
+  "transport": {
+    "title": "ट्रांसपोर्टर पोर्टल",
+    "availableToday": "आज उपलब्ध हैं",
+    "offline": "ऑफ़लाइन",
+    "guideRate": "गाइड भाड़ा: ₹{amount}",
+    "guideRateNotice": "केवल अनुमानित गाइड भाड़ा। ट्रांसपोर्टर और किसान/खरीदार आपस में सीधे अंतिम किराया तय करते हैं।",
+    "pickupOtp": "पिकअप OTP",
+    "deliveryOtp": "डिलीवरी OTP",
+    "verifyPickup": "पिकअप सत्यापित करें",
+    "completeDelivery": "डिलीवरी पूरी करें",
+    "pooling": "लोड पूलिंग v1",
+    "goodsAuto": "लोडिंग ऑटो (<500 किग्रा)",
+    "miniTruck": "मिनी-ट्रक (500 किग्रा - 1.5 टन)",
+    "largeTruck": "बड़ा ट्रक (>1.5 टन)"
+  },
+  "diary": {
+    "title": "किसान डायरी व आर्थिक हिसाब",
+    "plotDetails": "खेत और फसल विवरण",
+    "area": "खेती का रकबा",
+    "acres": "{count} एकर",
+    "profitPerAcre": "प्रति एकड़ लाभ / हानि",
+    "breakEven": "लागत मूल्य (ब्रेक-ईवन)",
+    "seasonSummary": "मंडी के औसत भाव से तुलना",
+    "exportRecords": "मेरा रिकॉर्ड डाउनलोड करें (CSV/JSON)",
+    "addCost": "खर्च दर्ज करें",
+    "addYield": "उपज दर्ज करें",
+    "addSale": "बिक्री दर्ज करें",
+    "voiceEntry": "बोलकर दर्ज करें (पुष्टि सहित)",
+    "readbackTitle": "बोलकर पुष्टि (रीड-बैक)",
+    "readbackPrompt": "कृपया सुरक्षित करने से पहले दर्ज किए गए विवरण की पुष्टि करें:",
+    "confirmSave": "पुष्टि करें और सुरक्षित करें"
+  },
+  "consumer": {
+    "title": "उपभोक्ता भाव केंद्र",
+    "anyCrop": "किसी भी फसल का आज का भाव",
+    "isExpensive": "क्या इस महीने भाव महंगा है?",
+    "expensiveBadge": "इस महीने महंगा है",
+    "fairBadge": "सामान्य / उचित भाव",
+    "cheapBadge": "खरीदने का सबसे अच्छा समय!",
+    "subscribeAlerts": "व्हाट्सएप / टेलीग्राम पर अलर्ट पाएं",
+    "noLogin": "लॉगिन की आवश्यकता नहीं • सीधे मंडी भाव"
+  },
+  "toasts": {
+    "successTitle": "सफल हुआ",
+    "errorTitle": "त्रुटि हुई",
+    "warningTitle": "ध्यान दें",
+    "infoTitle": "सूचना"
+  }
+}

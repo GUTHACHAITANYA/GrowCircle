@@ -4,7 +4,7 @@ Database engines and session factories (Async & Sync).
 
 from collections.abc import AsyncGenerator
 
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine, event
 from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker, create_async_engine
 from sqlalchemy.orm import Session, sessionmaker
 
@@ -16,6 +16,16 @@ async_engine = create_async_engine(
     echo=False,
     pool_pre_ping=True,
 )
+
+
+@event.listens_for(async_engine.sync_engine, "connect")
+def register_async_sqlite_geo_mocks(dbapi_connection: object, _connection_record: object) -> None:
+    if hasattr(dbapi_connection, "create_function"):
+        dbapi_connection.create_function("GeomFromEWKT", 1, lambda val: val)
+        dbapi_connection.create_function("ST_GeomFromEWKT", 1, lambda val: val)
+        dbapi_connection.create_function("AsEWKB", 1, lambda val: val)
+        dbapi_connection.create_function("ST_AsEWKB", 1, lambda val: val)
+
 
 AsyncSessionLocal = async_sessionmaker(
     bind=async_engine,
@@ -31,6 +41,16 @@ sync_engine = create_engine(
     echo=False,
     pool_pre_ping=True,
 )
+
+
+@event.listens_for(sync_engine, "connect")
+def register_sync_sqlite_geo_mocks(dbapi_connection: object, _connection_record: object) -> None:
+    if hasattr(dbapi_connection, "create_function"):
+        dbapi_connection.create_function("GeomFromEWKT", 1, lambda val: val)
+        dbapi_connection.create_function("ST_GeomFromEWKT", 1, lambda val: val)
+        dbapi_connection.create_function("AsEWKB", 1, lambda val: val)
+        dbapi_connection.create_function("ST_AsEWKB", 1, lambda val: val)
+
 
 SyncSessionLocal = sessionmaker(
     bind=sync_engine,

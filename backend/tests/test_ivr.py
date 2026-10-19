@@ -97,6 +97,29 @@ async def test_ivr_district_selection_saves_district(
 
 
 @pytest.mark.asyncio
+async def test_ivr_pincode_keypad_entry_saves_district(
+    client: AsyncClient, db_session: AsyncSession
+) -> None:
+    """Entering 6-digit PIN code via keypad resolves district and proceeds to crop menu."""
+    caller_phone = "9848044777"
+    await client.post("/ivr/missed-call", params={"From": caller_phone})
+    await client.post("/ivr/language-selection", params={"phone": caller_phone, "Digits": "1"})
+
+    # Key in PIN code 522001
+    response = await client.post(
+        "/ivr/district-selection",
+        params={"phone": caller_phone, "Digits": "522001"},
+    )
+    assert response.status_code == 200
+    assert "/ivr/crop-menu" in response.text
+
+    # Verify district resolved to guntur
+    user = await db_session.scalar(select(User).where(User.phone == caller_phone))
+    assert user is not None
+    assert user.district == "guntur"
+
+
+@pytest.mark.asyncio
 async def test_ivr_crop_menu_speaks_prices_and_post_menu(
     client: AsyncClient, db_session: AsyncSession
 ) -> None:

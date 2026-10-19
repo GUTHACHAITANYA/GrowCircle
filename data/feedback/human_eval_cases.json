@@ -1,0 +1,222 @@
+[
+  {
+    "case_id": "GOLDEN-FB-ERR-83B60F",
+    "origin": "human_feedback_ivr",
+    "category": "price_error",
+    "input_utterance": "Tenali tomato rate",
+    "flagged_response": "₹45.0 per kg",
+    "expected_behavior": "Mandi physical auction rate is ₹23.0 per kg",
+    "promoted_at": "2026-10-13T17:19:36.695214+00:00",
+    "reviewer_notes": "Ground truth verified from Tenali physical market slip"
+  },
+  {
+    "case_id": "GOLDEN-FB-ERR-BC2564",
+    "origin": "human_feedback_ivr",
+    "category": "price_error",
+    "input_utterance": "Tenali tomato rate",
+    "flagged_response": "₹45.0 per kg",
+    "expected_behavior": "Mandi physical auction rate is ₹23.0 per kg",
+    "promoted_at": "2026-10-13T17:21:18.826462+00:00",
+    "reviewer_notes": "Ground truth verified from Tenali physical market slip"
+  },
+  {
+    "case_id": "GOLDEN-FB-ERR-A90B0D",
+    "origin": "human_feedback_ivr",
+    "category": "price_error",
+    "input_utterance": "Tenali tomato rate",
+    "flagged_response": "₹45.0 per kg",
+    "expected_behavior": "Mandi physical auction rate is ₹23.0 per kg",
+    "promoted_at": "2026-10-13T17:21:49.256656+00:00",
+    "reviewer_notes": "Ground truth verified from Tenali physical market slip"
+  },
+  {
+    "case_id": "GOLDEN-FB-ERR-D2C568",
+    "origin": "human_feedback_ivr",
+    "category": "price_error",
+    "input_utterance": "Tenali tomato rate",
+    "flagged_response": "₹45.0 per kg",
+    "expected_behavior": "Mandi physical auction rate is ₹23.0 per kg",
+    "promoted_at": "2026-10-13T17:22:12.746988+00:00",
+    "reviewer_notes": "Ground truth verified from Tenali physical market slip"
+  },
+  {
+    "case_id": "GOLDEN-FB-ERR-3CFC2B",
+    "origin": "human_feedback_ivr",
+    "category": "price_error",
+    "input_utterance": "Tenali tomato rate",
+    "flagged_response": "₹45.0 per kg",
+    "expected_behavior": "Mandi physical auction rate is ₹23.0 per kg",
+    "promoted_at": "2026-10-13T17:23:31.487894+00:00",
+    "reviewer_notes": "Ground truth verified from Tenali physical market slip"
+  },
+  {
+    "case_id": "GOLDEN-FB-ERR-886591",
+    "origin": "human_feedback_ivr",
+    "category": "price_error",
+    "input_utterance": "Tenali tomato rate",
+    "flagged_response": "₹45.0 per kg",
+    "expected_behavior": "Mandi physical auction rate is ₹23.0 per kg",
+    "promoted_at": "2026-10-13T17:30:53.076829+00:00",
+    "reviewer_notes": "Ground truth verified from Tenali physical market slip"
+  },
+  {
+    "case_id": "GOLDEN-FB-ERR-70EE03",
+    "origin": "human_feedback_ivr",
+    "category": "price_error",
+    "input_utterance": "Tenali tomato rate",
+    "flagged_response": "₹45.0 per kg",
+    "expected_behavior": "Mandi physical auction rate is ₹23.0 per kg",
+    "promoted_at": "2026-10-13T17:33:13.551935+00:00",
+    "reviewer_notes": "Ground truth verified from Tenali physical market slip"
+  },
+  {
+    "case_id": "GOLDEN-FB-ERR-C6F956",
+    "origin": "human_feedback_ivr",
+    "category": "price_error",
+    "input_utterance": "Tenali tomato rate",
+    "flagged_response": "₹45.0 per kg",
+    "expected_behavior": "Mandi physical auction rate is ₹23.0 per kg",
+    "promoted_at": "2026-10-13T17:57:27.359690+00:00",
+    "reviewer_notes": "Ground truth verified from Tenali physical market slip"
+  },
+  {
+    "case_id": "GOLDEN-FB-ERR-B92356",
+    "origin": "human_feedback_ivr",
+    "category": "price_error",
+    "input_utterance": "Tenali tomato rate",
+    "flagged_response": "₹45.0 per kg",
+    "expected_behavior": "Mandi physical auction rate is ₹23.0 per kg",
+    "promoted_at": "2026-10-13T17:58:08.663658+00:00",
+    "reviewer_notes": "Ground truth verified from Tenali physical market slip"
+  },
+  {
+    "case_id": "GOLDEN-FB-ERR-075988",
+    "origin": "human_feedback_ivr",
+    "category": "price_error",
+    "input_utterance": "Tenali tomato rate",
+    "flagged_response": "₹45.0 per kg",
+    "expected_behavior": "Mandi physical auction rate is ₹23.0 per kg",
+    "promoted_at": "2026-10-13T18:44:48.066955+00:00",
+    "reviewer_notes": "Ground truth verified from Tenali physical market slip"
+  },
+  {
+    "case_id": "GOLDEN-FB-ERR-AEA5B9",
+    "origin": "human_feedback_ivr",
+    "category": "price_error",
+    "input_utterance": "Tenali tomato rate",
+    "flagged_response": "₹45.0 per kg",
+    "expected_behavior": "Mandi physical auction rate is ₹23.0 per kg",
+    "promoted_at": "2026-10-13T18:48:07.429248+00:00",
+    "reviewer_notes": "Ground truth verified from Tenali physical market slip"
+  },
+  {
+    "case_id": "GOLDEN-FB-ERR-8EE804",
+    "origin": "human_feedback_ivr",
+    "category": "price_error",
+    "input_utterance": "Tenali tomato rate",
+    "flagged_response": "₹45.0 per kg",
+    "expected_behavior": "Mandi physical auction rate is ₹23.0 per kg",
+    "promoted_at": "2026-10-13T18:52:51.116307+00:00",
+    "reviewer_notes": "Ground truth verified from Tenali physical market slip"
+  },
+  {
+    "case_id": "GOLDEN-FB-ERR-EE1990",
+    "origin": "human_feedback_ivr",
+    "category": "price_error",
+    "input_utterance": "Tenali tomato rate",
+    "flagged_response": "₹45.0 per kg",
+    "expected_behavior": "Mandi physical auction rate is ₹23.0 per kg",
+    "promoted_at": "2026-10-15T03:55:17.386887+00:00",
+    "reviewer_notes": "Ground truth verified from Tenali physical market slip"
+  },
+  {
+    "case_id": "GOLDEN-FB-ERR-2DEF48",
+    "origin": "human_feedback_ivr",
+    "category": "price_error",
+    "input_utterance": "Tenali tomato rate",
+    "flagged_response": "₹45.0 per kg",
+    "expected_behavior": "Mandi physical auction rate is ₹23.0 per kg",
+    "promoted_at": "2026-10-15T03:55:46.985485+00:00",
+    "reviewer_notes": "Ground truth verified from Tenali physical market slip"
+  },
+  {
+    "case_id": "GOLDEN-FB-ERR-1B13AE",
+    "origin": "human_feedback_ivr",
+    "category": "price_error",
+    "input_utterance": "Tenali tomato rate",
+    "flagged_response": "₹45.0 per kg",
+    "expected_behavior": "Mandi physical auction rate is ₹23.0 per kg",
+    "promoted_at": "2026-10-15T04:55:15.367417+00:00",
+    "reviewer_notes": "Ground truth verified from Tenali physical market slip"
+  },
+  {
+    "case_id": "GOLDEN-FB-ERR-9F5568",
+    "origin": "human_feedback_ivr",
+    "category": "price_error",
+    "input_utterance": "Tenali tomato rate",
+    "flagged_response": "₹45.0 per kg",
+    "expected_behavior": "Mandi physical auction rate is ₹23.0 per kg",
+    "promoted_at": "2026-10-15T05:18:15.394984+00:00",
+    "reviewer_notes": "Ground truth verified from Tenali physical market slip"
+  },
+  {
+    "case_id": "GOLDEN-FB-ERR-1F48E5",
+    "origin": "human_feedback_ivr",
+    "category": "price_error",
+    "input_utterance": "Tenali tomato rate",
+    "flagged_response": "₹45.0 per kg",
+    "expected_behavior": "Mandi physical auction rate is ₹23.0 per kg",
+    "promoted_at": "2026-10-15T05:33:19.223157+00:00",
+    "reviewer_notes": "Ground truth verified from Tenali physical market slip"
+  },
+  {
+    "case_id": "GOLDEN-FB-ERR-C9609C",
+    "origin": "human_feedback_ivr",
+    "category": "price_error",
+    "input_utterance": "Tenali tomato rate",
+    "flagged_response": "₹45.0 per kg",
+    "expected_behavior": "Mandi physical auction rate is ₹23.0 per kg",
+    "promoted_at": "2026-10-15T06:09:45.245394+00:00",
+    "reviewer_notes": "Ground truth verified from Tenali physical market slip"
+  },
+  {
+    "case_id": "GOLDEN-FB-ERR-E72805",
+    "origin": "human_feedback_ivr",
+    "category": "price_error",
+    "input_utterance": "Tenali tomato rate",
+    "flagged_response": "₹45.0 per kg",
+    "expected_behavior": "Mandi physical auction rate is ₹23.0 per kg",
+    "promoted_at": "2026-10-16T19:16:22.490158+00:00",
+    "reviewer_notes": "Ground truth verified from Tenali physical market slip"
+  },
+  {
+    "case_id": "GOLDEN-FB-ERR-DBF49B",
+    "origin": "human_feedback_ivr",
+    "category": "price_error",
+    "input_utterance": "Tenali tomato rate",
+    "flagged_response": "₹45.0 per kg",
+    "expected_behavior": "Mandi physical auction rate is ₹23.0 per kg",
+    "promoted_at": "2026-10-16T19:56:22.595486+00:00",
+    "reviewer_notes": "Ground truth verified from Tenali physical market slip"
+  },
+  {
+    "case_id": "GOLDEN-FB-ERR-A23C8E",
+    "origin": "human_feedback_ivr",
+    "category": "price_error",
+    "input_utterance": "Tenali tomato rate",
+    "flagged_response": "₹45.0 per kg",
+    "expected_behavior": "Mandi physical auction rate is ₹23.0 per kg",
+    "promoted_at": "2026-10-17T06:59:27.020702+00:00",
+    "reviewer_notes": "Ground truth verified from Tenali physical market slip"
+  },
+  {
+    "case_id": "GOLDEN-FB-ERR-699136",
+    "origin": "human_feedback_ivr",
+    "category": "price_error",
+    "input_utterance": "Tenali tomato rate",
+    "flagged_response": "₹45.0 per kg",
+    "expected_behavior": "Mandi physical auction rate is ₹23.0 per kg",
+    "promoted_at": "2026-10-19T06:44:45.068829+00:00",
+    "reviewer_notes": "Ground truth verified from Tenali physical market slip"
+  }
+]

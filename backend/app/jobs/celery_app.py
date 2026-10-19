@@ -20,10 +20,10 @@ celery.conf.update(
     accept_content=["json"],
     result_serializer="json",
     beat_schedule={
-        # Daily Mandi Price Ingestion at 06:30 AM IST (01:00 UTC)
-        "daily-ap-banana-fetch": {
-            "task": "backend.app.jobs.tasks.fetch_and_ingest_ap_banana",
-            "schedule": crontab(hour=6, minute=30),
+        # Multi-Source Mandi Price Ingestion 4 times a day (06:30, 11:30, 16:30, 20:30 IST)
+        "multi-source-mandi-price-sync": {
+            "task": "backend.app.jobs.tasks.run_multi_source_price_sync",
+            "schedule": crontab(hour="6,11,16,20", minute=30),
         },
         # Daily 07:00 AM IST WhatsApp Price Broadcast to subscribed users
         "daily-whatsapp-price-broadcast": {

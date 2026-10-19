@@ -155,8 +155,49 @@ async def test_whatsapp_location_sharing_replies_nearest_mandis(
     assert len(mock_provider.sent_messages) == 1
     msg = mock_provider.sent_messages[0]
     assert msg["type"] == "text"
-    assert "3 Nearest Mandis" in msg["text"]
+    assert "Nearest Mandis" in msg["text"]
+    assert "straight-line distance" in msg["text"]
     assert "గుంటూరు" in msg["text"]
+
+
+@pytest.mark.asyncio
+async def test_whatsapp_pincode_text_replies_nearest_mandis(
+    client: AsyncClient, db_session: AsyncSession
+) -> None:
+    """A 6-digit Indian PIN code text message triggers nearest mandis lookup."""
+    mock_provider = MockWhatsAppProvider()
+    whatsapp_handler.provider = mock_provider
+
+    sender_phone = "919848022444"
+    payload = {
+        "object": "whatsapp_business_account",
+        "entry": [
+            {
+                "changes": [
+                    {
+                        "value": {
+                            "messages": [
+                                {
+                                    "from": sender_phone,
+                                    "type": "text",
+                                    "text": {"body": "522001"},
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ],
+    }
+
+    response = await client.post("/whatsapp/webhook", json=payload)
+    assert response.status_code == 200
+
+    assert len(mock_provider.sent_messages) == 1
+    msg = mock_provider.sent_messages[0]
+    assert msg["type"] == "text"
+    assert "PIN 522001" in msg["text"]
+    assert "straight-line distance" in msg["text"]
 
 
 @pytest.mark.asyncio

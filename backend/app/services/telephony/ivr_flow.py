@@ -14,7 +14,9 @@ from backend.app.core.config import settings
 from backend.app.models.inquiry import Inquiry
 from backend.app.models.user import User
 from backend.app.services.geo import GeoService
+from backend.app.services.pincode_service import PincodeService
 from backend.app.services.speech.manager import speech_manager
+from backend.app.services.language_data import SUPPORTED_LANGUAGE_CODES
 from backend.app.services.speech.pronunciation import (
     DISTRICT_KEYPAD_MAP,
     PRERECORDED_PHRASES,
@@ -82,8 +84,8 @@ class IVRFlowService:
         user = await db.scalar(select(User).where(User.phone == clean_phone))
         lang = user.language if user and user.language else ""
 
-        # 1. First-call language menu (1=te, 2=hi, 3=gu)
-        if not lang or lang not in ["te", "hi", "gu", "en"]:
+        # 1. First-call language menu (if no language saved or invalid)
+        if not lang or lang not in SUPPORTED_LANGUAGE_CODES:
             text = (
                 "Welcome to GrowCircle. "
                 + PRERECORDED_PHRASES["language_menu"]["en"]
@@ -98,10 +100,11 @@ class IVRFlowService:
 
         # 2. District selection required if not saved
         if not user or not user.district:
+            welcome_text = PRERECORDED_PHRASES["welcome"].get(lang) or PRERECORDED_PHRASES["welcome"]["en"]
             prompt_text = (
-                PRERECORDED_PHRASES["welcome"].get(lang, "")
+                welcome_text
                 + " "
-                + PRERECORDED_PHRASES["district_prompt"].get(lang, "")
+                + (PRERECORDED_PHRASES["district_prompt"].get(lang) or PRERECORDED_PHRASES["district_prompt"]["en"])
             )
             return self.provider.render_ivr_response(
                 say_text=prompt_text,
@@ -110,10 +113,12 @@ class IVRFlowService:
             )
 
         # 3. Both saved: Welcome + Crop Menu
+        welcome_text = PRERECORDED_PHRASES["welcome"].get(lang) or PRERECORDED_PHRASES["welcome"]["en"]
+        crop_text = PRERECORDED_PHRASES["crop_menu"].get(lang) or PRERECORDED_PHRASES["crop_menu"]["en"]
         prompt_text = (
-            PRERECORDED_PHRASES["welcome"].get(lang, "")
+            welcome_text
             + " "
-            + PRERECORDED_PHRASES["crop_menu"].get(lang, "")
+            + crop_text
         )
         return self.provider.render_ivr_response(
             say_text=prompt_text,
@@ -153,11 +158,21 @@ class IVRFlowService:
 
     async def handle_district_selection(self, db: AsyncSession, phone: str, digits: str) -> str:
         """
-        Processes DTMF district choice (1=Guntur, 2=NTR, 3=Tirupati, 4=Kurnool).
+        Processes DTMF district choice (1=Guntur, 2=NTR, 3=Tirupati, 4=Kurnool)
+        OR 6-digit Indian PIN code (e.g. 522001).
         """
         clean_phone = phone.strip().replace(" ", "").replace("+", "")
-        district_entry = DISTRICT_KEYPAD_MAP.get(digits.strip(), DISTRICT_KEYPAD_MAP["1"])
-        district_key = district_entry["key"]
+        cleaned_digits = "".join(ch for ch in digits if ch.isdigit())
+
+        if len(cleaned_digits) == 6:
+            pin_info = PincodeService.lookup_pincode(cleaned_digits)
+            if pin_info:
+                district_key = pin_info["district"].lower()
+            else:
+                district_key = "guntur"
+        else:
+            district_entry = DISTRICT_KEYPAD_MAP.get(cleaned_digits, DISTRICT_KEYPAD_MAP["1"])
+            district_key = district_entry["key"]
 
         user = await db.scalar(select(User).where(User.phone == clean_phone))
         lang = "te"
@@ -175,7 +190,7 @@ class IVRFlowService:
 
     async def handle_crop_selection(self, db: AsyncSession, phone: str, digits: str) -> str:
         """
-        Queries Phase 1 GeoService for the 3 nearest mandis and speaks prices.
+        Queries Phase 1 GeoService for the 5 nearest mandis and speaks prices.
         Appends post-answer menu: 'Press 1 to sell, 2 for transport, 9 to repeat'.
         """
         clean_phone = phone.strip().replace(" ", "").replace("+", "")
@@ -195,13 +210,15 @@ class IVRFlowService:
                 lng = float(d_info["lng"])
                 break
 
-        # Reusing Phase 1 GeoService spatial calculation
+        # Reusing Phase 1 GeoService spatial calculation (up to 5, within 100km, max 3 days)
         nearby = await GeoService.get_nearby_mandis(
             db=db,
             user_lat=lat,
             user_lng=lng,
             crop_id=crop_id,
-            limit=3,
+            limit=5,
+            radius_km=100.0,
+            max_age_days=3,
         )
 
         # Synthesize spoken summary under 1 minute with cache

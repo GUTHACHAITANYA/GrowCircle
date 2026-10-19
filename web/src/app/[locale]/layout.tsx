@@ -3,6 +3,10 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { locales, Locale } from '@/i18n';
+import { getLanguageInfo, isRtlLocale } from '@/lib/languages';
+import { AuthProvider } from '@/lib/auth';
+import { ServiceWorkerRegister } from '@/components/pwa/ServiceWorkerRegister';
+import { BackendStatusBanner } from '@/components/ui/BackendStatusBanner';
 import '../globals.css';
 
 export const viewport: Viewport = {
@@ -52,12 +56,32 @@ export default async function LocaleLayout({
   setRequestLocale(locale);
 
   const messages = await getMessages();
+  const isRtl = isRtlLocale(locale);
+  const langInfo = getLanguageInfo(locale);
 
   return (
-    <html lang={locale}>
-      <body className="min-h-screen bg-cream text-ink antialiased selection:bg-harvest-gold selection:text-ink">
+    <html lang={locale} dir={isRtl ? 'rtl' : 'ltr'}>
+      <head>
+        {langInfo.fontUrl && (
+          <link
+            rel="stylesheet"
+            id={`noto-font-${langInfo.script.toLowerCase()}`}
+            href={langInfo.fontUrl}
+          />
+        )}
+      </head>
+      <body
+        className="min-h-screen bg-cream text-ink antialiased selection:bg-harvest-gold selection:text-ink"
+        style={{
+          fontFamily: langInfo.fontFamily || undefined,
+        }}
+      >
         <NextIntlClientProvider locale={locale} messages={messages}>
-          {children}
+          <AuthProvider>
+            <ServiceWorkerRegister />
+            <BackendStatusBanner />
+            {children}
+          </AuthProvider>
         </NextIntlClientProvider>
       </body>
     </html>

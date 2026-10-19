@@ -1,0 +1,1675 @@
+{
+  "generated_at": "2026-10-16T08:00:03.183Z",
+  "total_languages": 23,
+  "total_base_keys": 95,
+  "languages": [
+    {
+      "code": "en",
+      "name_english": "English",
+      "name_native": "English",
+      "is_rtl": false,
+      "ui_ready": true,
+      "voice_stt_ready": true,
+      "voice_tts_ready": true,
+      "reviewed_by_native_speaker": true,
+      "total_keys": 95,
+      "translated_keys": 95,
+      "fallback_keys_count": 0,
+      "coverage_percentage": 100,
+      "status": "Fully Translated & Reviewed",
+      "fallback_per_string_to": "English",
+      "untranslated_fallback_strings": []
+    },
+    {
+      "code": "te",
+      "name_english": "Telugu",
+      "name_native": "తెలుగు",
+      "is_rtl": false,
+      "ui_ready": true,
+      "voice_stt_ready": true,
+      "voice_tts_ready": true,
+      "reviewed_by_native_speaker": true,
+      "total_keys": 95,
+      "translated_keys": 91,
+      "fallback_keys_count": 4,
+      "coverage_percentage": 96,
+      "status": "Fully Translated & Reviewed",
+      "fallback_per_string_to": "English",
+      "untranslated_fallback_strings": [
+        {
+          "key": "languages.en",
+          "fallback_to": "English",
+          "english_value": "English"
+        },
+        {
+          "key": "languages.te",
+          "fallback_to": "English",
+          "english_value": "తెలుగు"
+        },
+        {
+          "key": "languages.hi",
+          "fallback_to": "English",
+          "english_value": "हिंदी"
+        },
+        {
+          "key": "languages.gu",
+          "fallback_to": "English",
+          "english_value": "ગુજરાતી"
+        }
+      ]
+    },
+    {
+      "code": "hi",
+      "name_english": "Hindi",
+      "name_native": "हिंदी",
+      "is_rtl": false,
+      "ui_ready": true,
+      "voice_stt_ready": true,
+      "voice_tts_ready": true,
+      "reviewed_by_native_speaker": true,
+      "total_keys": 95,
+      "translated_keys": 91,
+      "fallback_keys_count": 4,
+      "coverage_percentage": 96,
+      "status": "Fully Translated & Reviewed",
+      "fallback_per_string_to": "English",
+      "untranslated_fallback_strings": [
+        {
+          "key": "languages.en",
+          "fallback_to": "English",
+          "english_value": "English"
+        },
+        {
+          "key": "languages.te",
+          "fallback_to": "English",
+          "english_value": "తెలుగు"
+        },
+        {
+          "key": "languages.hi",
+          "fallback_to": "English",
+          "english_value": "हिंदी"
+        },
+        {
+          "key": "languages.gu",
+          "fallback_to": "English",
+          "english_value": "ગુજરાતી"
+        }
+      ]
+    },
+    {
+      "code": "gu",
+      "name_english": "Gujarati",
+      "name_native": "ગુજરાતી",
+      "is_rtl": false,
+      "ui_ready": true,
+      "voice_stt_ready": true,
+      "voice_tts_ready": true,
+      "reviewed_by_native_speaker": true,
+      "total_keys": 95,
+      "translated_keys": 91,
+      "fallback_keys_count": 4,
+      "coverage_percentage": 96,
+      "status": "Fully Translated & Reviewed",
+      "fallback_per_string_to": "Hindi",
+      "untranslated_fallback_strings": [
+        {
+          "key": "languages.en",
+          "fallback_to": "Hindi",
+          "english_value": "English"
+        },
+        {
+          "key": "languages.te",
+          "fallback_to": "Hindi",
+          "english_value": "తెలుగు"
+        },
+        {
+          "key": "languages.hi",
+          "fallback_to": "Hindi",
+          "english_value": "हिंदी"
+        },
+        {
+          "key": "languages.gu",
+          "fallback_to": "Hindi",
+          "english_value": "ગુજરાતી"
+        }
+      ]
+    },
+    {
+      "code": "as",
+      "name_english": "Assamese",
+      "name_native": "অসমীয়া",
+      "is_rtl": false,
+      "ui_ready": false,
+      "voice_stt_ready": false,
+      "voice_tts_ready": false,
+      "reviewed_by_native_speaker": false,
+      "total_keys": 95,
+      "translated_keys": 89,
+      "fallback_keys_count": 6,
+      "coverage_percentage": 94,
+      "status": "Partly translated (First draft)",
+      "fallback_per_string_to": "Hindi",
+      "untranslated_fallback_strings": [
+        {
+          "key": "languages.firstVisitDesc",
+          "fallback_to": "Hindi",
+          "english_value": "GrowCircle is available across 22 scheduled Indian languages plus English."
+        },
+        {
+          "key": "languages.noResults",
+          "fallback_to": "Hindi",
+          "english_value": "No matching languages found"
+        },
+        {
+          "key": "languages.en",
+          "fallback_to": "Hindi",
+          "english_value": "English"
+        },
+        {
+          "key": "languages.te",
+          "fallback_to": "Hindi",
+          "english_value": "తెలుగు"
+        },
+        {
+          "key": "languages.hi",
+          "fallback_to": "Hindi",
+          "english_value": "हिंदी"
+        },
+        {
+          "key": "languages.gu",
+          "fallback_to": "Hindi",
+          "english_value": "ગુજરાતી"
+        }
+      ]
+    },
+    {
+      "code": "bn",
+      "name_english": "Bengali",
+      "name_native": "বাংলা",
+      "is_rtl": false,
+      "ui_ready": false,
+      "voice_stt_ready": false,
+      "voice_tts_ready": false,
+      "reviewed_by_native_speaker": false,
+      "total_keys": 95,
+      "translated_keys": 91,
+      "fallback_keys_count": 4,
+      "coverage_percentage": 96,
+      "status": "Partly translated (First draft)",
+      "fallback_per_string_to": "Hindi",
+      "untranslated_fallback_strings": [
+        {
+          "key": "languages.en",
+          "fallback_to": "Hindi",
+          "english_value": "English"
+        },
+        {
+          "key": "languages.te",
+          "fallback_to": "Hindi",
+          "english_value": "తెలుగు"
+        },
+        {
+          "key": "languages.hi",
+          "fallback_to": "Hindi",
+          "english_value": "हिंदी"
+        },
+        {
+          "key": "languages.gu",
+          "fallback_to": "Hindi",
+          "english_value": "ગુજરાતી"
+        }
+      ]
+    },
+    {
+      "code": "brx",
+      "name_english": "Bodo",
+      "name_native": "बड़ो",
+      "is_rtl": false,
+      "ui_ready": false,
+      "voice_stt_ready": false,
+      "voice_tts_ready": false,
+      "reviewed_by_native_speaker": false,
+      "total_keys": 95,
+      "translated_keys": 86,
+      "fallback_keys_count": 9,
+      "coverage_percentage": 91,
+      "status": "Partly translated (First draft)",
+      "fallback_per_string_to": "Hindi",
+      "untranslated_fallback_strings": [
+        {
+          "key": "languages.partlyTranslated",
+          "fallback_to": "Hindi",
+          "english_value": "Partly translated"
+        },
+        {
+          "key": "languages.reviewed",
+          "fallback_to": "Hindi",
+          "english_value": "Native reviewed"
+        },
+        {
+          "key": "languages.firstVisitTitle",
+          "fallback_to": "Hindi",
+          "english_value": "Select your language"
+        },
+        {
+          "key": "languages.firstVisitDesc",
+          "fallback_to": "Hindi",
+          "english_value": "GrowCircle is available across 22 scheduled Indian languages plus English."
+        },
+        {
+          "key": "languages.noResults",
+          "fallback_to": "Hindi",
+          "english_value": "No matching languages found"
+        },
+        {
+          "key": "languages.en",
+          "fallback_to": "Hindi",
+          "english_value": "English"
+        },
+        {
+          "key": "languages.te",
+          "fallback_to": "Hindi",
+          "english_value": "తెలుగు"
+        },
+        {
+          "key": "languages.hi",
+          "fallback_to": "Hindi",
+          "english_value": "हिंदी"
+        },
+        {
+          "key": "languages.gu",
+          "fallback_to": "Hindi",
+          "english_value": "ગુજરાતી"
+        }
+      ]
+    },
+    {
+      "code": "doi",
+      "name_english": "Dogri",
+      "name_native": "डोगरी",
+      "is_rtl": false,
+      "ui_ready": false,
+      "voice_stt_ready": false,
+      "voice_tts_ready": false,
+      "reviewed_by_native_speaker": false,
+      "total_keys": 95,
+      "translated_keys": 86,
+      "fallback_keys_count": 9,
+      "coverage_percentage": 91,
+      "status": "Partly translated (First draft)",
+      "fallback_per_string_to": "Hindi",
+      "untranslated_fallback_strings": [
+        {
+          "key": "languages.partlyTranslated",
+          "fallback_to": "Hindi",
+          "english_value": "Partly translated"
+        },
+        {
+          "key": "languages.reviewed",
+          "fallback_to": "Hindi",
+          "english_value": "Native reviewed"
+        },
+        {
+          "key": "languages.firstVisitTitle",
+          "fallback_to": "Hindi",
+          "english_value": "Select your language"
+        },
+        {
+          "key": "languages.firstVisitDesc",
+          "fallback_to": "Hindi",
+          "english_value": "GrowCircle is available across 22 scheduled Indian languages plus English."
+        },
+        {
+          "key": "languages.noResults",
+          "fallback_to": "Hindi",
+          "english_value": "No matching languages found"
+        },
+        {
+          "key": "languages.en",
+          "fallback_to": "Hindi",
+          "english_value": "English"
+        },
+        {
+          "key": "languages.te",
+          "fallback_to": "Hindi",
+          "english_value": "తెలుగు"
+        },
+        {
+          "key": "languages.hi",
+          "fallback_to": "Hindi",
+          "english_value": "हिंदी"
+        },
+        {
+          "key": "languages.gu",
+          "fallback_to": "Hindi",
+          "english_value": "ગુજરાતી"
+        }
+      ]
+    },
+    {
+      "code": "kn",
+      "name_english": "Kannada",
+      "name_native": "ಕನ್ನಡ",
+      "is_rtl": false,
+      "ui_ready": false,
+      "voice_stt_ready": false,
+      "voice_tts_ready": false,
+      "reviewed_by_native_speaker": false,
+      "total_keys": 95,
+      "translated_keys": 91,
+      "fallback_keys_count": 4,
+      "coverage_percentage": 96,
+      "status": "Partly translated (First draft)",
+      "fallback_per_string_to": "Hindi",
+      "untranslated_fallback_strings": [
+        {
+          "key": "languages.en",
+          "fallback_to": "Hindi",
+          "english_value": "English"
+        },
+        {
+          "key": "languages.te",
+          "fallback_to": "Hindi",
+          "english_value": "తెలుగు"
+        },
+        {
+          "key": "languages.hi",
+          "fallback_to": "Hindi",
+          "english_value": "हिंदी"
+        },
+        {
+          "key": "languages.gu",
+          "fallback_to": "Hindi",
+          "english_value": "ગુજરાતી"
+        }
+      ]
+    },
+    {
+      "code": "ks",
+      "name_english": "Kashmiri",
+      "name_native": "کٲشُر",
+      "is_rtl": true,
+      "ui_ready": false,
+      "voice_stt_ready": false,
+      "voice_tts_ready": false,
+      "reviewed_by_native_speaker": false,
+      "total_keys": 95,
+      "translated_keys": 88,
+      "fallback_keys_count": 7,
+      "coverage_percentage": 93,
+      "status": "Partly translated (First draft)",
+      "fallback_per_string_to": "Hindi",
+      "untranslated_fallback_strings": [
+        {
+          "key": "languages.firstVisitTitle",
+          "fallback_to": "Hindi",
+          "english_value": "Select your language"
+        },
+        {
+          "key": "languages.firstVisitDesc",
+          "fallback_to": "Hindi",
+          "english_value": "GrowCircle is available across 22 scheduled Indian languages plus English."
+        },
+        {
+          "key": "languages.noResults",
+          "fallback_to": "Hindi",
+          "english_value": "No matching languages found"
+        },
+        {
+          "key": "languages.en",
+          "fallback_to": "Hindi",
+          "english_value": "English"
+        },
+        {
+          "key": "languages.te",
+          "fallback_to": "Hindi",
+          "english_value": "తెలుగు"
+        },
+        {
+          "key": "languages.hi",
+          "fallback_to": "Hindi",
+          "english_value": "हिंदी"
+        },
+        {
+          "key": "languages.gu",
+          "fallback_to": "Hindi",
+          "english_value": "ગુજરાતી"
+        }
+      ]
+    },
+    {
+      "code": "kok",
+      "name_english": "Konkani",
+      "name_native": "कोंकणी",
+      "is_rtl": false,
+      "ui_ready": false,
+      "voice_stt_ready": false,
+      "voice_tts_ready": false,
+      "reviewed_by_native_speaker": false,
+      "total_keys": 95,
+      "translated_keys": 86,
+      "fallback_keys_count": 9,
+      "coverage_percentage": 91,
+      "status": "Partly translated (First draft)",
+      "fallback_per_string_to": "Hindi",
+      "untranslated_fallback_strings": [
+        {
+          "key": "languages.partlyTranslated",
+          "fallback_to": "Hindi",
+          "english_value": "Partly translated"
+        },
+        {
+          "key": "languages.reviewed",
+          "fallback_to": "Hindi",
+          "english_value": "Native reviewed"
+        },
+        {
+          "key": "languages.firstVisitTitle",
+          "fallback_to": "Hindi",
+          "english_value": "Select your language"
+        },
+        {
+          "key": "languages.firstVisitDesc",
+          "fallback_to": "Hindi",
+          "english_value": "GrowCircle is available across 22 scheduled Indian languages plus English."
+        },
+        {
+          "key": "languages.noResults",
+          "fallback_to": "Hindi",
+          "english_value": "No matching languages found"
+        },
+        {
+          "key": "languages.en",
+          "fallback_to": "Hindi",
+          "english_value": "English"
+        },
+        {
+          "key": "languages.te",
+          "fallback_to": "Hindi",
+          "english_value": "తెలుగు"
+        },
+        {
+          "key": "languages.hi",
+          "fallback_to": "Hindi",
+          "english_value": "हिंदी"
+        },
+        {
+          "key": "languages.gu",
+          "fallback_to": "Hindi",
+          "english_value": "ગુજરાતી"
+        }
+      ]
+    },
+    {
+      "code": "mai",
+      "name_english": "Maithili",
+      "name_native": "मैथिली",
+      "is_rtl": false,
+      "ui_ready": false,
+      "voice_stt_ready": false,
+      "voice_tts_ready": false,
+      "reviewed_by_native_speaker": false,
+      "total_keys": 95,
+      "translated_keys": 86,
+      "fallback_keys_count": 9,
+      "coverage_percentage": 91,
+      "status": "Partly translated (First draft)",
+      "fallback_per_string_to": "Hindi",
+      "untranslated_fallback_strings": [
+        {
+          "key": "languages.partlyTranslated",
+          "fallback_to": "Hindi",
+          "english_value": "Partly translated"
+        },
+        {
+          "key": "languages.reviewed",
+          "fallback_to": "Hindi",
+          "english_value": "Native reviewed"
+        },
+        {
+          "key": "languages.firstVisitTitle",
+          "fallback_to": "Hindi",
+          "english_value": "Select your language"
+        },
+        {
+          "key": "languages.firstVisitDesc",
+          "fallback_to": "Hindi",
+          "english_value": "GrowCircle is available across 22 scheduled Indian languages plus English."
+        },
+        {
+          "key": "languages.noResults",
+          "fallback_to": "Hindi",
+          "english_value": "No matching languages found"
+        },
+        {
+          "key": "languages.en",
+          "fallback_to": "Hindi",
+          "english_value": "English"
+        },
+        {
+          "key": "languages.te",
+          "fallback_to": "Hindi",
+          "english_value": "తెలుగు"
+        },
+        {
+          "key": "languages.hi",
+          "fallback_to": "Hindi",
+          "english_value": "हिंदी"
+        },
+        {
+          "key": "languages.gu",
+          "fallback_to": "Hindi",
+          "english_value": "ગુજરાતી"
+        }
+      ]
+    },
+    {
+      "code": "ml",
+      "name_english": "Malayalam",
+      "name_native": "മലയാളം",
+      "is_rtl": false,
+      "ui_ready": false,
+      "voice_stt_ready": false,
+      "voice_tts_ready": false,
+      "reviewed_by_native_speaker": false,
+      "total_keys": 95,
+      "translated_keys": 34,
+      "fallback_keys_count": 61,
+      "coverage_percentage": 36,
+      "status": "Partly translated (First draft)",
+      "fallback_per_string_to": "English",
+      "untranslated_fallback_strings": [
+        {
+          "key": "brand.tagline",
+          "fallback_to": "English",
+          "english_value": "Farm to everyone, full circle"
+        },
+        {
+          "key": "brand.greeting",
+          "fallback_to": "English",
+          "english_value": "Welcome to GrowCircle"
+        },
+        {
+          "key": "languages.en",
+          "fallback_to": "English",
+          "english_value": "English"
+        },
+        {
+          "key": "languages.te",
+          "fallback_to": "English",
+          "english_value": "తెలుగు"
+        },
+        {
+          "key": "languages.hi",
+          "fallback_to": "English",
+          "english_value": "हिंदी"
+        },
+        {
+          "key": "languages.gu",
+          "fallback_to": "English",
+          "english_value": "ગુજરાતી"
+        },
+        {
+          "key": "priceTile.staleWarning",
+          "fallback_to": "English",
+          "english_value": "Prices older than 24h"
+        },
+        {
+          "key": "priceTile.trendUp",
+          "fallback_to": "English",
+          "english_value": "Price up from yesterday"
+        },
+        {
+          "key": "priceTile.trendDown",
+          "fallback_to": "English",
+          "english_value": "Price down from yesterday"
+        },
+        {
+          "key": "priceTile.trendSame",
+          "fallback_to": "English",
+          "english_value": "Stable price"
+        },
+        {
+          "key": "mandiRow.distance",
+          "fallback_to": "English",
+          "english_value": "{km} km away"
+        },
+        {
+          "key": "mandiRow.viewDetails",
+          "fallback_to": "English",
+          "english_value": "View Mandi"
+        },
+        {
+          "key": "voice.stop",
+          "fallback_to": "English",
+          "english_value": "Stop listening"
+        },
+        {
+          "key": "emptyState.noPricesTitle",
+          "fallback_to": "English",
+          "english_value": "No Mandi Prices Reported"
+        },
+        {
+          "key": "emptyState.noPricesDesc",
+          "fallback_to": "English",
+          "english_value": "This mandi has not reported daily arrival rates yet today. Showing closest active mandi."
+        },
+        {
+          "key": "emptyState.noResultsTitle",
+          "fallback_to": "English",
+          "english_value": "No Results Found"
+        },
+        {
+          "key": "emptyState.noResultsDesc",
+          "fallback_to": "English",
+          "english_value": "Try selecting another district or nearby crop."
+        },
+        {
+          "key": "emptyState.actionRetry",
+          "fallback_to": "English",
+          "english_value": "Refresh Data"
+        },
+        {
+          "key": "buttons.call",
+          "fallback_to": "English",
+          "english_value": "Call (Masked)"
+        },
+        {
+          "key": "buttons.offer",
+          "fallback_to": "English",
+          "english_value": "Make Offer"
+        },
+        {
+          "key": "buttons.accept",
+          "fallback_to": "English",
+          "english_value": "Accept Deal"
+        },
+        {
+          "key": "buttons.dispatch",
+          "fallback_to": "English",
+          "english_value": "Find Drivers"
+        },
+        {
+          "key": "transport.title",
+          "fallback_to": "English",
+          "english_value": "Transporter Portal"
+        },
+        {
+          "key": "transport.availableToday",
+          "fallback_to": "English",
+          "english_value": "Available Today"
+        },
+        {
+          "key": "transport.offline",
+          "fallback_to": "English",
+          "english_value": "Offline"
+        },
+        {
+          "key": "transport.guideRate",
+          "fallback_to": "English",
+          "english_value": "Guide Rate: ₹{amount}"
+        },
+        {
+          "key": "transport.guideRateNotice",
+          "fallback_to": "English",
+          "english_value": "Guide rate only (indicative estimate). Transporter and farmer/buyer agree directly on final freight charges."
+        },
+        {
+          "key": "transport.pickupOtp",
+          "fallback_to": "English",
+          "english_value": "Pickup OTP"
+        },
+        {
+          "key": "transport.deliveryOtp",
+          "fallback_to": "English",
+          "english_value": "Delivery OTP"
+        },
+        {
+          "key": "transport.verifyPickup",
+          "fallback_to": "English",
+          "english_value": "Verify Pickup"
+        },
+        {
+          "key": "transport.completeDelivery",
+          "fallback_to": "English",
+          "english_value": "Complete Delivery"
+        },
+        {
+          "key": "transport.pooling",
+          "fallback_to": "English",
+          "english_value": "Freight Pooling v1"
+        },
+        {
+          "key": "transport.goodsAuto",
+          "fallback_to": "English",
+          "english_value": "Goods Auto (<500 kg)"
+        },
+        {
+          "key": "transport.miniTruck",
+          "fallback_to": "English",
+          "english_value": "Mini-Truck (500 kg - 1.5 t)"
+        },
+        {
+          "key": "transport.largeTruck",
+          "fallback_to": "English",
+          "english_value": "Large Truck (>1.5 t)"
+        },
+        {
+          "key": "diary.title",
+          "fallback_to": "English",
+          "english_value": "Farm Diary & Season Economics"
+        },
+        {
+          "key": "diary.plotDetails",
+          "fallback_to": "English",
+          "english_value": "Plot & Cultivation Details"
+        },
+        {
+          "key": "diary.area",
+          "fallback_to": "English",
+          "english_value": "Cultivated Area"
+        },
+        {
+          "key": "diary.profitPerAcre",
+          "fallback_to": "English",
+          "english_value": "Profit / Loss per Acre"
+        },
+        {
+          "key": "diary.breakEven",
+          "fallback_to": "English",
+          "english_value": "Break-Even Price"
+        },
+        {
+          "key": "diary.seasonSummary",
+          "fallback_to": "English",
+          "english_value": "Season Summary vs Mandi Average"
+        },
+        {
+          "key": "diary.exportRecords",
+          "fallback_to": "English",
+          "english_value": "Export My Records (CSV/JSON)"
+        },
+        {
+          "key": "diary.addCost",
+          "fallback_to": "English",
+          "english_value": "Record Expense"
+        },
+        {
+          "key": "diary.addYield",
+          "fallback_to": "English",
+          "english_value": "Record Harvest"
+        },
+        {
+          "key": "diary.addSale",
+          "fallback_to": "English",
+          "english_value": "Record Sale"
+        },
+        {
+          "key": "diary.voiceEntry",
+          "fallback_to": "English",
+          "english_value": "Voice Entry (Transcribe & Confirm)"
+        },
+        {
+          "key": "diary.readbackTitle",
+          "fallback_to": "English",
+          "english_value": "Read-Back Confirmation"
+        },
+        {
+          "key": "diary.readbackPrompt",
+          "fallback_to": "English",
+          "english_value": "Please confirm the details transcribed from your voice note before saving:"
+        },
+        {
+          "key": "diary.confirmSave",
+          "fallback_to": "English",
+          "english_value": "Confirm & Save Entry"
+        },
+        {
+          "key": "consumer.title",
+          "fallback_to": "English",
+          "english_value": "Consumer Price Center"
+        },
+        {
+          "key": "consumer.anyCrop",
+          "fallback_to": "English",
+          "english_value": "Price Today for Any Crop"
+        },
+        {
+          "key": "consumer.isExpensive",
+          "fallback_to": "English",
+          "english_value": "Is it expensive this month?"
+        },
+        {
+          "key": "consumer.expensiveBadge",
+          "fallback_to": "English",
+          "english_value": "Expensive this month"
+        },
+        {
+          "key": "consumer.fairBadge",
+          "fallback_to": "English",
+          "english_value": "Normal / Fair Price"
+        },
+        {
+          "key": "consumer.cheapBadge",
+          "fallback_to": "English",
+          "english_value": "Great time to buy!"
+        },
+        {
+          "key": "consumer.subscribeAlerts",
+          "fallback_to": "English",
+          "english_value": "Get WhatsApp / Telegram Alerts"
+        },
+        {
+          "key": "consumer.noLogin",
+          "fallback_to": "English",
+          "english_value": "No login needed • Direct Mandi data"
+        },
+        {
+          "key": "toasts.successTitle",
+          "fallback_to": "English",
+          "english_value": "Operation Successful"
+        },
+        {
+          "key": "toasts.errorTitle",
+          "fallback_to": "English",
+          "english_value": "Error Encountered"
+        },
+        {
+          "key": "toasts.warningTitle",
+          "fallback_to": "English",
+          "english_value": "Attention Required"
+        },
+        {
+          "key": "toasts.infoTitle",
+          "fallback_to": "English",
+          "english_value": "Information"
+        }
+      ]
+    },
+    {
+      "code": "mni",
+      "name_english": "Manipuri",
+      "name_native": "মৈতৈলোন্",
+      "is_rtl": false,
+      "ui_ready": false,
+      "voice_stt_ready": false,
+      "voice_tts_ready": false,
+      "reviewed_by_native_speaker": false,
+      "total_keys": 95,
+      "translated_keys": 86,
+      "fallback_keys_count": 9,
+      "coverage_percentage": 91,
+      "status": "Partly translated (First draft)",
+      "fallback_per_string_to": "Hindi",
+      "untranslated_fallback_strings": [
+        {
+          "key": "languages.partlyTranslated",
+          "fallback_to": "Hindi",
+          "english_value": "Partly translated"
+        },
+        {
+          "key": "languages.reviewed",
+          "fallback_to": "Hindi",
+          "english_value": "Native reviewed"
+        },
+        {
+          "key": "languages.firstVisitTitle",
+          "fallback_to": "Hindi",
+          "english_value": "Select your language"
+        },
+        {
+          "key": "languages.firstVisitDesc",
+          "fallback_to": "Hindi",
+          "english_value": "GrowCircle is available across 22 scheduled Indian languages plus English."
+        },
+        {
+          "key": "languages.noResults",
+          "fallback_to": "Hindi",
+          "english_value": "No matching languages found"
+        },
+        {
+          "key": "languages.en",
+          "fallback_to": "Hindi",
+          "english_value": "English"
+        },
+        {
+          "key": "languages.te",
+          "fallback_to": "Hindi",
+          "english_value": "తెలుగు"
+        },
+        {
+          "key": "languages.hi",
+          "fallback_to": "Hindi",
+          "english_value": "हिंदी"
+        },
+        {
+          "key": "languages.gu",
+          "fallback_to": "Hindi",
+          "english_value": "ગુજરાતી"
+        }
+      ]
+    },
+    {
+      "code": "mr",
+      "name_english": "Marathi",
+      "name_native": "मराठी",
+      "is_rtl": false,
+      "ui_ready": false,
+      "voice_stt_ready": false,
+      "voice_tts_ready": false,
+      "reviewed_by_native_speaker": false,
+      "total_keys": 95,
+      "translated_keys": 91,
+      "fallback_keys_count": 4,
+      "coverage_percentage": 96,
+      "status": "Partly translated (First draft)",
+      "fallback_per_string_to": "Hindi",
+      "untranslated_fallback_strings": [
+        {
+          "key": "languages.en",
+          "fallback_to": "Hindi",
+          "english_value": "English"
+        },
+        {
+          "key": "languages.te",
+          "fallback_to": "Hindi",
+          "english_value": "తెలుగు"
+        },
+        {
+          "key": "languages.hi",
+          "fallback_to": "Hindi",
+          "english_value": "हिंदी"
+        },
+        {
+          "key": "languages.gu",
+          "fallback_to": "Hindi",
+          "english_value": "ગુજરાતી"
+        }
+      ]
+    },
+    {
+      "code": "ne",
+      "name_english": "Nepali",
+      "name_native": "नेपाली",
+      "is_rtl": false,
+      "ui_ready": false,
+      "voice_stt_ready": false,
+      "voice_tts_ready": false,
+      "reviewed_by_native_speaker": false,
+      "total_keys": 95,
+      "translated_keys": 89,
+      "fallback_keys_count": 6,
+      "coverage_percentage": 94,
+      "status": "Partly translated (First draft)",
+      "fallback_per_string_to": "Hindi",
+      "untranslated_fallback_strings": [
+        {
+          "key": "languages.firstVisitDesc",
+          "fallback_to": "Hindi",
+          "english_value": "GrowCircle is available across 22 scheduled Indian languages plus English."
+        },
+        {
+          "key": "languages.noResults",
+          "fallback_to": "Hindi",
+          "english_value": "No matching languages found"
+        },
+        {
+          "key": "languages.en",
+          "fallback_to": "Hindi",
+          "english_value": "English"
+        },
+        {
+          "key": "languages.te",
+          "fallback_to": "Hindi",
+          "english_value": "తెలుగు"
+        },
+        {
+          "key": "languages.hi",
+          "fallback_to": "Hindi",
+          "english_value": "हिंदी"
+        },
+        {
+          "key": "languages.gu",
+          "fallback_to": "Hindi",
+          "english_value": "ગુજરાતી"
+        }
+      ]
+    },
+    {
+      "code": "or",
+      "name_english": "Odia",
+      "name_native": "ଓଡ଼ିଆ",
+      "is_rtl": false,
+      "ui_ready": false,
+      "voice_stt_ready": false,
+      "voice_tts_ready": false,
+      "reviewed_by_native_speaker": false,
+      "total_keys": 95,
+      "translated_keys": 89,
+      "fallback_keys_count": 6,
+      "coverage_percentage": 94,
+      "status": "Partly translated (First draft)",
+      "fallback_per_string_to": "Hindi",
+      "untranslated_fallback_strings": [
+        {
+          "key": "languages.firstVisitDesc",
+          "fallback_to": "Hindi",
+          "english_value": "GrowCircle is available across 22 scheduled Indian languages plus English."
+        },
+        {
+          "key": "languages.noResults",
+          "fallback_to": "Hindi",
+          "english_value": "No matching languages found"
+        },
+        {
+          "key": "languages.en",
+          "fallback_to": "Hindi",
+          "english_value": "English"
+        },
+        {
+          "key": "languages.te",
+          "fallback_to": "Hindi",
+          "english_value": "తెలుగు"
+        },
+        {
+          "key": "languages.hi",
+          "fallback_to": "Hindi",
+          "english_value": "हिंदी"
+        },
+        {
+          "key": "languages.gu",
+          "fallback_to": "Hindi",
+          "english_value": "ગુજરાતી"
+        }
+      ]
+    },
+    {
+      "code": "pa",
+      "name_english": "Punjabi",
+      "name_native": "ਪੰਜਾਬੀ",
+      "is_rtl": false,
+      "ui_ready": false,
+      "voice_stt_ready": false,
+      "voice_tts_ready": false,
+      "reviewed_by_native_speaker": false,
+      "total_keys": 95,
+      "translated_keys": 91,
+      "fallback_keys_count": 4,
+      "coverage_percentage": 96,
+      "status": "Partly translated (First draft)",
+      "fallback_per_string_to": "Hindi",
+      "untranslated_fallback_strings": [
+        {
+          "key": "languages.en",
+          "fallback_to": "Hindi",
+          "english_value": "English"
+        },
+        {
+          "key": "languages.te",
+          "fallback_to": "Hindi",
+          "english_value": "తెలుగు"
+        },
+        {
+          "key": "languages.hi",
+          "fallback_to": "Hindi",
+          "english_value": "हिंदी"
+        },
+        {
+          "key": "languages.gu",
+          "fallback_to": "Hindi",
+          "english_value": "ગુજરાતી"
+        }
+      ]
+    },
+    {
+      "code": "sa",
+      "name_english": "Sanskrit",
+      "name_native": "संस्कृतम्",
+      "is_rtl": false,
+      "ui_ready": false,
+      "voice_stt_ready": false,
+      "voice_tts_ready": false,
+      "reviewed_by_native_speaker": false,
+      "total_keys": 95,
+      "translated_keys": 86,
+      "fallback_keys_count": 9,
+      "coverage_percentage": 91,
+      "status": "Partly translated (First draft)",
+      "fallback_per_string_to": "Hindi",
+      "untranslated_fallback_strings": [
+        {
+          "key": "languages.partlyTranslated",
+          "fallback_to": "Hindi",
+          "english_value": "Partly translated"
+        },
+        {
+          "key": "languages.reviewed",
+          "fallback_to": "Hindi",
+          "english_value": "Native reviewed"
+        },
+        {
+          "key": "languages.firstVisitTitle",
+          "fallback_to": "Hindi",
+          "english_value": "Select your language"
+        },
+        {
+          "key": "languages.firstVisitDesc",
+          "fallback_to": "Hindi",
+          "english_value": "GrowCircle is available across 22 scheduled Indian languages plus English."
+        },
+        {
+          "key": "languages.noResults",
+          "fallback_to": "Hindi",
+          "english_value": "No matching languages found"
+        },
+        {
+          "key": "languages.en",
+          "fallback_to": "Hindi",
+          "english_value": "English"
+        },
+        {
+          "key": "languages.te",
+          "fallback_to": "Hindi",
+          "english_value": "తెలుగు"
+        },
+        {
+          "key": "languages.hi",
+          "fallback_to": "Hindi",
+          "english_value": "हिंदी"
+        },
+        {
+          "key": "languages.gu",
+          "fallback_to": "Hindi",
+          "english_value": "ગુજરાતી"
+        }
+      ]
+    },
+    {
+      "code": "sat",
+      "name_english": "Santali",
+      "name_native": "ᱥᱟᱱᱛᱟᱲᱤ",
+      "is_rtl": false,
+      "ui_ready": false,
+      "voice_stt_ready": false,
+      "voice_tts_ready": false,
+      "reviewed_by_native_speaker": false,
+      "total_keys": 95,
+      "translated_keys": 86,
+      "fallback_keys_count": 9,
+      "coverage_percentage": 91,
+      "status": "Partly translated (First draft)",
+      "fallback_per_string_to": "Hindi",
+      "untranslated_fallback_strings": [
+        {
+          "key": "languages.partlyTranslated",
+          "fallback_to": "Hindi",
+          "english_value": "Partly translated"
+        },
+        {
+          "key": "languages.reviewed",
+          "fallback_to": "Hindi",
+          "english_value": "Native reviewed"
+        },
+        {
+          "key": "languages.firstVisitTitle",
+          "fallback_to": "Hindi",
+          "english_value": "Select your language"
+        },
+        {
+          "key": "languages.firstVisitDesc",
+          "fallback_to": "Hindi",
+          "english_value": "GrowCircle is available across 22 scheduled Indian languages plus English."
+        },
+        {
+          "key": "languages.noResults",
+          "fallback_to": "Hindi",
+          "english_value": "No matching languages found"
+        },
+        {
+          "key": "languages.en",
+          "fallback_to": "Hindi",
+          "english_value": "English"
+        },
+        {
+          "key": "languages.te",
+          "fallback_to": "Hindi",
+          "english_value": "తెలుగు"
+        },
+        {
+          "key": "languages.hi",
+          "fallback_to": "Hindi",
+          "english_value": "हिंदी"
+        },
+        {
+          "key": "languages.gu",
+          "fallback_to": "Hindi",
+          "english_value": "ગુજરાતી"
+        }
+      ]
+    },
+    {
+      "code": "sd",
+      "name_english": "Sindhi",
+      "name_native": "سنڌي",
+      "is_rtl": true,
+      "ui_ready": false,
+      "voice_stt_ready": false,
+      "voice_tts_ready": false,
+      "reviewed_by_native_speaker": false,
+      "total_keys": 95,
+      "translated_keys": 86,
+      "fallback_keys_count": 9,
+      "coverage_percentage": 91,
+      "status": "Partly translated (First draft)",
+      "fallback_per_string_to": "Hindi",
+      "untranslated_fallback_strings": [
+        {
+          "key": "languages.partlyTranslated",
+          "fallback_to": "Hindi",
+          "english_value": "Partly translated"
+        },
+        {
+          "key": "languages.reviewed",
+          "fallback_to": "Hindi",
+          "english_value": "Native reviewed"
+        },
+        {
+          "key": "languages.firstVisitTitle",
+          "fallback_to": "Hindi",
+          "english_value": "Select your language"
+        },
+        {
+          "key": "languages.firstVisitDesc",
+          "fallback_to": "Hindi",
+          "english_value": "GrowCircle is available across 22 scheduled Indian languages plus English."
+        },
+        {
+          "key": "languages.noResults",
+          "fallback_to": "Hindi",
+          "english_value": "No matching languages found"
+        },
+        {
+          "key": "languages.en",
+          "fallback_to": "Hindi",
+          "english_value": "English"
+        },
+        {
+          "key": "languages.te",
+          "fallback_to": "Hindi",
+          "english_value": "తెలుగు"
+        },
+        {
+          "key": "languages.hi",
+          "fallback_to": "Hindi",
+          "english_value": "हिंदी"
+        },
+        {
+          "key": "languages.gu",
+          "fallback_to": "Hindi",
+          "english_value": "ગુજરાતી"
+        }
+      ]
+    },
+    {
+      "code": "ta",
+      "name_english": "Tamil",
+      "name_native": "தமிழ்",
+      "is_rtl": false,
+      "ui_ready": false,
+      "voice_stt_ready": false,
+      "voice_tts_ready": false,
+      "reviewed_by_native_speaker": false,
+      "total_keys": 95,
+      "translated_keys": 34,
+      "fallback_keys_count": 61,
+      "coverage_percentage": 36,
+      "status": "Partly translated (First draft)",
+      "fallback_per_string_to": "English",
+      "untranslated_fallback_strings": [
+        {
+          "key": "brand.tagline",
+          "fallback_to": "English",
+          "english_value": "Farm to everyone, full circle"
+        },
+        {
+          "key": "brand.greeting",
+          "fallback_to": "English",
+          "english_value": "Welcome to GrowCircle"
+        },
+        {
+          "key": "languages.en",
+          "fallback_to": "English",
+          "english_value": "English"
+        },
+        {
+          "key": "languages.te",
+          "fallback_to": "English",
+          "english_value": "తెలుగు"
+        },
+        {
+          "key": "languages.hi",
+          "fallback_to": "English",
+          "english_value": "हिंदी"
+        },
+        {
+          "key": "languages.gu",
+          "fallback_to": "English",
+          "english_value": "ગુજરાતી"
+        },
+        {
+          "key": "priceTile.staleWarning",
+          "fallback_to": "English",
+          "english_value": "Prices older than 24h"
+        },
+        {
+          "key": "priceTile.trendUp",
+          "fallback_to": "English",
+          "english_value": "Price up from yesterday"
+        },
+        {
+          "key": "priceTile.trendDown",
+          "fallback_to": "English",
+          "english_value": "Price down from yesterday"
+        },
+        {
+          "key": "priceTile.trendSame",
+          "fallback_to": "English",
+          "english_value": "Stable price"
+        },
+        {
+          "key": "mandiRow.distance",
+          "fallback_to": "English",
+          "english_value": "{km} km away"
+        },
+        {
+          "key": "mandiRow.viewDetails",
+          "fallback_to": "English",
+          "english_value": "View Mandi"
+        },
+        {
+          "key": "voice.stop",
+          "fallback_to": "English",
+          "english_value": "Stop listening"
+        },
+        {
+          "key": "emptyState.noPricesTitle",
+          "fallback_to": "English",
+          "english_value": "No Mandi Prices Reported"
+        },
+        {
+          "key": "emptyState.noPricesDesc",
+          "fallback_to": "English",
+          "english_value": "This mandi has not reported daily arrival rates yet today. Showing closest active mandi."
+        },
+        {
+          "key": "emptyState.noResultsTitle",
+          "fallback_to": "English",
+          "english_value": "No Results Found"
+        },
+        {
+          "key": "emptyState.noResultsDesc",
+          "fallback_to": "English",
+          "english_value": "Try selecting another district or nearby crop."
+        },
+        {
+          "key": "emptyState.actionRetry",
+          "fallback_to": "English",
+          "english_value": "Refresh Data"
+        },
+        {
+          "key": "buttons.call",
+          "fallback_to": "English",
+          "english_value": "Call (Masked)"
+        },
+        {
+          "key": "buttons.offer",
+          "fallback_to": "English",
+          "english_value": "Make Offer"
+        },
+        {
+          "key": "buttons.accept",
+          "fallback_to": "English",
+          "english_value": "Accept Deal"
+        },
+        {
+          "key": "buttons.dispatch",
+          "fallback_to": "English",
+          "english_value": "Find Drivers"
+        },
+        {
+          "key": "transport.title",
+          "fallback_to": "English",
+          "english_value": "Transporter Portal"
+        },
+        {
+          "key": "transport.availableToday",
+          "fallback_to": "English",
+          "english_value": "Available Today"
+        },
+        {
+          "key": "transport.offline",
+          "fallback_to": "English",
+          "english_value": "Offline"
+        },
+        {
+          "key": "transport.guideRate",
+          "fallback_to": "English",
+          "english_value": "Guide Rate: ₹{amount}"
+        },
+        {
+          "key": "transport.guideRateNotice",
+          "fallback_to": "English",
+          "english_value": "Guide rate only (indicative estimate). Transporter and farmer/buyer agree directly on final freight charges."
+        },
+        {
+          "key": "transport.pickupOtp",
+          "fallback_to": "English",
+          "english_value": "Pickup OTP"
+        },
+        {
+          "key": "transport.deliveryOtp",
+          "fallback_to": "English",
+          "english_value": "Delivery OTP"
+        },
+        {
+          "key": "transport.verifyPickup",
+          "fallback_to": "English",
+          "english_value": "Verify Pickup"
+        },
+        {
+          "key": "transport.completeDelivery",
+          "fallback_to": "English",
+          "english_value": "Complete Delivery"
+        },
+        {
+          "key": "transport.pooling",
+          "fallback_to": "English",
+          "english_value": "Freight Pooling v1"
+        },
+        {
+          "key": "transport.goodsAuto",
+          "fallback_to": "English",
+          "english_value": "Goods Auto (<500 kg)"
+        },
+        {
+          "key": "transport.miniTruck",
+          "fallback_to": "English",
+          "english_value": "Mini-Truck (500 kg - 1.5 t)"
+        },
+        {
+          "key": "transport.largeTruck",
+          "fallback_to": "English",
+          "english_value": "Large Truck (>1.5 t)"
+        },
+        {
+          "key": "diary.title",
+          "fallback_to": "English",
+          "english_value": "Farm Diary & Season Economics"
+        },
+        {
+          "key": "diary.plotDetails",
+          "fallback_to": "English",
+          "english_value": "Plot & Cultivation Details"
+        },
+        {
+          "key": "diary.area",
+          "fallback_to": "English",
+          "english_value": "Cultivated Area"
+        },
+        {
+          "key": "diary.profitPerAcre",
+          "fallback_to": "English",
+          "english_value": "Profit / Loss per Acre"
+        },
+        {
+          "key": "diary.breakEven",
+          "fallback_to": "English",
+          "english_value": "Break-Even Price"
+        },
+        {
+          "key": "diary.seasonSummary",
+          "fallback_to": "English",
+          "english_value": "Season Summary vs Mandi Average"
+        },
+        {
+          "key": "diary.exportRecords",
+          "fallback_to": "English",
+          "english_value": "Export My Records (CSV/JSON)"
+        },
+        {
+          "key": "diary.addCost",
+          "fallback_to": "English",
+          "english_value": "Record Expense"
+        },
+        {
+          "key": "diary.addYield",
+          "fallback_to": "English",
+          "english_value": "Record Harvest"
+        },
+        {
+          "key": "diary.addSale",
+          "fallback_to": "English",
+          "english_value": "Record Sale"
+        },
+        {
+          "key": "diary.voiceEntry",
+          "fallback_to": "English",
+          "english_value": "Voice Entry (Transcribe & Confirm)"
+        },
+        {
+          "key": "diary.readbackTitle",
+          "fallback_to": "English",
+          "english_value": "Read-Back Confirmation"
+        },
+        {
+          "key": "diary.readbackPrompt",
+          "fallback_to": "English",
+          "english_value": "Please confirm the details transcribed from your voice note before saving:"
+        },
+        {
+          "key": "diary.confirmSave",
+          "fallback_to": "English",
+          "english_value": "Confirm & Save Entry"
+        },
+        {
+          "key": "consumer.title",
+          "fallback_to": "English",
+          "english_value": "Consumer Price Center"
+        },
+        {
+          "key": "consumer.anyCrop",
+          "fallback_to": "English",
+          "english_value": "Price Today for Any Crop"
+        },
+        {
+          "key": "consumer.isExpensive",
+          "fallback_to": "English",
+          "english_value": "Is it expensive this month?"
+        },
+        {
+          "key": "consumer.expensiveBadge",
+          "fallback_to": "English",
+          "english_value": "Expensive this month"
+        },
+        {
+          "key": "consumer.fairBadge",
+          "fallback_to": "English",
+          "english_value": "Normal / Fair Price"
+        },
+        {
+          "key": "consumer.cheapBadge",
+          "fallback_to": "English",
+          "english_value": "Great time to buy!"
+        },
+        {
+          "key": "consumer.subscribeAlerts",
+          "fallback_to": "English",
+          "english_value": "Get WhatsApp / Telegram Alerts"
+        },
+        {
+          "key": "consumer.noLogin",
+          "fallback_to": "English",
+          "english_value": "No login needed • Direct Mandi data"
+        },
+        {
+          "key": "toasts.successTitle",
+          "fallback_to": "English",
+          "english_value": "Operation Successful"
+        },
+        {
+          "key": "toasts.errorTitle",
+          "fallback_to": "English",
+          "english_value": "Error Encountered"
+        },
+        {
+          "key": "toasts.warningTitle",
+          "fallback_to": "English",
+          "english_value": "Attention Required"
+        },
+        {
+          "key": "toasts.infoTitle",
+          "fallback_to": "English",
+          "english_value": "Information"
+        }
+      ]
+    },
+    {
+      "code": "ur",
+      "name_english": "Urdu",
+      "name_native": "اردو",
+      "is_rtl": true,
+      "ui_ready": false,
+      "voice_stt_ready": false,
+      "voice_tts_ready": false,
+      "reviewed_by_native_speaker": false,
+      "total_keys": 95,
+      "translated_keys": 91,
+      "fallback_keys_count": 4,
+      "coverage_percentage": 96,
+      "status": "Partly translated (First draft)",
+      "fallback_per_string_to": "Hindi",
+      "untranslated_fallback_strings": [
+        {
+          "key": "languages.en",
+          "fallback_to": "Hindi",
+          "english_value": "English"
+        },
+        {
+          "key": "languages.te",
+          "fallback_to": "Hindi",
+          "english_value": "తెలుగు"
+        },
+        {
+          "key": "languages.hi",
+          "fallback_to": "Hindi",
+          "english_value": "हिंदी"
+        },
+        {
+          "key": "languages.gu",
+          "fallback_to": "Hindi",
+          "english_value": "ગુજરાતી"
+        }
+      ]
+    }
+  ]
+}

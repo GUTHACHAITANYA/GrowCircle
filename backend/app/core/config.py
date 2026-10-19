@@ -2,11 +2,13 @@
 Core application configuration using Pydantic Settings.
 """
 
+from pydantic import model_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
 class Settings(BaseSettings):
     ENVIRONMENT: str = "development"
+    APP_MODE: str = "demo"  # 'demo' or 'production'
     DEBUG: bool = True
 
     # Database URLs
@@ -53,10 +55,27 @@ class Settings(BaseSettings):
     WHATSAPP_BUSINESS_ACCOUNT_ID: str = ""
     WHATSAPP_ACCESS_TOKEN: str = ""
     WHATSAPP_VERIFY_TOKEN: str = "growcircle_webhook_token_2026"
+    WHATSAPP_APP_SECRET: str = ""
 
-    # Security
+    # Security & OTP
     SECRET_KEY: str = "dev-secret-key-growcircle-phase1-change-in-production"
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 10080
+    ADMIN_2FA_CODE: str = "654321"
+    OTP_CHANNEL: str = "sms"  # 'sms' or 'whatsapp'
+    SMS_API_KEY: str = ""
+    META_WHATSAPP_TOKEN: str = ""
+    ALLOWED_ORIGINS: list[str] = [
+        "http://localhost:3000",
+        "http://localhost:3001",
+        "http://127.0.0.1:3000",
+        "http://127.0.0.1:3001",
+        "https://growcircle.in",
+        "https://app.growcircle.in",
+    ]
+
+    # Observability & Monitoring
+    SENTRY_DSN: str = ""
+    PROMETHEUS_ENABLED: bool = True
 
     model_config = SettingsConfigDict(
         env_file=".env",
@@ -64,5 +83,24 @@ class Settings(BaseSettings):
         extra="ignore",
     )
 
+    @model_validator(mode="after")
+    def validate_production_settings(self) -> "Settings":
+        if self.APP_MODE not in ("demo", "production"):
+            raise ValueError(
+                f"Invalid APP_MODE '{self.APP_MODE}'. Must be 'demo' or 'production'."
+            )
+        if self.ENVIRONMENT in ("production", "staging"):
+            if not self.SECRET_KEY or self.SECRET_KEY.startswith("dev-secret-key"):
+                raise ValueError(
+                    f"Production/staging environment '{self.ENVIRONMENT}' cannot use the insecure default SECRET_KEY."
+                )
+            if self.DEBUG:
+                raise ValueError(
+                    f"DEBUG mode must be False in production/staging environment '{self.ENVIRONMENT}'."
+                )
+        return self
+
 
 settings = Settings()
+
+

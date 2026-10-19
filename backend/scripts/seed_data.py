@@ -55,7 +55,12 @@ def seed() -> None:
                 AgmarknetService.ingest_records(db, records)
                 logger.info(f"Ingested {len(records)} active mandi records.")
 
-        # 3. Seed 30-day historical time-series for Guntur mandi (for charts)
+        # 3. Seed 30-day historical time-series for Guntur mandi (for charts in demo mode only)
+        import os
+        if os.getenv("APP_MODE") == "production":
+            logger.info("APP_MODE=production: skipping synthetic price history seeding.")
+            return
+
         guntur = db.scalar(select(Mandi).where(Mandi.name == "Guntur"))
         if guntur:
             today = date.today()
@@ -94,12 +99,12 @@ def seed() -> None:
                         modal_price_kg=quintal_to_kg(modal_q),
                         modal_price_ton=quintal_to_ton(modal_q),
                         arrival_tonnes=round(40.0 + (days_ago % 7) * 4.5, 1),
-                        source="data.gov.in",
+                        source="demo",
                     )
                     db.add(hist_price)
 
             db.commit()
-            logger.info("Seeded 30-day historical price series for Guntur Mandi.")
+            logger.info("Seeded 30-day demo price series for Guntur Mandi (source='demo').")
 
         logger.info("Seed process completed successfully!")
     finally:

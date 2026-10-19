@@ -1,0 +1,11 @@
+schema: 2.0
+outs:
+  - path: cleaned_mandi_prices.csv
+    size: 1671441
+    hash: sha256:756ebd1bd30f1aebddbe6ab43593d41591a48e088c3fe1d6f8ee235bbf9657fd
+meta:
+  name: ap_mandi_prices_historical
+  version: 1.0.0
+  owner: GrowCircle ML Team
+  registered_date: 2026-10-17T06:59:40Z
+  total_rows: 9301

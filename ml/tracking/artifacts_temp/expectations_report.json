@@ -1,0 +1,208 @@
+{
+  "suite_name": "apmc_cleaned_mandi_prices_suite",
+  "total_expectations": 15,
+  "passed": 15,
+  "failed": 0,
+  "success_rate_pct": 100.0,
+  "overall_success": true,
+  "details": [
+    {
+      "expectation": "expect_table_columns_to_match_set",
+      "kwargs": {
+        "columns": [
+          "mandi_id",
+          "crop_id",
+          "variety",
+          "grade",
+          "price_date",
+          "min_price_kg",
+          "max_price_kg",
+          "modal_price_kg",
+          "arrival_tonnes",
+          "is_outlier",
+          "outlier_reason"
+        ]
+      },
+      "success": true,
+      "result": {
+        "missing_columns": []
+      }
+    },
+    {
+      "expectation": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "mandi_id"
+      },
+      "success": true,
+      "result": {
+        "null_count": 0,
+        "total_rows": 9301
+      }
+    },
+    {
+      "expectation": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "crop_id"
+      },
+      "success": true,
+      "result": {
+        "null_count": 0,
+        "total_rows": 9301
+      }
+    },
+    {
+      "expectation": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "price_date"
+      },
+      "success": true,
+      "result": {
+        "null_count": 0,
+        "total_rows": 9301
+      }
+    },
+    {
+      "expectation": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "modal_price_kg"
+      },
+      "success": true,
+      "result": {
+        "null_count": 0,
+        "total_rows": 9301
+      }
+    },
+    {
+      "expectation": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "min_price_kg"
+      },
+      "success": true,
+      "result": {
+        "null_count": 0,
+        "total_rows": 9301
+      }
+    },
+    {
+      "expectation": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "max_price_kg"
+      },
+      "success": true,
+      "result": {
+        "null_count": 0,
+        "total_rows": 9301
+      }
+    },
+    {
+      "expectation": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "crop_id",
+        "allowed_set": [
+          "tomato",
+          "banana",
+          "onion",
+          "potato"
+        ]
+      },
+      "success": true,
+      "result": {
+        "unexpected_values": []
+      }
+    },
+    {
+      "expectation": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "grade",
+        "allowed_set": [
+          "A",
+          "SUPER",
+          "B",
+          "C",
+          "FAQ"
+        ]
+      },
+      "success": true,
+      "result": {
+        "unexpected_values": []
+      }
+    },
+    {
+      "expectation": "expect_column_values_to_be_between_clean_rows_modal_price",
+      "kwargs": {
+        "column": "modal_price_kg",
+        "min_value": 0.5,
+        "max_value": 250.0,
+        "label": "clean_rows_modal_price"
+      },
+      "success": true,
+      "result": {
+        "out_of_bounds_count": 0
+      }
+    },
+    {
+      "expectation": "expect_column_values_to_be_between_all_rows_modal_price",
+      "kwargs": {
+        "column": "modal_price_kg",
+        "min_value": 0.5,
+        "max_value": 1500.0,
+        "label": "all_rows_modal_price"
+      },
+      "success": true,
+      "result": {
+        "out_of_bounds_count": 0
+      }
+    },
+    {
+      "expectation": "expect_column_values_to_be_between",
+      "kwargs": {
+        "column": "arrival_tonnes",
+        "min_value": 0.0,
+        "max_value": 5000.0,
+        "label": null
+      },
+      "success": true,
+      "result": {
+        "out_of_bounds_count": 0
+      }
+    },
+    {
+      "expectation": "expect_compound_columns_to_be_unique",
+      "kwargs": {
+        "columns": [
+          "mandi_id",
+          "crop_id",
+          "price_date",
+          "variety",
+          "grade"
+        ]
+      },
+      "success": true,
+      "result": {
+        "duplicate_count": 0
+      }
+    },
+    {
+      "expectation": "expect_price_hierarchy_for_non_outliers",
+      "kwargs": {
+        "rule": "min_price <= modal_price <= max_price on clean rows"
+      },
+      "success": true,
+      "result": {
+        "violation_count": 0,
+        "clean_rows_checked": 9299
+      }
+    },
+    {
+      "expectation": "expect_outlier_flag_integrity",
+      "kwargs": {
+        "rule": "Every flagged outlier has non-empty reason"
+      },
+      "success": true,
+      "result": {
+        "outliers_count": 2,
+        "unspecified_reason_count": 0
+      }
+    }
+  ]
+}

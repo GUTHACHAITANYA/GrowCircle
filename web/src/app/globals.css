@@ -39,13 +39,28 @@ h1, h2, h3, .font-heading {
   font-family: 'Baloo 2', cursive, sans-serif;
 }
 
-/* Locale font families */
-[lang="te"] {
-  font-family: 'Noto Sans Telugu', system-ui, sans-serif;
+/* RTL Support for Urdu (ur), Kashmiri (ks), Sindhi (sd) */
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
 }
-[lang="hi"] {
+
+[dir="rtl"] .rtl-flip {
+  transform: scaleX(-1);
+}
+
+/* Locale font families */
+[lang="te"] { font-family: 'Noto Sans Telugu', system-ui, sans-serif; }
+[lang="hi"], [lang="mr"], [lang="ne"], [lang="sa"], [lang="kok"], [lang="mai"], [lang="doi"], [lang="brx"] {
   font-family: 'Noto Sans Devanagari', system-ui, sans-serif;
 }
-[lang="gu"] {
-  font-family: 'Noto Sans Gujarati', system-ui, sans-serif;
-}
+[lang="gu"] { font-family: 'Noto Sans Gujarati', system-ui, sans-serif; }
+[lang="bn"], [lang="as"], [lang="mni"] { font-family: 'Noto Sans Bengali', system-ui, sans-serif; }
+[lang="ta"] { font-family: 'Noto Sans Tamil', system-ui, sans-serif; }
+[lang="kn"] { font-family: 'Noto Sans Kannada', system-ui, sans-serif; }
+[lang="ml"] { font-family: 'Noto Sans Malayalam', system-ui, sans-serif; }
+[lang="or"] { font-family: 'Noto Sans Oriya', system-ui, sans-serif; }
+[lang="pa"] { font-family: 'Noto Sans Gurmukhi', system-ui, sans-serif; }
+[lang="ur"], [lang="ks"], [lang="sd"] { font-family: 'Noto Sans Arabic', system-ui, sans-serif; }
+[lang="sat"] { font-family: 'Noto Sans Ol Chiki', system-ui, sans-serif; }
+

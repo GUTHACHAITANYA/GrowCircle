@@ -1,0 +1,231 @@
+{
+  "status": "completed",
+  "horizons": {
+    "1": {
+      "sample_count": 20,
+      "models": {
+        "naive": {
+          "mae": 5.25,
+          "smape": 20.57,
+          "mase": 0.912,
+          "pinball_loss": 2.623,
+          "interval_coverage_pct": 80.0
+        },
+        "seasonal_naive": {
+          "mae": 5.75,
+          "smape": 21.99,
+          "mase": 1.0,
+          "pinball_loss": 2.875,
+          "interval_coverage_pct": 80.0
+        },
+        "moving_average_7d": {
+          "mae": 2.26,
+          "smape": 9.48,
+          "mase": 0.392,
+          "pinball_loss": 1.128,
+          "interval_coverage_pct": 80.0
+        },
+        "exponential_smoothing": {
+          "mae": 2.47,
+          "smape": 10.14,
+          "mase": 0.429,
+          "pinball_loss": 1.234,
+          "interval_coverage_pct": 80.0
+        },
+        "lightgbm_global": {
+          "mae": 1.38,
+          "smape": 5.52,
+          "mase": 0.24,
+          "pinball_loss": 0.569,
+          "interval_coverage_pct": 80.0
+        }
+      },
+      "beats_seasonal_naive": true,
+      "improvement_vs_seasonal_naive_pct": 76.0,
+      "volatile_slice": {
+        "sample_count": 8,
+        "seasonal_naive_mae": 7.62,
+        "lightgbm_mae": 2.15,
+        "lightgbm_mase": 0.282,
+        "interval_coverage_pct": 75.0
+      }
+    },
+    "3": {
+      "sample_count": 20,
+      "models": {
+        "naive": {
+          "mae": 7.27,
+          "smape": 26.35,
+          "mase": 0.892,
+          "pinball_loss": 3.634,
+          "interval_coverage_pct": 80.0
+        },
+        "seasonal_naive": {
+          "mae": 8.15,
+          "smape": 27.74,
+          "mase": 1.0,
+          "pinball_loss": 4.074,
+          "interval_coverage_pct": 80.0
+        },
+        "moving_average_7d": {
+          "mae": 4.99,
+          "smape": 17.4,
+          "mase": 0.612,
+          "pinball_loss": 2.493,
+          "interval_coverage_pct": 80.0
+        },
+        "exponential_smoothing": {
+          "mae": 6.33,
+          "smape": 22.46,
+          "mase": 0.777,
+          "pinball_loss": 3.164,
+          "interval_coverage_pct": 80.0
+        },
+        "lightgbm_global": {
+          "mae": 3.91,
+          "smape": 13.98,
+          "mase": 0.48,
+          "pinball_loss": 1.334,
+          "interval_coverage_pct": 45.0
+        }
+      },
+      "beats_seasonal_naive": true,
+      "improvement_vs_seasonal_naive_pct": 52.02,
+      "volatile_slice": {
+        "sample_count": 12,
+        "seasonal_naive_mae": 9.69,
+        "lightgbm_mae": 4.52,
+        "lightgbm_mase": 0.466,
+        "interval_coverage_pct": 41.7
+      }
+    },
+    "7": {
+      "sample_count": 16,
+      "models": {
+        "naive": {
+          "mae": 3.49,
+          "smape": 13.97,
+          "mase": 0.999,
+          "pinball_loss": 1.744,
+          "interval_coverage_pct": 80.0
+        },
+        "seasonal_naive": {
+          "mae": 3.49,
+          "smape": 13.97,
+          "mase": 1.0,
+          "pinball_loss": 1.744,
+          "interval_coverage_pct": 80.0
+        },
+        "moving_average_7d": {
+          "mae": 3.47,
+          "smape": 13.19,
+          "mase": 0.993,
+          "pinball_loss": 1.733,
+          "interval_coverage_pct": 80.0
+        },
+        "exponential_smoothing": {
+          "mae": 3.24,
+          "smape": 13.27,
+          "mase": 0.929,
+          "pinball_loss": 1.622,
+          "interval_coverage_pct": 80.0
+        },
+        "lightgbm_global": {
+          "mae": 3.21,
+          "smape": 12.59,
+          "mase": 0.919,
+          "pinball_loss": 1.098,
+          "interval_coverage_pct": 56.2
+        }
+      },
+      "beats_seasonal_naive": true,
+      "improvement_vs_seasonal_naive_pct": 8.02,
+      "volatile_slice": {
+        "sample_count": 10,
+        "seasonal_naive_mae": 5.33,
+        "lightgbm_mae": 4.95,
+        "lightgbm_mase": 0.928,
+        "interval_coverage_pct": 40.0
+      }
+    },
+    "14": {
+      "sample_count": 19,
+      "models": {
+        "naive": {
+          "mae": 6.57,
+          "smape": 24.8,
+          "mase": 1.0,
+          "pinball_loss": 3.286,
+          "interval_coverage_pct": 80.0
+        },
+        "seasonal_naive": {
+          "mae": 6.57,
+          "smape": 24.8,
+          "mase": 1.0,
+          "pinball_loss": 3.286,
+          "interval_coverage_pct": 80.0
+        },
+        "moving_average_7d": {
+          "mae": 3.84,
+          "smape": 13.9,
+          "mase": 0.584,
+          "pinball_loss": 1.919,
+          "interval_coverage_pct": 80.0
+        },
+        "exponential_smoothing": {
+          "mae": 5.3,
+          "smape": 20.57,
+          "mase": 0.806,
+          "pinball_loss": 2.648,
+          "interval_coverage_pct": 80.0
+        },
+        "lightgbm_global": {
+          "mae": 3.12,
+          "smape": 11.12,
+          "mase": 0.474,
+          "pinball_loss": 1.014,
+          "interval_coverage_pct": 63.2
+        }
+      },
+      "beats_seasonal_naive": true,
+      "improvement_vs_seasonal_naive_pct": 52.51,
+      "volatile_slice": {
+        "sample_count": 11,
+        "seasonal_naive_mae": 7.82,
+        "lightgbm_mae": 3.33,
+        "lightgbm_mase": 0.425,
+        "interval_coverage_pct": 63.6
+      }
+    }
+  },
+  "cutoffs_evaluated": [
+    "2026-01-15",
+    "2026-03-20",
+    "2026-05-20",
+    "2026-07-25",
+    "2026-09-20"
+  ],
+  "eligible_series": [
+    [
+      "ap-guntur-01",
+      "banana"
+    ],
+    [
+      "ap-vijayawada-01",
+      "banana"
+    ],
+    [
+      "ap-madanapalle-01",
+      "tomato"
+    ],
+    [
+      "ap-kurnool-01",
+      "onion"
+    ],
+    [
+      "ap-kurnool-01",
+      "potato"
+    ]
+  ],
+  "overall_lgb_beats_baseline": true
+}

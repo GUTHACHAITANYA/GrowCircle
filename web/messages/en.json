@@ -7,7 +7,10 @@
   "nav": {
     "prices": "Price Today",
     "buyers": "Find Buyer",
+    "portal": "Buyer Portal",
+    "admin": "Admin Verify",
     "logistics": "Move Produce",
+    "diary": "Farm Diary",
     "planner": "Plan Ahead",
     "showcase": "Design System Showcase"
   },
@@ -19,6 +22,13 @@
   },
   "languages": {
     "title": "Select Language",
+    "selectLanguage": "Select a language",
+    "searchPlaceholder": "Search languages...",
+    "partlyTranslated": "Partly translated",
+    "reviewed": "Native reviewed",
+    "firstVisitTitle": "Select your language",
+    "firstVisitDesc": "GrowCircle is available across 22 scheduled Indian languages plus English.",
+    "noResults": "No matching languages found",
     "en": "English",
     "te": "తెలుగు",
     "hi": "हिंदी",
@@ -62,10 +72,103 @@
     "back": "Back",
     "close": "Close"
   },
+  "transport": {
+    "title": "Transporter Portal",
+    "availableToday": "Available Today",
+    "offline": "Offline",
+    "guideRate": "Guide Rate: ₹{amount}",
+    "guideRateNotice": "Guide rate only (indicative estimate). Transporter and farmer/buyer agree directly on final freight charges.",
+    "pickupOtp": "Pickup OTP",
+    "deliveryOtp": "Delivery OTP",
+    "verifyPickup": "Verify Pickup",
+    "completeDelivery": "Complete Delivery",
+    "pooling": "Freight Pooling v1",
+    "goodsAuto": "Goods Auto (<500 kg)",
+    "miniTruck": "Mini-Truck (500 kg - 1.5 t)",
+    "largeTruck": "Large Truck (>1.5 t)"
+  },
+  "diary": {
+    "title": "Farm Diary & Season Economics",
+    "plotDetails": "Plot & Cultivation Details",
+    "area": "Cultivated Area",
+    "acres": "{count} Acres",
+    "profitPerAcre": "Profit / Loss per Acre",
+    "breakEven": "Break-Even Price",
+    "seasonSummary": "Season Summary vs Mandi Average",
+    "exportRecords": "Export My Records (CSV/JSON)",
+    "addCost": "Record Expense",
+    "addYield": "Record Harvest",
+    "addSale": "Record Sale",
+    "voiceEntry": "Voice Entry (Transcribe & Confirm)",
+    "readbackTitle": "Read-Back Confirmation",
+    "readbackPrompt": "Please confirm the details transcribed from your voice note before saving:",
+    "confirmSave": "Confirm & Save Entry"
+  },
+  "consumer": {
+    "title": "Consumer Price Center",
+    "anyCrop": "Price Today for Any Crop",
+    "isExpensive": "Is it expensive this month?",
+    "expensiveBadge": "Expensive this month",
+    "fairBadge": "Normal / Fair Price",
+    "cheapBadge": "Great time to buy!",
+    "subscribeAlerts": "Get WhatsApp / Telegram Alerts",
+    "noLogin": "No login needed • Direct Mandi data"
+  },
   "toasts": {
     "successTitle": "Operation Successful",
     "errorTitle": "Error Encountered",
     "warningTitle": "Attention Required",
     "infoTitle": "Information"
+  },
+  "auth": {
+    "signInTitle": "Sign In / Register",
+    "verifyOtpTitle": "Verify Phone OTP",
+    "admin2faTitle": "Admin 2FA Security",
+    "phoneSubtitle": "No password needed — phone OTP authentication",
+    "otpSubtitle": "Enter code sent to +91 {phone}",
+    "admin2faSubtitle": "Administrative two-factor code required",
+    "mobileNumberLabel": "Mobile Number",
+    "mobileNumberPlaceholder": "98480 12345",
+    "realProviderNotice": "We verify with a 6-digit WhatsApp or SMS code. No passwords required.",
+    "demoModeNotice": "Demo mode — verification code simulated. No passwords required.",
+    "nameLabel": "Your Name",
+    "optional": "Optional",
+    "namePlaceholder": "e.g. Venkata Rao",
+    "selectRoleLabel": "Select Your Role",
+    "sendOtpButton": "Send OTP",
+    "sendingOtp": "Sending Verification Code...",
+    "enterOtpLabel": "Enter 6-Digit OTP",
+    "changePhone": "Change phone number",
+    "resendOtp": "Resend OTP",
+    "resendCooldown": "Resend OTP in {seconds}s",
+    "verifyButton": "Verify & Continue",
+    "verifying": "Verifying...",
+    "devOtpHdr": "Dev OTP",
+    "devOtpBadge": "Demo Sandbox Code",
+    "autoFill": "Auto-Fill",
+    "attemptsLeft": "{count} attempt(s) remaining",
+    "accountLocked": "Device locked due to repeated failed attempts. Please wait {seconds}s.",
+    "pendingVerificationNotice": "Your account is pending administrator verification. You can browse the platform while our team verifies your credentials.",
+    "adminCodeLabel": "Admin 2FA Security Code",
+    "adminCodeDesc": "Administrative access requires secondary TOTP authorization. In demo mode, use master code 654321.",
+    "adminSubmit": "Unlock Admin Console",
+    "roles": {
+      "farmer": {
+        "title": "Farmer",
+        "subtitle": "List produce, view local mandi rates, manage diary"
+      },
+      "buyer": {
+        "title": "Buyer (Institution / Shop)",
+        "subtitle": "Post weekly needs, direct buy from farms (pending verification)"
+      },
+      "driver": {
+        "title": "Transporter",
+        "subtitle": "Accept farm-to-mandi trips, pickup/delivery OTPs (pending verification)"
+      },
+      "consumer": {
+        "title": "Consumer",
+        "subtitle": "Browse transparent farm mandi prices and group buys"
+      }
+    }
   }
 }

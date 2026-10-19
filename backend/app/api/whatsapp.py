@@ -3,13 +3,18 @@ FastAPI endpoints for WhatsApp Cloud API Webhooks.
 Includes Meta webhook subscription verification and message dispatcher.
 """
 
+import hashlib
+import hmac
 import logging
+import secrets
 from typing import Annotated
 
 from fastapi import APIRouter, Depends, HTTPException, Query, Request, Response
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from backend.app.core.config import settings
+from backend.app.core.monitoring import metrics_registry
+from backend.app.core.rate_limit import RateLimitRule, get_client_ip, rate_limit_check
 from backend.app.db.session import get_async_db
 from backend.app.services.whatsapp.handler import whatsapp_handler
 
@@ -26,11 +31,11 @@ async def verify_whatsapp_webhook(
 ) -> Response:
     """
     Meta WhatsApp Cloud API Webhook verification handshake.
-    Responds with hub.challenge when token matches.
+    Responds with hub.challenge when token matches using constant-time comparison.
     """
     expected_token = settings.WHATSAPP_VERIFY_TOKEN
 
-    if hub_mode == "subscribe" and hub_verify_token == expected_token:
+    if hub_mode == "subscribe" and secrets.compare_digest(hub_verify_token or "", expected_token):
         logger.info("WhatsApp webhook verified successfully.")
         return Response(content=hub_challenge or "", media_type="text/plain")
 
@@ -49,8 +54,26 @@ async def handle_whatsapp_webhook_event(
     - Location sharing
     - Text messages
     """
+    client_ip = get_client_ip(request)
+    await rate_limit_check("whatsapp_webhook", client_ip, *RateLimitRule.WHATSAPP)
+    metrics_registry.record_whatsapp_message()
+
+    raw_body = await request.body()
+
+    # If Meta App Secret is configured in production, verify HMAC-SHA256 signature
+    app_secret = getattr(settings, "WHATSAPP_APP_SECRET", "")
+    if app_secret:
+        sig_header = request.headers.get("X-Hub-Signature-256", "")
+        if not sig_header or not sig_header.startswith("sha256="):
+            raise HTTPException(status_code=403, detail="Missing or invalid webhook signature")
+        expected_sig = hmac.new(app_secret.encode(), raw_body, hashlib.sha256).hexdigest()
+        if not hmac.compare_digest(sig_header.split("sha256=")[1], expected_sig):
+            raise HTTPException(status_code=403, detail="Invalid webhook signature")
+
     try:
-        payload = await request.json()
+        import json
+
+        payload = json.loads(raw_body.decode("utf-8")) if raw_body else {}
     except Exception:
         raise HTTPException(status_code=400, detail="Invalid JSON payload") from None
 

@@ -9,6 +9,8 @@ from typing import Annotated
 from fastapi import APIRouter, Depends, Query, Request, Response
 from sqlalchemy.ext.asyncio import AsyncSession
 
+from backend.app.core.monitoring import metrics_registry
+from backend.app.core.rate_limit import RateLimitRule, get_client_ip, rate_limit_check
 from backend.app.db.session import get_async_db
 from backend.app.services.telephony.ivr_flow import ivr_flow_service
 
@@ -59,6 +61,11 @@ async def missed_call_webhook(
     if not phone and "From" in request.query_params:
         phone = request.query_params["From"]
 
+    caller_id = phone or get_client_ip(request)
+    await rate_limit_check("ivr_missed_call", caller_id, *RateLimitRule.IVR_MISSED_CALL)
+
+    metrics_registry.record_ivr_call()
+
     xml_response = await ivr_flow_service.handle_missed_call(
         db=db, caller_phone=phone or "9999999999"
     )
@@ -76,6 +83,7 @@ async def callback_answered_webhook(
     """
     caller_phone, _ = await extract_caller_data(request)
     target_phone = phone or caller_phone or "9999999999"
+    await rate_limit_check("ivr_interactive", target_phone, *RateLimitRule.IVR)
 
     xml_response = await ivr_flow_service.handle_callback_answered(db=db, phone=target_phone)
     return Response(content=xml_response, media_type="application/xml")
@@ -92,6 +100,7 @@ async def language_selection_webhook(
     """
     caller_phone, digits = await extract_caller_data(request)
     target_phone = phone or caller_phone or "9999999999"
+    await rate_limit_check("ivr_interactive", target_phone, *RateLimitRule.IVR)
 
     xml_response = await ivr_flow_service.handle_language_selection(
         db=db, phone=target_phone, digits=digits or "1"
@@ -110,6 +119,7 @@ async def district_selection_webhook(
     """
     caller_phone, digits = await extract_caller_data(request)
     target_phone = phone or caller_phone or "9999999999"
+    await rate_limit_check("ivr_interactive", target_phone, *RateLimitRule.IVR)
 
     xml_response = await ivr_flow_service.handle_district_selection(
         db=db, phone=target_phone, digits=digits or "1"
@@ -129,6 +139,7 @@ async def crop_menu_webhook(
     """
     caller_phone, digits = await extract_caller_data(request)
     target_phone = phone or caller_phone or "9999999999"
+    await rate_limit_check("ivr_interactive", target_phone, *RateLimitRule.IVR)
 
     xml_response = await ivr_flow_service.handle_crop_selection(
         db=db, phone=target_phone, digits=digits or "1"
@@ -151,6 +162,7 @@ async def action_selection_webhook(
     """
     caller_phone, digits = await extract_caller_data(request)
     target_phone = phone or caller_phone or "9999999999"
+    await rate_limit_check("ivr_interactive", target_phone, *RateLimitRule.IVR)
 
     xml_response = await ivr_flow_service.handle_action_selection(
         db=db, phone=target_phone, crop_id=crop, digits=digits or "9"

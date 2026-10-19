@@ -226,7 +226,7 @@ def build_mandi_prices_spoken_summary(
         header = f"Today's {crop_name} prices:"
 
     lines = [header]
-    for idx, item in enumerate(mandis_data[:3], 1):
+    for idx, item in enumerate(mandis_data[:5], 1):
         raw_name = item.get("mandi_name") or item.get("name") or ""
         m_name = get_mandi_spoken_name(str(item.get("mandi_id", "")), raw_name, lang)
 
