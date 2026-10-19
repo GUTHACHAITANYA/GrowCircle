@@ -1,4 +1,4 @@
-# GrowCircle (గ్రో సర్キల్ / ग्रो सर्कल / ગ્રો સર્કલ)
+# GrowCircle 
 > *"Farm to everyone, full circle"*
 
 GrowCircle is a voice-first platform that connects the whole fruit-and-vegetable ecosystem in India: farmers, buyers (hostels, colleges, schools, hotels, shops), transport drivers, and everyday consumers.
